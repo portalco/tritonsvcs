@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Citizens Home Page</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom-cit.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="#">Careers</a>
+                    </li>
+                    <li> <a href="blog.html">Contact Us</a>
+                    </li>
+                    <li> <a href="#">Governance</a>
+                    </li>
+                    <li> <a href="#">Search</a>
+                    </li>
+                    <li class="dropdown" id="menuLogin">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                        <div class="dropdown-menu navbar-inverse" style="padding:17px;">
+                            <form class="form" id="formLogin">
+                                <input name="username" id="username" type="text" placeholder="Username">
+                                <input name="password" id="password" type="password" placeholder="Password">
+                                <br>
+                                <button type="btn-info" id="btnLogin" class="btn">Login</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-default ">
+        <div class="container">
+            <div class="navbar-collapse ">
+                <a href="#" class="navbar-brand nav navbar-nav navbar-left" style="display:block!important">
+                    <img class="img-responsive" src="images/Citizen-Logo.png">
+                </a>
+                <ul class="nav navbar-nav navbar-right" style="display:block!important">
+                    <li> <a href="#">Insurance</a>
+                    </li>
+                    <li> <a href="blog.html">Claims</a>
+                    </li>
+                    <li> <a href="#">Storms</a>
+                    </li>
+                    <li> <a href="#">Learning Center</a>
+                    </li>
+                    <li> <a href="#">News</a>
+                    </li>
+                    <li> <a href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="images/slide1.png" alt="Learning...">
+                    <!--<div class="carousel-caption">
+                        <h3>We are Citizens</h3>
+                        <p>Brenda P</p>
+                        <p>Learning Developement</p>
+                    </div>-->
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/slide2.png" alt="Operations...">
+                    <!--<div class="carousel-caption">
+                        <h3>We are Citizens</h3>
+                        <p>Stacey B</p>
+                        <p>IT Operations</p>
+                    </div>-->
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/slide3.png" alt="Finance...">
+                    <!--<div class="carousel-caption">
+                        <h3>We are Citizens</h3>
+                        <p>Patrick K</p>
+                        <p>Finance</p>
+                    </div>-->
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+
+
+    
+    <div class="container gallery">
+        <div class="row">
+            <div class="col-md-4 stretch">
+                <img class="img-responsive stretch gallery" src="images/careers.jpg" alt="Careers">
+                <div class="gallery-title"> Careers At Citizens</div>
+                <div class="gallery-text">Work at the best company in the world</div>
+            </div>
+            <div class="col-md-4 stretch">
+                <img class="img-responsive stretch gallery" src="images/Policy.jpg" alt="Policy">
+                <div class="gallery-title"> Manage myPolicy</div>
+                <div class="gallery-text">Learn everything there is about the insurance industry.</div>
+            </div>
+            <div class="col-md-4 stretch">
+                <img class="img-responsive stretch gallery" src="images/lightning.jpg" alt="Lightning">
+                <div class="gallery-title"> Storm Prep</div>
+                <div class="gallery-text">Tips and tricks to prepare you for the perfect storm.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-bottom">
+        <div class="containter">
+            <div class="navbar-text pull-left">
+                <p>Privacy Policy | Site Map</p>
+                <p>Copyright 2014 Citizens Property Insurance Corporation of Florida</p>
+            </div>
+            <div class="pull-right">
+                <a href="http://www.facebook.com/citizensfla" class="navbar-btn btn-primary btn ">
+                    <img src="images/fb.png">
+                </a>
+                <a href="http://www.twitter.com/citizensfla" class="navbar-btn btn-primary btn ">
+                    <img src="images/twt.png">
+                </a>
+                <a href="http://www.linkedin.com/citizensfla" class="navbar-btn btn-primary btn ">
+                    <img src="images/lnkd.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="loginp" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-offset-5 col-md-3">
+                        <div class="form-login">
+                            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+                            </br>
+                            <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                            </br>
+                            <div class="wrapper">
+                                <span class="group-btn">     
+                                <a href="#" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
+                                <a class="btn btn-defaul" data-dismiss="modal">Close</a>
+                            </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
