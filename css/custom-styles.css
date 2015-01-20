@@ -102,8 +102,10 @@ img.gallery:hover {
 }
 .gallery-title {
     position: absolute;
-    top: 10px;
-    font-size: 25px;
+    top: 1%;
+    bottom: auto;
+    left: 1%;
+    font-size: 2.0em;
     text-align: left;
     z-index: 15;
     padding-top: 5px;
@@ -115,9 +117,12 @@ img.gallery:hover {
 .gallery-text {
     position: absolute;
     color: #fff;
-    top: 20px;
+    top: 15%;
+    bottom: auto;
+    left: 8%;
     text-align: left;
-    padding: 20px 15px 20px 15px;
+    padding: 0px 0px 0px 0px;
+    line-height: 70%;
     width:100%;
 }
 
