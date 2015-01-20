@@ -124,9 +124,9 @@ img.gallery:hover {
 .carousel-title {
     position: absolute;
     top: auto;
-    bottom: 20%;
-    left: 46%;
-    font-size: 55.68pt;
+    bottom: 24%;
+    left: 47%;
+    font-size: 4.7em;
     text-align: left;
     padding-bottom: 0px;
     padding-right: 0px;
@@ -140,7 +140,7 @@ img.gallery:hover {
     left: 47.5%;
     text-align: left;
     width:100%;
-    font-size: 12.7pt;
+    font-size: 1.04em;
     color: #fff;
     margin: 0px 0 0px !important;
     padding: 10px 0px 0px 0px;
