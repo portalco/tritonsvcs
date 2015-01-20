@@ -1,0 +1,10 @@
+img {
+  filter: gray; 
+  -webkit-filter: grayscale(1); 
+}
+
+img:hover {
+  filter: none; 
+  -webkit-filter: grayscale(0); 
+ 
+}

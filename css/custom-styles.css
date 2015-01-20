@@ -1,0 +1,202 @@
+.citizens-navbar {
+    height: 25px;
+    color: #0066a1;
+    font: 300 23px / 42.701px AvenirLTStd;
+    float: right;
+}
+.citizens-topnav {
+    background-color: #0066a1;
+    height: 37px;
+}
+.citizens-dockbar-text {
+    color: #ffffff;
+    font: 300 15px / 42.701px AvenirLTStd;
+    line-height: 42.701px;
+    text-align: right;
+}
+.border-red {
+    border-style: solid;
+    border-color: red;
+    z-index: 10;
+}
+
+.citizens-logo {
+    height: 69px;
+    width: 202px;
+    float: left;
+}
+.citizens-footer {
+    background-color: #0066a1;
+    height: 93px;
+    width: 100%;
+    position: relative;
+}
+.citizens-footer-right {
+    float: right;
+    width: 10%;
+}
+.citizens-footer-left {
+    float: left;
+    width: 89.5%;
+    margin-left: 0.5%;
+}
+.citizens-footer-left p {
+    color: #ffffff;
+    font: 300 15px / 18px AvenirLTStd;
+    margin: 0;
+}
+.citizens-footer img {
+    margin-top: 3%;
+}
+
+.citizens-alert-text {
+    color: #ffffff;
+    font: 800 20px / 42.701px AvenirLTStd;
+    text-align: center;
+}
+.citizens-clear {
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+.citizens-slider-span {
+    display: inline;
+}
+div.citizens-slider-span img:nth-child(1) {
+    z-index: 1;
+    position: relative;
+    left: 0%;
+}
+div.citizens-slider-span img:nth-child(2) {
+    z-index: 5;
+    top: 0;
+    left: -32.5%;
+    position: relative;
+    display: run-in;
+    opacity: 0.6;
+}
+
+div.stretch {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+img.gallery {
+  filter: gray; 
+  -webkit-filter: grayscale(1); 
+}
+
+img.gallery:hover {
+  filter: none; 
+  -webkit-filter: grayscale(0); 
+ 
+}
+
+
+
+.product-box {
+    
+    display:inline-block;
+    position:relative;
+}
+.gallery-title {
+    position: absolute;
+    top: 1%;
+    bottom: auto;
+    left: 1%;
+    font-size: 2.0em;
+    text-align: left;
+    z-index: 15;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    padding-left: 20px;
+    width: 100%;
+}
+.gallery-text {
+    position: absolute;
+    color: #fff;
+    top: 15%;
+    bottom: auto;
+    left: 8%;
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    line-height: 70%;
+    width:100%;
+}
+
+.carousel-title {
+    position: absolute;
+    top: auto;
+    bottom: 24%;
+    left: 47%;
+    font-size: 4.7rem;
+    text-align: left;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    width: 100%;
+    color: white;
+}
+@media(max-width: 680px) 
+{
+    .carousel-title {
+        font-size: 3.2rem;
+    }
+}
+@media(max-width: 300px) 
+{
+    .carousel-title {
+        font-size: 1.2rem;
+    }
+}
+
+.carousel-text {
+    position: absolute;
+    top: auto;
+    bottom: 10%;
+    left: 47.5%;
+    text-align: left;
+    width:100%;
+    font-size: 1.04em;
+    color: #fff;
+    margin: 0px 0 0px !important;
+    padding: 10px 0px 0px 0px;
+    line-height: 70%;
+}
+
+.navbar-second{
+}
+
+.citizens-alert {
+    z-index: 2000;
+    color: white;
+    background-color: #9e0b0f;
+    width: 100%;
+    font-size: 20px;
+}
+
+.navbar-bottom {
+        margin-top: 20px;
+}
+
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #004A10;
+}
+
+#menuLogin
+{
+    background-color: #7CB8FF;
+}
+
+
+#menuLogin a:hover, #menuLogin a:focus
+{
+    background-color: #7CB8FF;
+}
+
+.navbar-second 
+{
+    font-size: 24.92px;
+}
