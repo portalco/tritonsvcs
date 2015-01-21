@@ -164,7 +164,7 @@ img.gallery:hover {
 
 
 .navbar-second{
-    font-size: 24.92pt;
+/*    font-size: 24.92pt;*/
 }
 
 .citizens-alert {
@@ -200,22 +200,20 @@ img.gallery:hover {
 }
 
 
+/*
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     background-color: #004A10;
 }
+*/
 
 #menuLogin
 {
-    background-color: #7CB8FF;
+    background-color: #004A74;
 }
 
 
 #menuLogin a:hover, #menuLogin a:focus
 {
-    background-color: #7CB8FF;
+    background-color: #0066A1;
 }
 
-.navbar-second 
-{
-    font-size: 24.92px;
-}
