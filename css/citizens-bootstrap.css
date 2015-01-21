@@ -6162,8 +6162,9 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  bottom: -4%;
+  left: auto;
+  right: -26%;
   z-index: 15;
   width: 60%;
   margin-left: -30%;
@@ -6226,9 +6227,6 @@ button.close {
     left: 20%;
     right: 20%;
     padding-bottom: 30px;
-  }
-  .carousel-indicators {
-    bottom: 20px;
   }
 }
 .clearfix:before,
