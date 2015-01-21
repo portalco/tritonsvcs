@@ -9,6 +9,33 @@
  * BootSwatchr built and provided by @DrewStrickland
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+with any questions regarding Web Fonts:  http://www.linotype.com
+*/
+
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=8767b4a1-56d6-4504-927d-7d8b7d028ede&fontids=721220");
+
+@font-face{
+
+    font-family:"Avenir LT W01_35 Light";
+
+    src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+
+    src:url("Fonts/721220/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),
+
+    url("Fonts/721220/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),
+
+    url("Fonts/721220/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),
+
+    url("Fonts/721220/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+}
+
+
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -279,7 +306,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: AvenirLTStd;
+  font-family: Avenir LT W01_35 Light;
   font-size: 14px;
   line-height: 1.428571429;
   color: #08a4ff;
@@ -5753,7 +5780,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: AvenirLTStd;
+  font-family: Avenir LT W01_35 Light;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5860,7 +5887,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: AvenirLTStd;
+  font-family: Avenir LT W01_35 Light;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.428571429;

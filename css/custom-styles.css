@@ -1,3 +1,4 @@
+
 .citizens-navbar {
     height: 25px;
     color: #0066a1;
@@ -83,17 +84,12 @@ div.stretch {
 
 
 img.gallery {
-  filter: gray; 
-  -webkit-filter: grayscale(1); 
+    opacity: 0.9;
 }
 
 img.gallery:hover {
-  filter: none; 
-  -webkit-filter: grayscale(0); 
- 
+    opacity: 1;
 }
-
-
 
 .product-box {
     
@@ -131,24 +127,12 @@ img.gallery:hover {
     top: auto;
     bottom: 24%;
     left: 47%;
-    font-size: 4.7rem;
+    font-size: 6.0rem;
     text-align: left;
     padding-bottom: 0px;
     padding-right: 0px;
     width: 100%;
     color: white;
-}
-@media(max-width: 680px) 
-{
-    .carousel-title {
-        font-size: 3.2rem;
-    }
-}
-@media(max-width: 300px) 
-{
-    .carousel-title {
-        font-size: 1.2rem;
-    }
 }
 
 .carousel-text {
@@ -165,7 +149,22 @@ img.gallery:hover {
     line-height: 70%;
 }
 
+@media(max-width: 680px) 
+{
+    .carousel-title {
+        font-size: 3.2rem;
+    }
+}
+@media(max-width: 300px) 
+{
+    .carousel-title {
+        font-size: 1.2rem;
+    }
+}
+
+
 .navbar-second{
+    font-size: 24.92pt;
 }
 
 .citizens-alert {
@@ -173,8 +172,28 @@ img.gallery:hover {
     color: white;
     background-color: #9e0b0f;
     width: 100%;
-    font-size: 20px;
+    font-size: 11pt;
+    min-height: 37px;
 }
+
+.citizens-alert .container div {
+    height: 25px;
+    line-height: 25px;
+    padding: 1px;
+    align-content: center;
+    text-align: left;
+}
+
+.citizens-alert p {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 
 .navbar-bottom {
         margin-top: 20px;
