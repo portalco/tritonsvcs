@@ -13,11 +13,14 @@ $dockbarOpenGradientStart: #0EA6F9;
 
 /* ---------- Base styles ---------- */
 
+html {
+	position: relative;
+	min-height: 100%;
+}
 body {
 	height: 100% !important;
 	margin: 0;
-	}
-
+}
 .aui {
 	#skip-to-content {
 		display: none;
@@ -146,6 +149,7 @@ body {
 						.dropdown-menu {
 							width: 196px;
 							padding: 0px 0px 8px 0px;
+							font-size: 15px;
 							 a:hover {
 								text-decoration: underline;
 							}
@@ -167,7 +171,7 @@ body {
 							font-family: 'Avenir85-Heavy';
 							padding: 0px 0px 0px 35px;
 							float: left;
-							height: 30px;
+							height: 31px;
 						}
 					}
 					&.sign-in {
@@ -212,6 +216,9 @@ body {
 					margin-top: 10px;
 					top: 50px;
 				}
+			}
+			.btn-navbar {
+				padding: 2px 10px;
 			}
 
 			.nav-add-controls {
@@ -278,7 +285,7 @@ body {
 	/* ---------- Main navigation ---------- */
 
 	#navigation {
-    	padding:0;
+		padding:0;
 		.add-page-editor {
 			input {
 				margin-top: 0;
@@ -410,7 +417,7 @@ body {
 
 	.portlet-asset-publisher .asset-content, .portlet-asset-publisher .asset-summary, .portlet-asset-publisher .asset-title, .portlet-asset-publisher .header-title, .portlet-asset-publisher li.title-list, .portlet-blogs .entry-body, .portlet-blogs .entry-title, .portlet-blogs .header-title, .portlet-journal-content .journal-content-article, .portlet-message-boards .header-title, .portlet-message-boards .thread-body {
 		-moz-hyphens: manual !important;
-    	word-break: keep-all !important;
+		word-break: keep-all !important;
 	}
 
 	.lfr-configurator-visibility .portlet-topper {
@@ -689,12 +696,28 @@ body {
 
 /* ---------- Emdev2 styles ---------- */
 
-@media (min-width: 940px) {
-
+@media (min-width: 768px) {
+	.aui .container, .aui .navbar .container, .portlet-dockbar .dockbar {
+		width: 750px;
+	}
+	.aui #navigation .navbar-inner ul.nav-collapse li a {
+		margin-left: 20px;
+	}
 }
-@media (min-width: 769px) and (max-width: 979px) {
-
+@media (min-width: 992px) {
+	.aui .container, .aui .navbar .container, .portlet-dockbar .dockbar {
+		width: 940px;
+	}
+	.aui #navigation .navbar-inner ul.nav-collapse li a {
+		margin-left: 20px;
+	}
 }
+@media (min-width: 1200px) {
+	.aui .container, .aui .navbar .container, .portlet-dockbar .dockbar {
+		width: 1200px;
+	}
+}
+
 @font-face {
 	font-family: 'Avenir35-Light';
 	src: url('../fonts/AvenirLTStd-Light.eot');
@@ -724,82 +747,206 @@ body {
 	font-style: normal;
 }
 
+.aui body {
+	margin-bottom: 60px !important;
+}
 
-#wrapper {
-    padding: 0;
-    width: 1200px;
-    margin: 0 auto;
-    #heading {
-        float: left;
-    }
-    #navigation {
-        float: right;
-        margin-top: 50px;
-        .navbar-inner {
-            background: transparent;
-            padding: 0;
-            ul.nav-collapse {
-            	margin: 0;
-                li {
-                	a {
-                        font-family: 'Avenir35-Light' !important;
-                        color: $darkblue;
-                        font-size: 24.92px;
-                        padding: 0;
-                        margin-left: 55px;
-                        &:hover, &:focus {
-                            text-decoration: underline;
-                            color: rgb(0, 0, 0);
-                        }
-                    }
-                    &.open > a, &.active > a {
-                    	background: transparent;
-                    	color: inherit;
-                    }
-                    &.active > a {
-                    	font-family: 'Avenir95-Black' !important;
-                    }
-                }
-            }
-        }
-    }
-}
 .portlet-dockbar {
-    height: 37px;
-    background-color: $darkblue;
-    position: relative;
-    .dockbar {
-        font-family: 'Avenir35-Light' !important;
-        position: relative !important;
-        height: auto !important;
-        max-width: 1200px;
-        margin: 0 auto;
-        .navbar-inner {
-            width: auto !important;
-            min-height: 37px !important;
-            .container {
-                max-width: 1200px;
-                height: 37px;
-                .nav-account-controls {
-                    position: relative !important;
-                    right: auto;
-                }
-            }
-        }
-    }
+	height: 37px;
+	background-color: $darkblue;
+	position: relative;
+	z-index: 1031;
+	.dockbar {
+		font-family: 'Avenir35-Light' !important;
+		position: relative !important;
+		height: auto !important;
+		margin: 0 auto;
+		.navbar-inner {
+			width: auto !important;
+			min-height: 37px !important;
+			.container {
+				max-width: 1200px;
+				height: 37px;
+				.collapse.nav-collapse {
+					visibility: visible;
+					display: block;
+				}
+				.nav-account-controls {
+					position: relative !important;
+					right: auto;
+				}
+			}
+		}
+	}
+	.footer {
+		display: none;
+	}
 }
-#footerWrapper {
-    background-color: $footerbg;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #fff;
-    padding: 20px 0px;
-    font-family: 'Avenir35-Light';
-    font-size: 14px;
-    #footerContent {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+
+.aui {
+	#navigation {
+		float: right;
+		margin-top: 50px;
+		.navbar-inner {
+			background: transparent;
+			padding: 0;
+			.collapse.nav-collapse {
+				visibility: visible;
+				display: block;
+			}
+			ul.nav-collapse {
+				margin: 0;
+				li {
+					a {
+						font-family: 'Avenir35-Light' !important;
+						color: $darkblue;
+						font-size: 24.92px;
+						padding: 0;
+						margin-left: 55px;
+						&:hover, &:focus {
+							text-decoration: underline;
+							color: rgb(0, 0, 0);
+						}
+					}
+					&.open > a, &.active > a {
+						background: transparent;
+						color: inherit;
+					}
+					&.active > a {
+						font-family: 'Avenir95-Black' !important;
+					}
+				}
+			}
+		}
+	}
+	.carousel {
+		margin: 0;
+		overflow: hidden;
+		font-family: 'Avenir35-Light' !important;
+		.carousel-inner .item {
+			&:after, &:before {
+				background-color: rgba(255, 255, 255, 0.25);
+				height: 100%;
+				width: 20px;
+			}
+			&:before {
+				left: 0;
+			}
+		}
+		.carousel-control {
+			z-index: 5;
+			top: 50%;
+		}
+		.carousel-indicators {
+			bottom: 8px;
+			left: auto;
+			width: auto;
+			top: auto;
+			li {
+				background-color: rgba(255, 255, 255, 0.85);
+			}
+			.active {
+				margin-top: 1px;
+				background-color: rgba(255, 255, 255, 0.25);
+			}
+		}
+		.carousel-title {
+			position: absolute;
+			top: auto;
+			bottom: 36%;
+			left: 46.5%;
+			text-align: left;
+			width:100%;
+			font-size: 75.68px;
+			color: #fff;
+			margin: 0px 0 0px !important;
+			padding: 10px 0px 0px 0px;
+			line-height: 70%;
+			b {
+				font-family: 'Avenir95-Black';
+			}
+		}
+		.carousel-text {
+			position: absolute;
+			top: auto;
+			bottom: 15%;
+			left: 47.5%;
+			text-align: left;
+			width:100%;
+			font-size: 20px;
+			color: #fff;
+			margin: 0px 0 0px !important;
+			padding: 10px 0px 0px 0px;
+			line-height: 70%;
+		}
+	}
+	.navbar .container, .container {
+		padding: 0;
+		.navbar-collapse {
+			padding: 0;
+		}
+	}
+	.container, .col-md-12, .col-sm-12.col-md-4.col-lg-4 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.category {
+		h2 {
+			margin: 0;
+			font-size: 35px;
+			line-height: 34.76px;
+			padding-bottom: 7px;
+		}
+		.col-sm-12.col-md-4.col-lg-4 {
+			height: 383px;
+			> a > div {
+				height: 100%;
+				padding: 44px 40px;
+				color: white;
+				font-size: 20px;
+				line-height: 24.1px;
+				font-family: 'Avenir35-Light';
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+		.careers {
+			background: url("@theme_image_path@/custom/careers_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+		}
+		.policy {
+			background: url("@theme_image_path@/custom/policy_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+		}
+		.storm {
+			background: url("@theme_image_path@/custom/storm_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+		}
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		background-color: #0066A1;
+		padding: 20px 0px;
+		color: white;
+		font-size: 14px;
+		.links {
+			color: white;
+			a {
+				color: white;
+				font-size: 15px;
+			}
+		}
+		.copyright {
+			margin: 0;
+			line-height: 24px;
+		}
+		.social {
+			float: right;
+		}
+	}
 }

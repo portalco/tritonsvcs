@@ -5,12 +5,13 @@
 <html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
 
 <head>
-	<title>$the_title - $company_name</title>
+  <title>$the_title - $company_name</title>
 
-	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <link href="${theme_display.getPathThemeCss()}/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-	$theme.include($top_head_include)
+  $theme.include($top_head_include)
 </head>
 
 <body class="$css_class">
@@ -19,46 +20,138 @@ $theme.include($body_top_include)
 
 #dockbar()
 
-<div class="container-fluid" id="wrapper">
-	<header id="banner" role="banner">
-		<div id="heading">
-			<h1 class="site-title">
-				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])"><img alt="$logo_description" src="${theme_display.getPathThemeRoot()}/images/custom/logo.png" /></a>
+  <nav class="navbar">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
 
-			</h1>
+      <a class="$logo_css_class navbar-brand" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])"><img alt="$logo_description" src="${theme_display.getPathThemeRoot()}/images/custom/logo.png" /></a>
 
-			<h2 class="page-title">
-				<span>$the_title</span>
-			</h2>
-		</div>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
 
-		#if ($has_navigation || $is_signed_in)
-			#parse ("$full_templates_path/navigation.vm")
-		#end
-	</header>
+      #if ($has_navigation || $is_signed_in)
+      #parse ("$full_templates_path/navigation.vm")
+    #end
 
-	<div id="content">
+    </div>
+    </div>
+  </nav>
 
-		#if ($selectable)
-			$theme.include($content_include)
-		#else
-			$portletDisplay.recycle()
+  <!-- Begin page content -->
+  <div class="container">
 
-			$portletDisplay.setTitle($the_title)
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
 
-			$theme.wrapPortlet("portlet.vm", $content_include)
-		#end
-	</div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="${theme_display.getPathThemeRoot()}/images/custom/banner_1.jpg" alt="...">
+            <div class="carousel-title">
+              <p>We Are <b>Citizens</b></p>
+            </div>
+            <div class="carousel-text">
+              <p>Brenda P</p>
+              <p>Learning Developement</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="${theme_display.getPathThemeRoot()}/images/custom/banner_2.jpg" alt="...">
+            <div class="carousel-title">
+              <p>We Are Citizens</p>
+            </div>
+            <div class="carousel-text">
+              <p>Brenda P</p>
+              <p>Learning Developement</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="${theme_display.getPathThemeRoot()}/images/custom/banner_3.jpg" alt="...">
+            <div class="carousel-title">
+              <p>We Are Citizens</p>
+            </div>
+            <div class="carousel-text">
+              <p>Brenda P</p>
+              <p>Learning Developement</p>
+            </div>
+          </div>
+        </div>
 
-<footer id="footerWrapper" role="contentinfo">
-	<div id="footerContent" class="aui-layout-content">
-		Copyright 2014 Citizens Property Insurance Corporation of Florida
-	</div>
-</footer>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-</div>
+      <div class="row">
+        <div class="col-md-12 category">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <a href="#"><div class="careers"><h2>Careers At Citizens</h2>Work at the best company<br />in the world.</div></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <a href="#"><div class="policy"><h2>Manage myPolicy</h2>Learn everything there is about<br />the insurance industry.</div></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <a href="#"><div class="storm"><h2>Storm Prep</h2>Tips and tricks to prepare<br />you for the perfect storm.</div></a>
+            </div>
 
+          </div>
+        </div>
+      </div>
 
+      #if ($selectable)
+      $theme.include($content_include)
+    #else
+      $portletDisplay.recycle()
+
+      $portletDisplay.setTitle($the_title)
+
+      $theme.wrapPortlet("portlet.vm", $content_include)
+    #end
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+    <div class="links">
+      <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Site Map</a>
+    </div>
+    <p class="copyright">Copyright 2014 Citizens Property Insurance Corporation of Florida</p>
+
+    <div class="social">
+                <a href="http://www.facebook.com/citizensfla" class="navbar-btn btn-primary ">
+                    <img src="${theme_display.getPathThemeRoot()}/images/custom/fb.png">
+                </a>
+                <a href="http://www.twitter.com/citizensfla" class="navbar-btn btn-primary ">
+                    <img src="${theme_display.getPathThemeRoot()}/images/custom/twt.png">
+                </a>
+                <a href="http://www.linkedin.com/citizensfla" class="navbar-btn btn-primary ">
+                    <img src="${theme_display.getPathThemeRoot()}/images/custom/lnkd.png">
+                </a>
+            </div>
+
+    </div>
+  </footer>
+
+<script type="text/javascript" src="${theme_display.getPathThemeRoot()}/js/jquery.js"></script>
+<script type="text/javascript" src="${theme_display.getPathThemeRoot()}/js/bootstrap.min.js"></script>
 
 $theme.include($body_bottom_include)
 
