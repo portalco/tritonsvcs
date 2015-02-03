@@ -174,14 +174,16 @@ body {
 							height: 31px;
 						}
 					}
-					&.sign-in {
-						background: $lightblue !important;
-						width: 96px;
+				}
+				#_145_loginDropdown {
+					background: $lightblue !important;
+					width: 96px;
+					a {
 						text-align: center;
-						a:hover {
-							background: $lightblue !important;
-							text-decoration: underline;
-						}
+					}
+					a:hover {
+						background: $lightblue !important;
+						text-decoration: underline;
 					}
 				}
 			}
@@ -314,6 +316,9 @@ body {
 							border-bottom-color: #FFF;
 							border-top-color: #FFF;
 						}
+						> i {
+							display: none;
+						}
 					}
 				}
 
@@ -326,6 +331,34 @@ body {
 
 				&.active > a {
 					background-color: $darkblue;
+				}
+			}
+
+			#_145_loginDropdown > .dropdown-menu {
+				margin-left: -188px;
+				width: 284px;
+				.portlet {
+					background: $darkblue !important;
+					padding: 20px !important;
+					color: white;
+					#_58_login, #_58_password {
+						width: 208px;
+					}
+					.control-label {
+						display: none !important;
+					}
+					.control-group, .button-holder {
+						margin: 0 !important;
+					}
+					.navigation {
+						background: transparent !important;
+						.taglib-icon-list {
+							padding: 0 !important;
+						}
+					}
+					label, a.taglib-icon, a.taglib-icon:hover {
+						color: white !important;
+					}
 				}
 			}
 
@@ -864,6 +897,7 @@ body {
 			line-height: 70%;
 			b {
 				font-family: 'Avenir95-Black';
+				font-weight: normal;
 			}
 		}
 		.carousel-text {

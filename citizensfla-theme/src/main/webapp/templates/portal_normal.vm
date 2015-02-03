@@ -68,23 +68,9 @@ $theme.include($body_top_include)
           </div>
           <div class="item">
             <img src="${theme_display.getPathThemeRoot()}/images/custom/banner_2.jpg" alt="...">
-            <div class="carousel-title">
-              <p>We Are Citizens</p>
-            </div>
-            <div class="carousel-text">
-              <p>Brenda P</p>
-              <p>Learning Developement</p>
-            </div>
           </div>
           <div class="item">
             <img src="${theme_display.getPathThemeRoot()}/images/custom/banner_3.jpg" alt="...">
-            <div class="carousel-title">
-              <p>We Are Citizens</p>
-            </div>
-            <div class="carousel-text">
-              <p>Brenda P</p>
-              <p>Learning Developement</p>
-            </div>
           </div>
         </div>
 
