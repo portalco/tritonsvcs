@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.classpath
+.settings
+.project
+target
+/.idea/
+/atlassian-ide-plugin.xml
+*.iml
+rebel.xml
+build.*.properties
+.bpmn/
