@@ -117,18 +117,18 @@ $theme.include($body_top_include)
   <footer class="footer">
     <div class="container">
     <div class="links">
-      <a href="privacy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Site Map</a>
+      <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Site Map</a>
     </div>
-    <a class="copyright">Copyright 2014 Citizens Property Insurance Corporation of Florida</a>
+    <p class="copyright">Copyright 2014 Citizens Property Insurance Corporation of Florida</p>
 
     <div class="social">
-                <a href="//www.facebook.com/pages/Citizens-Property-Insurance-Corporation" class="navbar-btn btn-primary ">
+                <a href="http://www.facebook.com/citizensfla" class="navbar-btn btn-primary ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/fb.png">
                 </a>
-                <a href="//twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.citizensfla.com%2F&region=follow_link&screen_name=citizens_fla&tw_p=followbutton" class="navbar-btn btn-primary ">
+                <a href="http://www.twitter.com/citizensfla" class="navbar-btn btn-primary ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/twt.png">
                 </a>
-                <a href="//www.linkedin.com/company/42110?trk=tyah" class="navbar-btn btn-primary ">
+                <a href="http://www.linkedin.com/citizensfla" class="navbar-btn btn-primary ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/lnkd.png">
                 </a>
             </div>

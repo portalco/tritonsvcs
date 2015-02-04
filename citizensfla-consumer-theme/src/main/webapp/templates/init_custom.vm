@@ -1,0 +1,4 @@
+#set ($groupLocalService = $serviceLocator.findService("com.liferay.portal.service.GroupLocalService"))
+#set ($guest_group = $groupLocalService.getGroup($company_id, "Guest").getGroupId())
+
+#set ($css_class = "${css_class} dockbar-split")
