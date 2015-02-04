@@ -175,6 +175,42 @@ body {
 						}
 					}
 				}
+				#_145_searchDropdown {
+					.portlet {
+						background: transparent !important;
+						.control-group.control-group-inline {
+							margin: 4px !important;
+							#_search_WAR_searchportlet_keywords {
+								width: 198px;
+								box-shadow: none;
+								border-radius: 0px;
+								font-family: "Avenir35-Light" !important;
+								padding: 0px 5px;
+								height: 22px;
+								font-size: 14px;
+								color: rgb(149, 149, 149);
+								margin-top: 10px;
+								border: 0;
+							}
+							.btn {
+								height: 25px;
+								width: 26px;
+								right: 18px;
+								top: 24px;
+								position: absolute;
+								text-indent: 7px;
+								background: $darkblue !important;
+								border-radius: 0;
+								color: #fff !important;
+								line-height: 14px;
+								overflow: hidden;
+								&:before {
+									content: "►";
+								}
+							}
+						}
+					}
+				}
 				#_145_loginDropdown {
 					background: $lightblue !important;
 					width: 96px;
