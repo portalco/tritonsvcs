@@ -185,16 +185,16 @@ body {
 						}
 					}
 					a:hover {
-						background: $lightblue !important;
-						text-decoration: underline;
+						background: $navydarkblue !important;
 					}
 					> .dropdown-menu {
 						margin-left: -188px;
 						width: 284px;
 						height: 145px;
+						overflow: hidden;
 						.portlet {
 							background: $navydarkblue !important;
-							padding: 20px 5px 5px 20px !important;
+							padding: 0 5px 5px 20px !important;
 							color: white;
 							#_58_login, #_58_password {
 								width: 198px;
@@ -205,16 +205,22 @@ body {
 								height: 22px;
 								font-size: 12px;
 								color: rgb(149, 149, 149);
-								margin-bottom: 15px;
+								margin-top: 21px;
 							}
 							#_58_password {
-								margin-bottom: 5px !important;
+								margin-top: 12px !important;
 							}
 							.control-label, [for="_58_rememberMeCheckbox"] {
 								display: none !important;
 							}
 							.control-group, .button-holder {
 								margin: 0 !important;
+							}
+							.form-validator-stack.help-inline {
+								position: absolute;
+								left: 95px;
+								margin-top: -2px;
+								font-size: 12px;
 							}
 							.button-holder {
 								position: absolute;
@@ -243,7 +249,7 @@ body {
 									padding: 0 !important;
 									li {
 										line-height: 25px;
-										margin-left: 5px;
+										margin-left: 6px;
 										margin-top: -6px;
 										line-height: 0px;
 										float: none;
@@ -908,25 +914,41 @@ body {
 		margin: 0;
 		overflow: hidden;
 		font-family: 'Avenir35-Light' !important;
-		.carousel-inner .item {
-			&:after, &:before {
-				background-color: rgba(255, 255, 255, 0.25);
-				height: 100%;
-				width: 20px;
-			}
-			&:before {
-				left: 0;
+		.control_bg {
+			position: absolute;
+			width: 32px;
+			height: 100%;
+			background: rgba(132, 132, 132, 0.75);
+			top: 0;
+			left: 0;
+			&.right {
+				right: 0;
 			}
 		}
 		.carousel-control {
 			z-index: 5;
 			top: 50%;
+			border: 0;
+			background: transparent;
+			&.left, &.right {
+				background: url("@theme_image_path@/custom/arrow.png") no-repeat 11px 10px;
+				left: -5px;
+			}
+			&.right {
+				@include transform(rotate(-180deg));
+				right: -5px;
+				left: auto;
+			}
+			span {
+				display: none;
+			}
 		}
 		.carousel-indicators {
 			bottom: 8px;
 			left: auto;
 			width: auto;
 			top: auto;
+			right: 54px;
 			li {
 				background-color: rgba(255, 255, 255, 0.85);
 			}
@@ -1020,6 +1042,9 @@ body {
 		padding: 20px 0px;
 		color: white;
 		font-size: 14px;
+		.container {
+			position: relative;
+		}
 		.links {
 			color: white;
 			a {
@@ -1032,7 +1057,14 @@ body {
 			line-height: 24px;
 		}
 		.social {
-			float: right;
+			position: absolute;
+			top: 14px;
+			right: 0px;
+			.navbar-btn {
+			    margin-top: 8px;
+			    margin-bottom: 8px;
+			    margin-left: 11px;
+			}
 		}
 	}
 }
