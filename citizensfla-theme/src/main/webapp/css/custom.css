@@ -191,27 +191,77 @@ body {
 					> .dropdown-menu {
 						margin-left: -188px;
 						width: 284px;
+						height: 145px;
 						.portlet {
-							background: $darkblue !important;
-							padding: 20px !important;
+							background: $navydarkblue !important;
+							padding: 20px 5px 5px 20px !important;
 							color: white;
 							#_58_login, #_58_password {
-								width: 208px;
+								width: 198px;
+								box-shadow: none;
+								border-radius: 0px;
+								font-family: "Avenir35-Light" !important;
+								padding: 0px 5px;
+								height: 22px;
+								font-size: 12px;
+								color: rgb(149, 149, 149);
+								margin-bottom: 15px;
 							}
-							.control-label {
+							#_58_password {
+								margin-bottom: 5px !important;
+							}
+							.control-label, [for="_58_rememberMeCheckbox"] {
 								display: none !important;
 							}
 							.control-group, .button-holder {
 								margin: 0 !important;
 							}
+							.button-holder {
+								position: absolute;
+								right: 0;
+								top: 0;
+								.btn {
+									height: 25px;
+									width: 26px;
+									right: 17px;
+									top: 27px;
+									position: absolute;
+									text-indent: 1000px;
+									background: $darkblue !important;
+									border-radius: 0;
+									color: transparent !important;
+									&:before {
+										content: "►";
+									}
+								}
+							}
 							.navigation {
 								background: transparent !important;
+								border: 0;
+								padding: 0;
 								.taglib-icon-list {
 									padding: 0 !important;
+									li {
+										line-height: 25px;
+										margin-left: 5px;
+										margin-top: -6px;
+										line-height: 0px;
+										float: none;
+										list-style: none;
+										&:first-child {
+											display: none;
+										}
+										img {
+											display: none;
+										}
+									}
 								}
 							}
 							label, a.taglib-icon, a.taglib-icon:hover {
 								color: white !important;
+								font-size: 12px;
+								background: transparent !important;
+								font-family: "Avenir35-Light" !important;
 							}
 						}
 					}
