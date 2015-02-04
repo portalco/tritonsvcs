@@ -192,9 +192,12 @@ body {
 						width: 284px;
 						height: 145px;
 						overflow: hidden;
+						.portlet-content {
+							position: relative;
+						}
 						.portlet {
 							background: $navydarkblue !important;
-							padding: 0 5px 5px 20px !important;
+							padding: 12px 5px 5px 20px !important;
 							color: white;
 							#_58_login, #_58_password {
 								width: 198px;
@@ -205,10 +208,11 @@ body {
 								height: 22px;
 								font-size: 12px;
 								color: rgb(149, 149, 149);
-								margin-top: 21px;
+								margin-top: 10px;
+								border: 0;
 							}
 							#_58_password {
-								margin-top: 12px !important;
+								margin-bottom: 14px !important;
 							}
 							.control-label, [for="_58_rememberMeCheckbox"] {
 								display: none !important;
@@ -219,18 +223,17 @@ body {
 							.form-validator-stack.help-inline {
 								position: absolute;
 								left: 95px;
-								margin-top: -2px;
+								margin-top: 10px;
 								font-size: 12px;
 							}
 							.button-holder {
-								position: absolute;
 								right: 0;
 								top: 0;
 								.btn {
 									height: 25px;
 									width: 26px;
 									right: 17px;
-									top: 27px;
+									top: 24px;
 									position: absolute;
 									text-indent: 1000px;
 									background: $darkblue !important;
@@ -1004,22 +1007,21 @@ body {
 	}
 
 	.category {
-		h2 {
+		span.title {
 			margin: 0;
 			font-size: 35px;
 			line-height: 34.76px;
 			padding-bottom: 7px;
+			display: block;
 		}
-		.col-sm-12.col-md-4.col-lg-4 {
+		.col-sm-12.col-md-4.col-lg-4 a {
 			height: 383px;
-			> a > div {
-				height: 100%;
-				padding: 44px 40px;
-				color: white;
-				font-size: 20px;
-				line-height: 24.1px;
-				font-family: 'Avenir35-Light';
-			}
+			display: block;
+			padding: 44px 40px;
+			color: white;
+			font-size: 20px;
+			lne-height: 24.1px;
+			font-family: 'Avenir35-Light';
 			a:hover {
 				text-decoration: none;
 			}
