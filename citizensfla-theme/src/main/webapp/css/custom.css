@@ -222,8 +222,8 @@ body {
 							}
 							.form-validator-stack.help-inline {
 								position: absolute;
-								left: 95px;
-								margin-top: 10px;
+								left: 80px;
+								margin-top: 7px;
 								font-size: 12px;
 							}
 							.button-holder {
@@ -232,13 +232,15 @@ body {
 								.btn {
 									height: 25px;
 									width: 26px;
-									right: 17px;
+									right: 18px;
 									top: 24px;
 									position: absolute;
-									text-indent: 1000px;
+									text-indent: 7px;
 									background: $darkblue !important;
 									border-radius: 0;
-									color: transparent !important;
+									color: #fff !important;
+									line-height: 14px;
+									overflow: hidden;
 									&:before {
 										content: "►";
 									}
@@ -842,7 +844,7 @@ body {
 }
 
 .aui body {
-	margin-bottom: 60px !important;
+	margin-bottom: 120px !important;
 }
 
 .portlet-dockbar {
@@ -926,6 +928,7 @@ body {
 			left: 0;
 			&.right {
 				right: 0;
+				left: auto;
 			}
 		}
 		.carousel-control {
@@ -1022,7 +1025,7 @@ body {
 			font-size: 20px;
 			lne-height: 24.1px;
 			font-family: 'Avenir35-Light';
-			a:hover {
+			&:hover {
 				text-decoration: none;
 			}
 		}

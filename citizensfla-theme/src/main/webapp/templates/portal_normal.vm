@@ -46,7 +46,6 @@ $theme.include($body_top_include)
   <!-- Begin page content -->
   <div class="container">
 
-
       #if ($selectable)
       $theme.include($content_include)
     #else
@@ -67,13 +66,13 @@ $theme.include($body_top_include)
     <p class="copyright">Copyright 2014 Citizens Property Insurance Corporation of Florida</p>
 
     <div class="social">
-                <a href="http://www.facebook.com/citizensfla" class="navbar-btn btn-primary ">
+                <a href="http://www.facebook.com/citizensfla" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/fb.png">
                 </a>
-                <a href="http://www.twitter.com/citizensfla" class="navbar-btn btn-primary ">
+                <a href="http://www.twitter.com/citizensfla" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/twt.png">
                 </a>
-                <a href="http://www.linkedin.com/citizensfla" class="navbar-btn btn-primary ">
+                <a href="http://www.linkedin.com/citizensfla" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/lnkd.png">
                 </a>
             </div>
