@@ -980,6 +980,9 @@ body {
 		.copyright {
 			margin: 0;
 			line-height: 24px;
+			a {
+				color: white;
+			}
 		}
 		.social {
 			float: right;

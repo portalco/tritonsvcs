@@ -24,9 +24,12 @@
 		<%= HtmlUtil.escape(user.getFullName()) %>
 	</span>
 </liferay-util:buffer>
-<aui:nav-item anchorId="careersLink" href="#" label='careers'/>
-<aui:nav-item anchorId="contactusLink" href="#" label='contact-us'/>
-<aui:nav-item anchorId="governanceLink" href="#" label='governance'/>
+<aui:nav-item anchorId="careersLink" href="careers" label='careers'/>
+<aui:nav-item anchorId="contactusLink" href="contactus" label='contact-us'/>
+<aui:nav-item anchorId="governanceLink" href="governance" label='governance'/>
+<aui:nav-item id="searchDropdown" cssClass="staging-controls">
+    <liferay-portlet:runtime portletName="search_WAR_searchportlet"/>
+</aui:nav-item>
 <c:choose>
 	<c:when test="<%= themeDisplay.isSignedIn() %>">
 		<aui:nav-item anchorCssClass="user-avatar-link" cssClass='<%= themeDisplay.isImpersonated() ? "user-avatar impersonating-user" : "user-avatar" %>' dropdown="<%= true %>" id="userAvatar" label="<%= userName %>">

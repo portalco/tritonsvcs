@@ -2,16 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>citizensfla</artifactId>
-        <groupId>ru.emdev.citizensfla</groupId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
-
-
-    <groupId>ru.emdev.citizensfla</groupId>
+    <groupId>com.citizensfla.plugins</groupId>
     <artifactId>dockbar-hook</artifactId>
     <packaging>war</packaging>
     <name>Dockbar Hook</name>
@@ -61,7 +53,7 @@
         </dependency>
 
         <!-- Liferay Dependencies -->
-        <dependency>
+        <!-- <dependency>
             <groupId>com.liferay.portal</groupId>
             <artifactId>portal-service</artifactId>
             <version>${liferay.version}</version>
@@ -84,6 +76,37 @@
             <artifactId>util-java</artifactId>
             <version>${liferay.version}</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency> -->
+        <dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-service</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-bridges</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-taglib</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-java</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+        
     </dependencies>
+	<properties>
+		<liferay.version>6.2.1</liferay.version>
+		<liferay.plugin.version>6.2.0</liferay.plugin.version>
+		<liferay.maven.plugin.version>6.2.10.9</liferay.maven.plugin.version>
+		<liferay.auto.deploy.dir>C:/home/tools/liferay-portal-6.2-ee-sp8/deploy</liferay.auto.deploy.dir>
+	</properties>
 </project>
