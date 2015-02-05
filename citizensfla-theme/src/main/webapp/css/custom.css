@@ -176,9 +176,22 @@ body {
 					}
 				}
 				#_145_searchDropdown {
+					width: 110px;
+					text-align: center;
+					.icon-caret-down {
+						background: transparent;
+						margin-left: 0px;
+						margin-right: -7px;
+						&:before {
+							content: "\f002" !important;
+						}
+					}
 					.portlet {
 						background: transparent !important;
 						padding: 14px 5px 5px 20px !important;
+						.alert {
+							display: none;
+						}
 						.control-group.control-group-inline {
 							margin: 4px !important;
 							#_search_WAR_searchportlet_keywords {
@@ -193,7 +206,7 @@ body {
 								margin: 0;
 								border: 0;
 							}
-							#_search_WAR_searchportlet_search {
+							button {
 								height: 25px;
 								width: 26px;
 								margin-left: 3px;
@@ -209,7 +222,7 @@ body {
 						}
 					}
 					> .dropdown-menu {
-						margin-left: -356px;
+						margin-left: -336px;
 						width: 446px;
 						height: 67px;
 						overflow: hidden;
