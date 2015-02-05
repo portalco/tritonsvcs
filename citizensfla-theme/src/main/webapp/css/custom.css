@@ -229,6 +229,7 @@ body {
 						width: 446px;
 						height: 67px;
 						overflow: hidden;
+						position: relative;
 					}
 				}
 				#_145_loginDropdown {
@@ -295,9 +296,6 @@ body {
 								line-height: 14px;
 								font-size: 15px;
 								overflow: hidden;
-								&:before {
-									content: "► ";
-								}
 							}
 							.navigation {
 								background: transparent !important;
@@ -921,11 +919,19 @@ body {
 		text-shadow: none;
 		text-align: center;
 		padding: 0 10px !important;
-		height: 37px;
+		min-height: 37px;
 		line-height: 37px;
 		margin: 0 !important;
 		font-family: 'Avenir85-Heavy';
 		font-size: 20px;
+	}
+	#_145_navAccountControls {
+		margin-top: 0 !important;
+		top: 0 !important;
+	}
+	&.desktop-notifications .portlet-dockbar {
+		height: 74px;
+		padding-top: 37px;
 	}
 	.navbar-header .navbar-brand {
 		height: auto !important;
@@ -1197,6 +1203,32 @@ body {
 		.category span.title {
 			font-size: 28px;
 			line-height: 28px;
+		}
+		.dockbar-split .dockbar .navbar-inner .btn-navbar {
+			float: right;
+			a.taglib-icon {
+				line-height: 25px;
+				padding: 0;
+			}
+		}
+		.dockbar-split .dockbar .navbar-inner .nav > li {
+			float: left;
+		}
+		#_145_navAccountControlsNavbarCollapse {
+			position: absolute;
+			top: 0;
+			margin-left: 60px;
+			.nav.nav-account-controls {
+				padding: 0;
+				background: transparent !important;
+				a {
+					margin: 0;
+					padding: 6px 10px;
+					font-weight: normal;
+					border-radius: 0;
+					font-size: 15px;
+				}
+			}
 		}
 	}
 }
