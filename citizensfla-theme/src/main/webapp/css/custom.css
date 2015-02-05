@@ -271,14 +271,14 @@ body {
 									right: 18px;
 									top: 24px;
 									position: absolute;
-									text-indent: 7px;
+									text-indent: -5px;
 									background: $darkblue !important;
 									border-radius: 0;
 									color: #fff !important;
 									line-height: 14px;
 									overflow: hidden;
 									&:before {
-										content: "►";
+										content: "► ";
 									}
 								}
 							}
