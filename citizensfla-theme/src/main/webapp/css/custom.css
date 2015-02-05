@@ -6,7 +6,7 @@
 $darkblue: rgb(0, 102, 161);
 $navydarkblue: rgb(0, 74, 116);
 $lightblue: rgb(124, 184, 255);
-$footerbg: rgb(158, 11, 15);
+$alert: rgb(158, 11, 15);
 
 $dockbarOpenGradientEnd: #0993DD;
 $dockbarOpenGradientStart: #0EA6F9;
@@ -271,11 +271,12 @@ body {
 									right: 18px;
 									top: 24px;
 									position: absolute;
-									text-indent: -5px;
+									text-indent: 6px;
 									background: $darkblue !important;
 									border-radius: 0;
 									color: #fff !important;
 									line-height: 14px;
+									font-size: 15px;
 									overflow: hidden;
 									&:before {
 										content: "► ";
@@ -470,7 +471,7 @@ body {
 				box-shadow: none;
 				border-width: 0;
 				margin: 0;
-				min-width: auto !important;
+				min-width: 0 !important;
 
 				&:after, &:before {
 					border-width: 0;
@@ -918,6 +919,19 @@ body {
 }
 
 .aui {
+	.alert-danger, .alert-error, .portlet-msg-error {
+		background-color: $alert;
+		border: 0;
+		color: #fff;
+		text-shadow: none;
+		text-align: center;
+		padding: 0 10px !important;
+		height: 37px;
+		line-height: 37px;
+		margin: 0 !important;
+		font-family: 'Avenir85-Heavy';
+		font-size: 20px;
+	}
 	.navbar-header .navbar-brand {
 		height: auto !important;
 		position: relative;
@@ -962,9 +976,8 @@ body {
 					}
 					a {
 						line-height: 34px;
-						margin-left: 0;
-						margin-left: 10px;
-						font-size: 20px;
+						font-size: 19px;
+						padding: 0 12px;
 						&:hover {
 							background: transparent !important;
 						} 
@@ -1074,6 +1087,10 @@ body {
 			line-height: 34.76px;
 			padding-bottom: 7px;
 			display: block;
+			b {
+				font-family: 'Avenir95-Black';
+				font-weight: normal;
+			}
 		}
 		.col-sm-12.col-md-4.col-lg-4 a {
 			height: 383px;
@@ -1124,9 +1141,12 @@ body {
 			top: 14px;
 			right: 0px;
 			.navbar-btn {
-			    margin-top: 8px;
-			    margin-bottom: 8px;
-			    margin-left: 11px;
+				margin-top: 8px;
+				margin-bottom: 8px;
+				margin-left: 11px;
+				&:hover {
+					@include opacity(0.7);
+				}
 			}
 		}
 	}
