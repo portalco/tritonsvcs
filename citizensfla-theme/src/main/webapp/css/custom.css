@@ -175,6 +175,42 @@ body {
 						}
 					}
 				}
+				#_145_searchDropdown {
+					.portlet {
+						background: transparent !important;
+						margin-right: 62px !important;
+						.control-group.control-group-inline {
+							margin: 4px !important;
+							#_search_WAR_searchportlet_keywords {
+								width: 198px;
+								box-shadow: none;
+								border-radius: 0px;
+								font-family: "Avenir35-Light" !important;
+								padding: 0px 5px;
+								height: 22px;
+								font-size: 14px;
+								color: rgb(149, 149, 149);
+								margin: 0;
+								border: 0;
+							}
+							#_search_WAR_searchportlet_search {
+								height: 22px;
+								margin-left: -7px;
+								background: $lightblue !important;
+								border-radius: 0;
+								color: #fff !important;
+								line-height: 14px;
+								overflow: hidden;
+								border: 0;
+								top: 8px;
+								position: absolute;
+								&:before {
+									content: "►";
+								}
+							}
+						}
+					}
+				}
 				#_145_loginDropdown {
 					background: $lightblue !important;
 					width: 96px;
@@ -185,33 +221,94 @@ body {
 						}
 					}
 					a:hover {
-						background: $lightblue !important;
-						text-decoration: underline;
+						background: $navydarkblue !important;
 					}
 					> .dropdown-menu {
 						margin-left: -188px;
 						width: 284px;
+						height: 145px;
+						overflow: hidden;
+						.portlet-content {
+							position: relative;
+						}
 						.portlet {
-							background: $darkblue !important;
-							padding: 20px !important;
+							background: $navydarkblue !important;
+							padding: 12px 5px 5px 20px !important;
 							color: white;
 							#_58_login, #_58_password {
-								width: 208px;
+								width: 198px;
+								box-shadow: none;
+								border-radius: 0px;
+								font-family: "Avenir35-Light" !important;
+								padding: 0px 5px;
+								height: 22px;
+								font-size: 12px;
+								color: rgb(149, 149, 149);
+								margin-top: 10px;
+								border: 0;
 							}
-							.control-label {
+							#_58_password {
+								margin-bottom: 14px !important;
+							}
+							.control-label, [for="_58_rememberMeCheckbox"] {
 								display: none !important;
 							}
 							.control-group, .button-holder {
 								margin: 0 !important;
 							}
+							.form-validator-stack.help-inline {
+								position: absolute;
+								left: 80px;
+								margin-top: 7px;
+								font-size: 12px;
+							}
+							.button-holder {
+								right: 0;
+								top: 0;
+								.btn {
+									height: 25px;
+									width: 26px;
+									right: 18px;
+									top: 24px;
+									position: absolute;
+									text-indent: -5px;
+									background: $darkblue !important;
+									border-radius: 0;
+									color: #fff !important;
+									line-height: 14px;
+									overflow: hidden;
+									&:before {
+										content: "► ";
+									}
+								}
+							}
 							.navigation {
 								background: transparent !important;
+								border: 0;
+								padding: 0;
 								.taglib-icon-list {
 									padding: 0 !important;
+									li {
+										line-height: 25px;
+										margin-left: 6px;
+										margin-top: -6px;
+										line-height: 0px;
+										float: none;
+										list-style: none;
+										&:first-child {
+											display: none;
+										}
+										img {
+											display: none;
+										}
+									}
 								}
 							}
 							label, a.taglib-icon, a.taglib-icon:hover {
 								color: white !important;
+								font-size: 12px;
+								background: transparent !important;
+								font-family: "Avenir35-Light" !important;
 							}
 						}
 					}
@@ -339,7 +436,7 @@ body {
 			li {
 				&.dropdown {
 					&.open > .dropdown-toggle {
-						background: $darkblue !important;
+						background: #fff !important;
 					}
 					> .dropdown-toggle {
 						.caret {
@@ -369,9 +466,11 @@ body {
 			}
 
 			.dropdown-menu {
-				background: $darkblue !important;
+				background: #fff !important;
+				box-shadow: none;
 				border-width: 0;
 				margin: 0;
+				min-width: auto !important;
 
 				&:after, &:before {
 					border-width: 0;
@@ -783,7 +882,7 @@ body {
 }
 
 .aui body {
-	margin-bottom: 60px !important;
+	margin-bottom: 120px !important;
 }
 
 .portlet-dockbar {
@@ -819,6 +918,11 @@ body {
 }
 
 .aui {
+	.navbar-header .navbar-brand {
+		height: auto !important;
+		position: relative;
+		z-index: 1;
+	}
 	#navigation {
 		float: right;
 		margin-top: 50px;
@@ -832,12 +936,13 @@ body {
 			ul.nav-collapse {
 				margin: 0;
 				li {
+					margin-left: 55px;
 					a {
 						font-family: 'Avenir35-Light' !important;
 						color: $darkblue;
 						font-size: 24.92px;
 						padding: 0;
-						margin-left: 55px;
+						margin-left: 0;
 						&:hover, &:focus {
 							text-decoration: underline;
 							color: rgb(0, 0, 0);
@@ -851,6 +956,20 @@ body {
 						font-family: 'Avenir95-Black' !important;
 					}
 				}
+				.dropdown-menu.child-menu {
+					li {
+						margin-left: 0px;
+					}
+					a {
+						line-height: 34px;
+						margin-left: 0;
+						margin-left: 10px;
+						font-size: 20px;
+						&:hover {
+							background: transparent !important;
+						} 
+					}
+				}
 			}
 		}
 	}
@@ -858,25 +977,42 @@ body {
 		margin: 0;
 		overflow: hidden;
 		font-family: 'Avenir35-Light' !important;
-		.carousel-inner .item {
-			&:after, &:before {
-				background-color: rgba(255, 255, 255, 0.25);
-				height: 100%;
-				width: 20px;
-			}
-			&:before {
-				left: 0;
+		.control_bg {
+			position: absolute;
+			width: 32px;
+			height: 100%;
+			background: rgba(132, 132, 132, 0.75);
+			top: 0;
+			left: 0;
+			&.right {
+				right: 0;
+				left: auto;
 			}
 		}
 		.carousel-control {
 			z-index: 5;
 			top: 50%;
+			border: 0;
+			background: transparent;
+			&.left, &.right {
+				background: url("@theme_image_path@/custom/arrow.png") no-repeat 11px 10px;
+				left: -5px;
+			}
+			&.right {
+				@include transform(rotate(-180deg));
+				right: -5px;
+				left: auto;
+			}
+			span {
+				display: none;
+			}
 		}
 		.carousel-indicators {
 			bottom: 8px;
 			left: auto;
 			width: auto;
 			top: auto;
+			right: 54px;
 			li {
 				background-color: rgba(255, 255, 255, 0.85);
 			}
@@ -932,34 +1068,36 @@ body {
 	}
 
 	.category {
-		h2 {
+		span.title {
 			margin: 0;
 			font-size: 35px;
 			line-height: 34.76px;
 			padding-bottom: 7px;
+			display: block;
 		}
-		.col-sm-12.col-md-4.col-lg-4 {
+		.col-sm-12.col-md-4.col-lg-4 a {
 			height: 383px;
-			> a > div {
-				height: 100%;
-				padding: 44px 40px;
-				color: white;
-				font-size: 20px;
-				line-height: 24.1px;
-				font-family: 'Avenir35-Light';
-			}
-			a:hover {
+			display: block;
+			padding: 44px 40px;
+			color: white;
+			font-size: 20px;
+			lne-height: 24.1px;
+			font-family: 'Avenir35-Light';
+			&:hover {
 				text-decoration: none;
 			}
 		}
 		.careers {
 			background: url("@theme_image_path@/custom/careers_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+			opacity: 0.9;&:hover{opacity: 1;}
 		}
 		.policy {
 			background: url("@theme_image_path@/custom/policy_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+			opacity: 0.9;&:hover{opacity: 1;}
 		}
 		.storm {
 			background: url("@theme_image_path@/custom/storm_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+			opacity: 0.9;&:hover{opacity: 1;}
 		}
 	}
 	.footer {
@@ -970,6 +1108,9 @@ body {
 		padding: 20px 0px;
 		color: white;
 		font-size: 14px;
+		.container {
+			position: relative;
+		}
 		.links {
 			color: white;
 			a {
@@ -982,7 +1123,14 @@ body {
 			line-height: 24px;
 		}
 		.social {
-			float: right;
+			position: absolute;
+			top: 14px;
+			right: 0px;
+			.navbar-btn {
+			    margin-top: 8px;
+			    margin-bottom: 8px;
+			    margin-left: 11px;
+			}
 		}
 	}
 }
