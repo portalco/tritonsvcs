@@ -271,7 +271,7 @@ body {
 									right: 18px;
 									top: 24px;
 									position: absolute;
-									text-indent: 6px;
+									text-indent: -5px;
 									background: $darkblue !important;
 									border-radius: 0;
 									color: #fff !important;
@@ -1106,12 +1106,21 @@ body {
 		}
 		.careers {
 			background: url("@theme_image_path@/custom/careers_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+			&:hover {
+				background: url("@theme_image_path@/custom/careers_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
+			}
 		}
 		.policy {
 			background: url("@theme_image_path@/custom/policy_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+			&:hover {
+				background: url("@theme_image_path@/custom/policy_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
+			}
 		}
 		.storm {
 			background: url("@theme_image_path@/custom/storm_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+			&:hover {
+				background: url("@theme_image_path@/custom/storm_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
+			}
 		}
 	}
 	.footer {
@@ -1149,5 +1158,10 @@ body {
 				}
 			}
 		}
+	}
+
+	.firefox .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .button-holder .btn,
+	.firefox .dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .button-holder .btn {
+		text-indent: 5px;
 	}
 }
