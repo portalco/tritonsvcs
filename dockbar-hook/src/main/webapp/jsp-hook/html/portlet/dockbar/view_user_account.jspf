@@ -24,9 +24,9 @@
 		<%= HtmlUtil.escape(user.getFullName()) %>
 	</span>
 </liferay-util:buffer>
-<aui:nav-item anchorId="careersLink" href=“/careers“ label=‘Careers'/>
-<aui:nav-item anchorId="contactusLink" href=“/contact-us” label=‘Contact Us'/>
-<aui:nav-item anchorId="governanceLink" href=“/governance“ label=‘Governance'/>
+<aui:nav-item anchorId="careersLink" href="/careers" label='Careers'/>
+<aui:nav-item anchorId="contactusLink" href="/contact-us" label='Contact Us'/>
+<aui:nav-item anchorId="governanceLink" href="/governance" label='Governance'/>
 <aui:nav-item dropdown="<%= true %>" id="searchDropdown" label="Search">
     <aui:nav-item id="searchDropdown" cssClass="staging-controls">
         <liferay-portlet:runtime portletName="search_WAR_searchportlet"/>
