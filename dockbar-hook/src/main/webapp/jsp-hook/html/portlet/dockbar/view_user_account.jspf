@@ -27,8 +27,10 @@
 <aui:nav-item anchorId="careersLink" href="#" label='careers'/>
 <aui:nav-item anchorId="contactusLink" href="#" label='contact-us'/>
 <aui:nav-item anchorId="governanceLink" href="#" label='governance'/>
-<aui:nav-item id="searchDropdown" cssClass="staging-controls">
-    <liferay-portlet:runtime portletName="search_WAR_searchportlet"/>
+<aui:nav-item dropdown="<%= true %>" id="searchDropdown" label="Search">
+    <aui:nav-item id="searchDropdown" cssClass="staging-controls">
+        <liferay-portlet:runtime portletName="search_WAR_searchportlet"/>
+    </aui:nav-item>
 </aui:nav-item>
 <c:choose>
 	<c:when test="<%= themeDisplay.isSignedIn() %>">
