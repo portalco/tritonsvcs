@@ -154,7 +154,7 @@ body {
 								text-decoration: underline;
 							}
 							> li > a {
-								padding: 0px 6px 0 34px;
+								padding: 0px 6px 0 35px;
 								line-height: 20.7px !important;
 							}
 						}
@@ -172,6 +172,10 @@ body {
 							padding: 0px 0px 0px 35px;
 							float: left;
 							height: 31px;
+							text-align: left;
+							&:before {
+								content: "Welcome "
+							}
 						}
 					}
 				}
@@ -206,19 +210,18 @@ body {
 								margin: 0;
 								border: 0;
 							}
-							button {
-								height: 25px;
-								width: 26px;
-								margin-left: 3px;
-								background: $darkblue !important;
-								border-radius: 0;
-								color: #fff !important;
-								overflow: hidden;
-								border: 0;
-								&:before {
-									content: "►";
-								}
-							}
+						}
+						button[name="search"] {
+							height: 25px;
+							width: 26px;
+							background: $darkblue !important;
+							border-radius: 0;
+							color: #fff !important;
+							overflow: hidden;
+							border: 0;
+							position: absolute;
+							top: 20px;
+							right: 15px;
 						}
 					}
 					> .dropdown-menu {
@@ -265,7 +268,7 @@ body {
 								border: 0;
 							}
 							#_58_password {
-								margin-bottom: 14px !important;
+								margin-bottom: 12px !important;
 							}
 							.control-label, [for="_58_rememberMeCheckbox"] {
 								display: none !important;
@@ -279,25 +282,21 @@ body {
 								margin-top: 7px;
 								font-size: 12px;
 							}
-							.button-holder {
-								right: 0;
-								top: 0;
-								.btn {
-									height: 25px;
-									width: 26px;
-									right: 18px;
-									top: 24px;
-									position: absolute;
-									text-indent: -5px;
-									background: $darkblue !important;
-									border-radius: 0;
-									color: #fff !important;
-									line-height: 14px;
-									font-size: 15px;
-									overflow: hidden;
-									&:before {
-										content: "► ";
-									}
+							button[type="submit"] {
+								height: 25px;
+								width: 26px;
+								right: 18px;
+								top: 24px;
+								position: absolute;
+								text-indent: 3px;
+								background: $darkblue !important;
+								border: 0;
+								color: #fff !important;
+								line-height: 14px;
+								font-size: 15px;
+								overflow: hidden;
+								&:before {
+									content: "► ";
 								}
 							}
 							.navigation {
