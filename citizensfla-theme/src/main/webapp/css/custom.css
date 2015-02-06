@@ -172,6 +172,7 @@ body {
 							padding: 0px 0px 0px 24px;
 							float: left;
 							height: 31px;
+							line-height: 26px;
 							text-align: left;
 							&:before {
 								content: "Welcome "
@@ -485,9 +486,10 @@ body {
 				background: #fff !important;
 				box-shadow: none;
 				border-width: 0;
-				margin: 0px 0px 0px -19px;
+				margin: 0px 0px 0px -15px;
 				min-width: 0 !important;
-				position: relative;
+				position: absolute;
+				@include box-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));	
 
 				&:after, &:before {
 					border-width: 0;
@@ -915,6 +917,9 @@ body {
 }
 
 .aui {
+	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+		margin: 0;
+	}
 	.alert-danger, .alert-error, .portlet-msg-error {
 		background-color: $alert;
 		border: 0;
@@ -1107,6 +1112,7 @@ body {
 		padding: 20px 0px;
 		color: white;
 		font-size: 14px;
+		z-index: 5;
 		.container {
 			position: relative;
 		}
@@ -1135,6 +1141,15 @@ body {
 			}
 		}
 	}
+	.collapse {
+		overflow: visible !important;
+		display: block !important;
+		visibility: visible !important;
+	}
+	.has-alerts {
+		padding-top: 37px;
+		height: 74px;
+	}
 }
 
 .firefox .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .button-holder .btn,
@@ -1147,7 +1162,7 @@ body {
 @media (min-width: 240px) {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
-			width: 240px;
+			width: 220px;
 			float: none !important;
 		}
 		#navigation .navbar-inner ul.nav-collapse {
@@ -1165,11 +1180,11 @@ body {
 		}
 		.carousel {
 			.carousel-title {
-				font-size: 47px;
+				font-size: 25px;
 			}
 			.carousel-text {
-				font-size: 11px;
-				line-height: 18%;
+				font-size: 9px;
+				line-height: 0;
 			}
 		}
 		.category {
@@ -1185,9 +1200,9 @@ body {
 				}
 			}
 			.col-sm-12.col-md-4.col-lg-4 a {
-				height: 174px;
+				height: 143px;
+				padding: 34px 40px;
 				display: block;
-				padding: 44px 40px;
 				color: white;
 				font-size: 16px;
 				line-height: 24.1px;
@@ -1247,6 +1262,130 @@ body {
 				line-height: 25px !important;
 			}
 		}
+		.navbar-brand > img {
+			width: 190px;
+		}
+		#navigation {
+			margin-top: -65px;
+			padding-left: 240px;
+		}
+
+	}
+}
+
+@media (min-width: 320px) {
+	.aui {
+		.container, .navbar .container, .portlet-dockbar .dockbar {
+			width: 300px;
+			float: none !important;
+		}
+		 #navigation {
+		 	margin-top: -75px;
+		 	padding-left: 210px;
+		 }
+		.category .col-sm-12.col-md-4.col-lg-4 a {
+			height: 106px;
+			padding: 14px 20px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.navbar-brand > img {
+			width: 170px;
+		}
+		#_145_navAccountControlsNavbarCollapse {
+			margin-left: 0px;
+			.nav.nav-account-controls a {
+				padding: 6px 7px;
+				font-size: 14px;
+			}
+		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
+			margin-left: -256px;
+			width: 366px;
+			#_search_WAR_searchportlet_keywords {
+				width: 286px;
+			}
+		}
+		.footer {
+			font-size: 11px;
+			padding: 10px 0px;
+			.links a {
+				font-size: 12px;
+			}
+			.social {
+				top: 10px;
+			}
+			.copyright {
+				padding-right: 110px;
+			}
+		}
+	}
+}
+
+@media (min-width: 480px) {
+	.aui {
+		.container, .navbar .container, .portlet-dockbar .dockbar {
+			width: 460px;
+			float: none !important;
+		}
+		 #navigation {
+		 	margin-top: -75px;
+		 	padding-left: 210px;
+		 }
+		 #navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
+		 	line-height: 28px;
+		 }
+		.category .col-sm-12.col-md-4.col-lg-4 a {
+			height: 106px;
+			padding: 14px 20px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.carousel {
+			.carousel-title {
+				font-size: 30px;
+			}
+		}
+		.navbar-brand > img {
+			width: 170px;
+		}
+		#_145_navAccountControlsNavbarCollapse {
+			margin-left: 0px;
+			.nav.nav-account-controls a {
+				padding: 6px 7px;
+				font-size: 14px;
+			}
+		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
+			margin-left: -256px;
+			width: 366px;
+		}
+		#_search_WAR_searchportlet_keywords {
+			width: 286px;
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	.aui {
+		.container, .navbar .container, .portlet-dockbar .dockbar {
+			width: 620px;
+			float: none !important;
+		}
+		#navigation {
+			margin-top: -62px;
+		}
+		 #navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
+		 	line-height: 34px;
+		 }
+		.footer {
+			font-size: 14px;
+			.links a {
+				font-size: 15px;
+			}
+		}
 	}
 }
 
@@ -1255,6 +1394,10 @@ body {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
 			width: 750px;
 			float: none !important;
+		}
+		#navigation {
+			margin-top: 45px;
+			padding-left: 220px;
 		}
 		#navigation .navbar-inner ul.nav-collapse {
 			li {
@@ -1268,6 +1411,9 @@ body {
 			.dropdown-menu.child-menu a {
 				font-size: 13px;
 			}
+		}
+		.category .col-sm-12.col-md-4.col-lg-4 a {
+			height: 173px;
 		}
 		.carousel {
 			.carousel-title {
