@@ -169,7 +169,7 @@ body {
 						}
 						.user-full-name {
 							font-family: 'Avenir85-Heavy';
-							padding: 0px 0px 0px 35px;
+							padding: 0px 0px 0px 24px;
 							float: left;
 							height: 31px;
 							text-align: left;
@@ -286,7 +286,7 @@ body {
 							button[type="submit"] {
 								height: 25px;
 								width: 26px;
-								right: 18px;
+								left: 214px;
 								top: 24px;
 								position: absolute;
 								text-indent: 3px;
@@ -305,7 +305,7 @@ body {
 									padding: 0 !important;
 									li {
 										line-height: 25px;
-										margin-left: 6px;
+										margin-left: -2px;
 										margin-top: -6px;
 										line-height: 0px;
 										float: none;
@@ -353,6 +353,7 @@ body {
 		}
 
 		.navbar-inner {
+			background: transparent !important;
 			.nav-account-controls {
 				font-size: 15px;
 
@@ -484,9 +485,9 @@ body {
 				background: #fff !important;
 				box-shadow: none;
 				border-width: 0;
-				margin: 0;
+				margin: 0px 0px 0px -19px;
 				min-width: 0 !important;
-				margin-left: -19px;
+				position: relative;
 
 				&:after, &:before {
 					border-width: 0;
@@ -875,6 +876,7 @@ body {
 	font-style: normal;
 }
 
+
 .aui body {
 	margin-bottom: 120px !important;
 }
@@ -892,6 +894,7 @@ body {
 		.navbar-inner {
 			width: auto !important;
 			min-height: 37px !important;
+			background: transparent !important;
 			.container {
 				max-width: 1200px;
 				height: 37px;
@@ -929,18 +932,28 @@ body {
 		margin-top: 0 !important;
 		top: 0 !important;
 	}
-	&.desktop-notifications .portlet-dockbar {
-		height: 74px;
-		padding-top: 37px;
+	#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls li {
+		float: left;
+	}
+	#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls .dropdown-menu a {
+		padding-left: 35px;
 	}
 	.navbar-header .navbar-brand {
 		height: auto !important;
 		position: relative;
 		z-index: 1;
 	}
+	.navbar .container .nav-collapse {
+		display: block !important;
+	}
+	#navigation .navbar-inner .nav-collapse, #navigation .navbar-inner .nav-collapse.collapse {
+		overflow: visible !important;
+	}
 	#navigation {
-		float: right;
 		margin-top: 50px;
+		position: absolute;
+		right: 0;
+		display: block;
 		.navbar-inner {
 			background: transparent;
 			padding: 0;
@@ -978,11 +991,13 @@ body {
 				.dropdown-menu.child-menu {
 					li {
 						margin-left: 0px;
+						float: none;
 					}
 					a {
 						line-height: 34px;
 						font-size: 19px;
-						padding: 0px 20px;
+						padding: 0px 13px;
+						text-align: right;
 						&:hover {
 							background: transparent !important;
 						} 
@@ -1084,52 +1099,8 @@ body {
 		margin-left: 0;
 		margin-right: 0;
 	}
-
-	.category {
-		span.title {
-			margin: 0;
-			font-size: 35px;
-			line-height: 40px;
-			padding-bottom: 4px;
-			display: block;
-			b {
-				font-family: 'Avenir95-Black';
-				font-weight: normal;
-			}
-		}
-		.col-sm-12.col-md-4.col-lg-4 a {
-			height: 383px;
-			display: block;
-			padding: 44px 40px;
-			color: white;
-			font-size: 20px;
-			lne-height: 24.1px;
-			font-family: 'Avenir35-Light';
-			&:hover {
-				text-decoration: none;
-			}
-		}
-		.careers {
-			background: url("@theme_image_path@/custom/careers_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
-			&:hover {
-				background: url("@theme_image_path@/custom/careers_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
-			}
-		}
-		.policy {
-			background: url("@theme_image_path@/custom/policy_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
-			&:hover {
-				background: url("@theme_image_path@/custom/policy_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
-			}
-		}
-		.storm {
-			background: url("@theme_image_path@/custom/storm_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
-			&:hover {
-				background: url("@theme_image_path@/custom/storm_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
-			}
-		}
-	}
 	.footer {
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 		width: 100%;
 		background-color: #0066A1;
@@ -1165,44 +1136,85 @@ body {
 		}
 	}
 }
+
 .firefox .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .button-holder .btn,
 .firefox .dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .button-holder .btn {
 	text-indent: 5px;
 }
 
-@media (min-width: 768px) {
+
+
+@media (min-width: 240px) {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
-			width: 750px;
+			width: 240px;
+			float: none !important;
 		}
 		#navigation .navbar-inner ul.nav-collapse {
 			li {
-				margin-left: 24px;
+				margin-left: 16px;
+				float: left;
 				a {
-					font-size: 22px;
+					font-size: 17px;
+					font-weight: normal;
 				}
 			}
 			.dropdown-menu.child-menu a {
-				font-size: 16px;
+				font-size: 13px;
 			}
 		}
-		#navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a
 		.carousel {
 			.carousel-title {
-				font-size: 60.68px;
+				font-size: 47px;
 			}
 			.carousel-text {
-				font-size: 16px;
-				line-height: 43%;
+				font-size: 11px;
+				line-height: 18%;
 			}
 		}
-		.category .col-sm-12.col-md-4.col-lg-4 a {
-			height: 314px;
-			font-size: 16px;
-		}
-		.category span.title {
-			font-size: 28px;
-			line-height: 28px;
+		.category {
+			span.title {
+				margin: 0;
+				font-size: 28px;
+				line-height: 28px;
+				padding-bottom: 4px;
+				display: block;
+				b {
+					font-family: 'Avenir95-Black';
+					font-weight: normal;
+				}
+			}
+			.col-sm-12.col-md-4.col-lg-4 a {
+				height: 174px;
+				display: block;
+				padding: 44px 40px;
+				color: white;
+				font-size: 16px;
+				line-height: 24.1px;
+				font-family: 'Avenir35-Light';
+				background-position: 0 -100px;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.careers {
+				background: url("@theme_image_path@/custom/careers_bg_small.jpg") no-repeat 0 0 / cover #2A3B4B;
+				&:hover {
+					background: url("@theme_image_path@/custom/careers_bg_hover_small.jpg") no-repeat 0 0 / cover #2A3B4B;
+				}
+			}
+			.policy {
+				background: url("@theme_image_path@/custom/policy_bg_small.jpg") no-repeat 0 0 / cover #2A3B4B;
+				&:hover {
+					background: url("@theme_image_path@/custom/policy_bg_hover_small.jpg") no-repeat 0 0 / cover #2A3B4B;
+				}
+			}
+			.storm {
+				background: url("@theme_image_path@/custom/storm_bg_small.jpg") no-repeat 0 0 / cover #2A3B4B;
+				&:hover {
+					background: url("@theme_image_path@/custom/storm_bg_hover_small.jpg") no-repeat 0 0 / cover #2A3B4B;
+				}
+			}
 		}
 		.dockbar-split .dockbar .navbar-inner .btn-navbar {
 			float: right;
@@ -1211,13 +1223,12 @@ body {
 				padding: 0;
 			}
 		}
-		.dockbar-split .dockbar .navbar-inner .nav > li {
-			float: left;
-		}
 		#_145_navAccountControlsNavbarCollapse {
 			position: absolute;
 			top: 0;
+			right: 0;
 			margin-left: 60px;
+			overflow: visible !important;
 			.nav.nav-account-controls {
 				padding: 0;
 				background: transparent !important;
@@ -1230,9 +1241,92 @@ body {
 				}
 			}
 		}
+		.portlet-login {
+			ul li a.taglib-icon {
+				padding: 0 6px !important;
+				line-height: 25px !important;
+			}
+		}
 	}
 }
 
+@media (min-width: 768px) {
+	.aui {
+		.container, .navbar .container, .portlet-dockbar .dockbar {
+			width: 750px;
+			float: none !important;
+		}
+		#navigation .navbar-inner ul.nav-collapse {
+			li {
+				margin-left: 14px;
+				float: left;
+				a {
+					font-size: 17px;
+					font-weight: normal;
+				}
+			}
+			.dropdown-menu.child-menu a {
+				font-size: 13px;
+			}
+		}
+		.carousel {
+			.carousel-title {
+				font-size: 47px;
+			}
+			.carousel-text {
+				font-size: 11px;
+				line-height: 18%;
+			}
+		}
+		.dockbar-split .dockbar .navbar-inner .btn-navbar {
+			float: right;
+			a.taglib-icon {
+				line-height: 25px;
+				padding: 0;
+			}
+		}
+		#_145_navAccountControlsNavbarCollapse {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-left: 60px;
+			overflow: visible !important;
+			.nav.nav-account-controls {
+				padding: 0;
+				background: transparent !important;
+				a {
+					margin: 0;
+					padding: 6px 10px;
+					font-weight: normal;
+					border-radius: 0;
+					font-size: 15px;
+				}
+			}
+		}
+		.portlet-login {
+			ul li a.taglib-icon {
+				padding: 0 6px !important;
+				line-height: 25px !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 980px) {
+	.aui {
+		#navigation .navbar-inner ul.nav-collapse {
+			li {
+				margin-left: 14px;
+				a {
+					font-size: 17px;
+				}
+			}
+			.dropdown-menu.child-menu a {
+				font-size: 13px;
+			}
+		}
+	}
+}
 @media (min-width: 992px) {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
@@ -1249,7 +1343,6 @@ body {
 				font-size: 16px;
 			}
 		}
-		#navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a
 		.carousel {
 			.carousel-title {
 				font-size: 60.68px;
@@ -1262,9 +1355,38 @@ body {
 		.category .col-sm-12.col-md-4.col-lg-4 a {
 			height: 314px;
 		}
-		.category span.title {
-			font-size: 28px;
-			line-height: 28px;
+		.category {
+			span.title {
+				font-size: 35px;
+				line-height: 40px;
+			}
+			.col-sm-12.col-md-4.col-lg-4 a {
+				height: 314px;
+				font-size: 20px;
+				line-height: 24.1px;
+				background-position: 0 0;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.careers {
+				background: url("@theme_image_path@/custom/careers_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+				&:hover {
+					background: url("@theme_image_path@/custom/careers_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
+				}
+			}
+			.policy {
+				background: url("@theme_image_path@/custom/policy_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+				&:hover {
+					background: url("@theme_image_path@/custom/policy_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
+				}
+			}
+			.storm {
+				background: url("@theme_image_path@/custom/storm_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
+				&:hover {
+					background: url("@theme_image_path@/custom/storm_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
+				}
+			}
 		}
 	}
 }
@@ -1285,7 +1407,6 @@ body {
 				font-size: 20px;
 			}
 		}
-		#navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a
 		.carousel {
 			.carousel-title {
 				font-size: 75.68px;
@@ -1301,6 +1422,9 @@ body {
 		.category span.title {
 			font-size: 35px;
 			line-height: 40px;
+		}
+		#_145_navAccountControlsNavbarCollapse {
+			position: relative;
 		}
 	}
 }
