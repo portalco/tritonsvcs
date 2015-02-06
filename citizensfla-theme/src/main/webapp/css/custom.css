@@ -84,7 +84,7 @@ body {
 						padding: 6px 10px;
 
 						&:hover {
-							background-color: $navydarkblue;
+							background-color: $navydarkblue !important;
 						}
 					}
 				}
@@ -325,6 +325,7 @@ body {
 								font-size: 12px;
 								background: transparent !important;
 								font-family: "Avenir35-Light" !important;
+								padding: 0 6px !important;
 							}
 						}
 					}
@@ -928,7 +929,7 @@ body {
 		position: absolute;
 		top: 4px;
 		color: #fff;
-		right: 17px;
+		right: -18px;
 		z-index: 1;
 	}
 	.navbar {
@@ -959,7 +960,12 @@ body {
 		float: left;
 	}
 	#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls .dropdown-menu a {
-		padding-left: 35px;
+		padding: 0px 35px !important;
+		line-height: 26px !important;
+		height: 26px;
+		&:hover, &:focus {
+			background: transparent;
+		}
 	}
 	.navbar-header .navbar-brand {
 		height: auto !important;
@@ -1169,7 +1175,8 @@ body {
 		height: 74px;
 	}
 	#_145_navSiteNavigationNavbarBtn,
-	#_145_navAccountControlsNavbarBtn {
+	#_145_navAccountControlsNavbarBtn,
+	#_145_navAddControlsNavbarBtn {
 		display: none !important;
 	}
 }
@@ -1186,6 +1193,19 @@ body {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
 			width: 300px;
 			float: none !important;
+		}
+		#_145_navAddControlsNavbarCollapse {
+			display: none !important;
+		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
+			padding: 6px 3px;
+			font-size: 13px;
+		}
+		#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3) {
+			margin-right: 0;
+		}
+		#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3):after {
+			display: none;
 		}
 		#navigation .navbar-inner ul.nav-collapse {
 			li {
@@ -1320,14 +1340,11 @@ body {
 		.navbar-brand > img {
 			width: auto;
 		}
-		.portlet-dockbar {
-			height: 74px;
-		}
 		#_145_navAccountControlsNavbarCollapse {
 			margin-left: 0px;
 			.nav.nav-account-controls a {
 				padding: 6px 7px;
-				font-size: 14px;
+				font-size: 13px;
 			}
 		}
 		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
@@ -1350,6 +1367,22 @@ body {
 			top: 22px;
 			width: 210px;
 		}
+		#_145_searchDropdown {
+			width: auto !important;
+			a {
+				padding: 6px 7px 6px 1px !important;
+			}
+			> .dropdown-menu {
+				margin-left: -175px !important;
+				width: 203px !important;
+			}
+			.nav-item-label {
+				display: none;
+			}
+		}
+		#_search_WAR_searchportlet_keywords {
+			width: 130px !important;
+		}
 		.footer {
 			font-size: 11px;
 			padding: 10px 0px;
@@ -1364,11 +1397,15 @@ body {
 				line-height: 15px;
 			}
 		}
-		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
-			padding: 6px 15px;
-		}
 		#_145_loginDropdown, #_145_searchDropdown {
-			float: right !important;
+			float: left !important;
+		}
+		#_145_loginDropdown {
+			width: 44px !important;
+			float: left !important;
+			> .dropdown-menu {
+				margin-left: -240px !important;
+			}
 		}
 		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu, 
 		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu {
@@ -1389,16 +1426,55 @@ body {
 			width: 460px;
 			float: none !important;
 		}
+		#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3) {
+			margin-right: 18px;
+		}
+		#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3):after {
+			display: block;
+		}
+		#_145_loginDropdown, #_145_searchDropdown {
+			float: left !important;
+		}
+		#_145_loginDropdown {
+			width: 96px !important;
+			float: left !important;
+			> .dropdown-menu {
+				margin-left: -188px !important;
+			}
+		}
+		#_145_searchDropdown {
+			width: 110px !important;
+			a {
+				padding: 6px 7px 6px 1px !important;
+			}
+			> .dropdown-menu {
+				margin-left: -256px !important;
+				width: 366px !important;
+				position: relative !important;
+			}
+			.nav-item-label {
+				display: inline-block !important;
+			}
+		}
+		#_search_WAR_searchportlet_keywords {
+			width: 270px !important;
+			position: absolute;
+			left: 0 !important;
+			top: 0 !important;
+		}
 		.portlet-dockbar {
 			height: 37px;
 		}
 		.navbar-brand > img {
 			width: 170px;
 		}
-		 #navigation {
+		#navigation {
 		 	margin-top: -75px;
 		 	padding-left: 210px;
 		 	position: absolute;
+		 	.navbar-inner {
+		 		margin-top: 0 !important;
+		 	}
 		}
 		#navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
 			line-height: 28px;
@@ -1429,9 +1505,22 @@ body {
 		}
 		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
 			padding: 6px 7px;
+			font-size: 14px;
 		}
 		#_145_loginDropdown, #_145_searchDropdown {
 			float: left !important;
+		}
+		#_145_searchDropdown {
+			width: 110px;
+			a {
+				padding: 6px 7px;
+			}
+			.nav-item-label {
+				display: inline-block;
+			}
+		}
+		#_145_loginDropdown {
+			width: 96px;
 		}
 		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords,
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords {
@@ -1460,7 +1549,7 @@ body {
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
 			margin-left: -336px;
 			width: 446px;
-			position: absolute;
+			position: absolute !important;
 			#_search_WAR_searchportlet_keywords {
     			width: 366px !important;
     			position: relative !important;
@@ -1476,6 +1565,27 @@ body {
 		}
 		#navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
 			line-height: 34px;
+		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
+			padding: 6px 15px;
+		}
+		#_145_searchDropdown {
+			width: 110px !important;
+			a {
+				padding: 6px 7px 6px 1px !important;
+			}
+			> .dropdown-menu {
+				margin-left: -336px !important;
+				width: 446px !important;
+				position: relative !important;
+			}
+			.nav-item-label {
+				display: none;
+			}
+		}
+		#_search_WAR_searchportlet_keywords {
+			width: 366px !important;
+			position: relative;
 		}
 		.footer {
 			font-size: 14px;
@@ -1560,6 +1670,9 @@ body {
 				line-height: 25px !important;
 			}
 		}
+		.footer .copyright {
+    		line-height: 25px;
+		}
 	}
 }
 
@@ -1585,6 +1698,10 @@ body {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
 			width: 940px;
+		}
+
+		#_145_navAddControlsNavbarCollapse {
+			display: block !important;
 		}
 		#navigation .navbar-inner ul.nav-collapse {
 			li {
