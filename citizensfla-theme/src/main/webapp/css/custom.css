@@ -489,7 +489,7 @@ body {
 				margin: 0px 0px 0px -15px;
 				min-width: 0 !important;
 				position: absolute;
-				@include box-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));	
+				@include box-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));	
 
 				&:after, &:before {
 					border-width: 0;
@@ -974,7 +974,7 @@ body {
 						font-family: 'Avenir35-Light' !important;
 						color: $darkblue;
 						font-size: 24.92px;
-						padding: 0;
+						padding: 3px 0px;
 						margin-left: 0;
 						&:hover, &:focus {
 							text-decoration: underline;
@@ -1150,6 +1150,10 @@ body {
 		padding-top: 37px;
 		height: 74px;
 	}
+	#_145_navSiteNavigationNavbarBtn,
+	#_145_navAccountControlsNavbarBtn {
+		display: none;
+	}
 }
 
 .firefox .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .button-holder .btn,
@@ -1162,7 +1166,7 @@ body {
 @media (min-width: 240px) {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
-			width: 220px;
+			width: 300px;
 			float: none !important;
 		}
 		#navigation .navbar-inner ul.nav-collapse {
@@ -1178,6 +1182,10 @@ body {
 				font-size: 13px;
 			}
 		}
+		#navigation .navbar-inner {
+			float: left;
+			margin-top: 75px;
+			}
 		.carousel {
 			.carousel-title {
 				font-size: 25px;
@@ -1265,32 +1273,36 @@ body {
 		.navbar-brand > img {
 			width: 190px;
 		}
-		#navigation {
-			margin-top: -65px;
-			padding-left: 240px;
-		}
-
-	}
-}
-
-@media (min-width: 320px) {
-	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
-			width: 300px;
-			float: none !important;
-		}
 		 #navigation {
 		 	margin-top: -75px;
-		 	padding-left: 210px;
+		 	padding-left: 20px;
+		 	position: static !important;
 		 }
 		.category .col-sm-12.col-md-4.col-lg-4 a {
-			height: 106px;
-			padding: 14px 20px;
-			font-size: 14px;
-			line-height: 18px;
+			height: 70px;
+			padding: 4px 10px;
+			font-size: 11px;
+			line-height: 12px;
+			background-position: 0px -60px;
+		}
+		.carousel {
+			.carousel-title {
+				font-size: 19px;
+			}
+			.carousel-text {
+				font-size: 7px;
+			}
+		}
+		.category {
+			span.title {
+				font-size: 21px;
+			}
 		}
 		.navbar-brand > img {
-			width: 170px;
+			width: auto;
+		}
+		.portlet-dockbar {
+			height: 74px;
 		}
 		#_145_navAccountControlsNavbarCollapse {
 			margin-left: 0px;
@@ -1307,6 +1319,18 @@ body {
 				width: 286px;
 			}
 		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
+			margin-left: -256px;
+			width: 366px;
+		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords {
+			position: absolute;
+			left: 20px;
+			top: 22px;
+			width: 210px;
+		}
 		.footer {
 			font-size: 11px;
 			padding: 10px 0px;
@@ -1318,8 +1342,25 @@ body {
 			}
 			.copyright {
 				padding-right: 110px;
+				line-height: 15px;
 			}
 		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
+			padding: 6px 18px;
+		}
+		#_145_loginDropdown, #_145_searchDropdown {
+			float: right !important;
+		}
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu {
+			margin-left: -86px;
+		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
+			margin-left: -177px;
+			width: 286px;
+		}
+
 	}
 }
 
@@ -1329,13 +1370,23 @@ body {
 			width: 460px;
 			float: none !important;
 		}
+		.portlet-dockbar {
+			height: 37px;
+		}
+		.navbar-brand > img {
+			width: 170px;
+		}
 		 #navigation {
 		 	margin-top: -75px;
 		 	padding-left: 210px;
-		 }
-		 #navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
-		 	line-height: 28px;
-		 }
+		 	position: absolute;
+		}
+		#navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
+			line-height: 28px;
+		}
+		#navigation .navbar-inner ul.nav-collapse li a {
+			padding: 1px 0px;
+		}
 		.category .col-sm-12.col-md-4.col-lg-4 a {
 			height: 106px;
 			padding: 14px 20px;
@@ -1357,13 +1408,25 @@ body {
 				font-size: 14px;
 			}
 		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
+			padding: 6px 7px;
+		}
+		#_145_loginDropdown, #_145_searchDropdown {
+			float: left !important;
+		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords {
+			width: 286px;
+			position: relative;
+		}
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu {
+			margin-left: -188px;
+		}
 		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
 			margin-left: -256px;
 			width: 366px;
-		}
-		#_search_WAR_searchportlet_keywords {
-			width: 286px;
 		}
 	}
 }
@@ -1374,16 +1437,38 @@ body {
 			width: 620px;
 			float: none !important;
 		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
+			margin-left: -336px;
+			width: 446px;
+			.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords, 
+			.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords {
+    			width: 366px;
+    			position: relative;
+    			left: 0;
+    			top: 0;
+			}
+		}
 		#navigation {
 			margin-top: -62px;
+			.navbar-inner {
+    			margin-top: 0px;
+			}
 		}
-		 #navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
-		 	line-height: 34px;
-		 }
+		#navigation .navbar-inner ul.nav-collapse .dropdown-menu.child-menu a {
+			line-height: 34px;
+		}
 		.footer {
 			font-size: 14px;
+			padding: 20px 0px;
 			.links a {
 				font-size: 15px;
+			}
+			.social {
+				top: 14px;
+			}
+			.copyright {
+				padding-right: 0;
 			}
 		}
 	}
@@ -1500,6 +1585,7 @@ body {
 		}
 		.category .col-sm-12.col-md-4.col-lg-4 a {
 			height: 314px;
+			padding: 44px 40px;
 		}
 		.category {
 			span.title {
