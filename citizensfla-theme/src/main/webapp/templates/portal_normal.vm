@@ -23,7 +23,7 @@ $theme.include($body_top_include)
   <nav class="navbar">
     <div class="container">
     <div class="navbar-header">
-    
+
       <a class="$logo_css_class navbar-brand" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])"><img alt="$logo_description" src="${theme_display.getPathThemeRoot()}/images/custom/logo.png" /></a>
 
     </div>
@@ -60,13 +60,13 @@ $theme.include($body_top_include)
     <p class="copyright">Copyright 2014 Citizens Property Insurance Corporation of Florida</p>
 
     <div class="social">
-                <a href="http://www.facebook.com/citizensfla" class="navbar-btn ">
+                <a href="https://www.facebook.com/pages/Citizens-Property-Insurance-Corporation/313353039304?ref=ts&fref=ts" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/fb.png">
                 </a>
-                <a href="http://www.twitter.com/citizensfla" class="navbar-btn ">
+                <a href="https://twitter.com/citizens_fla" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/twt.png">
                 </a>
-                <a href="http://www.linkedin.com/citizensfla" class="navbar-btn ">
+                <a href="https://www.linkedin.com/company/42110?trk=tyah" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/lnkd.png">
                 </a>
             </div>

@@ -264,7 +264,7 @@ body {
 								font-family: "Avenir35-Light" !important;
 								padding: 0px 5px;
 								height: 22px;
-								font-size: 12px;
+								font-size: 14px;
 								color: rgb(149, 149, 149);
 								margin-top: 10px;
 								border: 0;
@@ -920,6 +920,24 @@ body {
 	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
 		margin: 0;
 	}
+	#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3) {
+		margin-right: 18px;
+	}
+	#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3):after {
+		content: " | ";
+		position: absolute;
+		top: 4px;
+		color: #fff;
+		right: 17px;
+		z-index: 1;
+	}
+	.navbar {
+		margin-bottom: 0;
+	}
+	.navbar-brand {
+		padding: 17px;
+		margin-bottom: -1px;
+	}
 	.alert-danger, .alert-error, .portlet-msg-error {
 		background-color: $alert;
 		border: 0;
@@ -1152,7 +1170,7 @@ body {
 	}
 	#_145_navSiteNavigationNavbarBtn,
 	#_145_navAccountControlsNavbarBtn {
-		display: none;
+		display: none !important;
 	}
 }
 
@@ -1261,6 +1279,7 @@ body {
 					font-weight: normal;
 					border-radius: 0;
 					font-size: 15px;
+					height: 37px;
 				}
 			}
 		}
@@ -1346,7 +1365,7 @@ body {
 			}
 		}
 		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
-			padding: 6px 18px;
+			padding: 6px 15px;
 		}
 		#_145_loginDropdown, #_145_searchDropdown {
 			float: right !important;
@@ -1441,12 +1460,12 @@ body {
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
 			margin-left: -336px;
 			width: 446px;
-			.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords, 
-			.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords {
-    			width: 366px;
-    			position: relative;
-    			left: 0;
-    			top: 0;
+			position: absolute;
+			#_search_WAR_searchportlet_keywords {
+    			width: 366px !important;
+    			position: relative !important;
+    			left: 0 !important;
+    			top: 0 !important;
 			}
 		}
 		#navigation {
@@ -1531,6 +1550,7 @@ body {
 					font-weight: normal;
 					border-radius: 0;
 					font-size: 15px;
+					line-height: 26px;
 				}
 			}
 		}
@@ -1555,6 +1575,9 @@ body {
 			.dropdown-menu.child-menu a {
 				font-size: 13px;
 			}
+		}
+		.navbar-brand > img {
+    		width: auto;
 		}
 	}
 }
@@ -1630,7 +1653,7 @@ body {
 		}
 		#navigation .navbar-inner ul.nav-collapse {
 			li {
-				margin-left: 52px;
+				margin-left: 54px;
 				a {
 					font-size: 24.92px;
 				}
@@ -1638,6 +1661,9 @@ body {
 			.dropdown-menu.child-menu a {
 				font-size: 20px;
 			}
+		}
+		#navigation .navbar-inner {
+			float: right;
 		}
 		.carousel {
 			.carousel-title {
