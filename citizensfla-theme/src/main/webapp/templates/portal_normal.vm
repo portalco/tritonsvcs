@@ -18,6 +18,10 @@
 
 $theme.include($body_top_include)
 
+ID: $theme_settings.alert-message-article-id <br/>
+Message: $alert_message
+
+
 #if ($alert_message)
 	<div class="alert-error red-alert">
 	  <div class="container">
