@@ -18,6 +18,15 @@
 
 $theme.include($body_top_include)
 
+<div class="alert-error red-alert">
+  <div class="container">
+    <p>
+     Due to Torpical Storm Gena, Citizens has suspended writing any new policies until further notice.
+    </p>
+    <a href="#" class="close">×</a>
+  </div>
+</div>
+
 #dockbar()
 
   <nav class="navbar">

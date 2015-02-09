@@ -952,6 +952,16 @@ body {
 		font-family: 'Avenir85-Heavy';
 		font-size: 20px;
 	}
+	.red-alert {
+		p {
+			margin: 0;
+		}
+		.close {
+			position: absolute;
+			top: 9px;
+			right: 15px;
+		}
+	}
 	#_145_navAccountControls {
 		margin-top: 0 !important;
 		top: 0 !important;
