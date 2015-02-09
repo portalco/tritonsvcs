@@ -18,7 +18,7 @@
 
 $theme.include($body_top_include)
 
-<!-- ID2: $theme.getSetting("alert-message-article-id") -->
+<!-- ID2: $theme.getSetting('alert-message-article-id') -->
 <!-- Message: $alert_message -->
 
 
