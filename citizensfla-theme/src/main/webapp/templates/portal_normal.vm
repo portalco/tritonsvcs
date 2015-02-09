@@ -18,8 +18,8 @@
 
 $theme.include($body_top_include)
 
-ID2: $theme.getSetting("alert-message-article-id") <br/>
-Message: $alert_message
+<!-- ID2: $theme.getSetting("alert-message-article-id") -->
+<!-- Message: $alert_message -->
 
 
 #if ($alert_message)
