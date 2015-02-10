@@ -556,16 +556,15 @@ body {
 		color: #FFF;
 		padding: 0;
 
-		.portlet-title {
-			display: none;
-		}
-
 		.portlet-topper-toolbar {
 			font-size: 0.8em;
 			margin: -10px 0 0;
 			padding: 0;
 			right: 10px;
 			top: 50%;
+			a i {
+    			color: #000;
+			}
 		}
 	}
 
