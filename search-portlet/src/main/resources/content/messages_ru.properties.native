@@ -1,0 +1,55 @@
+osm-portlet-info=Настройки для отображения Open Street Map
+osm-longitude=Долгота
+osm-latitude=Широта
+osm-zoom=Увеличение (0-15)
+osm-address=Адрес
+osm-height=Высота портлета (px)
+video-portlet-info=Портлет для отображения видео.<br/>\
+Можно встраивать ссылки с youtube, vimeo и видео с портала размещенное в Document Library.<br/>\
+Пример ссылки для видео размещенного на портале:<br/>\
+http://example.com/documents/10157/0/Video1234.mp4 без указания версии документа.<br/><br/>\
+С портала вы можете встраивать видео только следующих форматов: FLV, H.264, MP4, VP8, WebM, MP3, AAC, JPG, PNG и GIF
+video-url=Адрес видео
+video-image=Картинка видео (стоп-кадр)
+video-width=Ширина видео (px)
+video-height=Высота видео (px)
+video-parser-url=Преобразовать URL автоматически для встраивания видео
+create-new-video=Создание нового видео контента
+edit-video=Редактирование видео контента
+video-title-required=Название видео контента обязательное поле
+external-link-required=Ссылка на видео обязательное поле
+video-file-required=Видео файл обязательное поле
+thumbnail-required=Изображение заставки обязательное поле
+video-height-required=Высота видео обязательное поле
+video-width-required=Ширина видео обязательное поле
+file-already-exist=Файл с таким именем уже существует
+thumbnail-already-exist=Изображение заставки уже существует
+external-video-link=Ссылка на внешний источник видео
+internal-video-link=Видео файл
+use-external-video=Использовать внешний источник видео?
+external-type=Внешний источник
+internal-type=Внутренний источник
+are-you-sure-you-want-to-delete-this-video=Вы уверенны, что хотите удалить эту запись?
+create-new-video=Добавить видео
+submitted-by=Опубликованно
+video-parser-url=Преобразовать URL автоматически для встраивания видео
+results-url=Страница результатов
+search=Поиск
+
+
+begin-template=Шаблон начала
+end-template=Шаблон конца
+
+photogallery=Фотогалерея
+videogallery=Видеогалерея
+album-id=ID корневой папки
+photos=фотографий
+display-number=Сколько показывать
+intervalTime=Время просмотра(с)
+
+show-tree-nodes=Показать все
+hide-tree-nodes=Скрыть все
+
+use-user-location=Использовать местоположение пользователя
+use-business-location=Использовать бизнес-таргетирование
+use-business-location-tip=При создании контента выберите в категориях из словаря верхнеуровневых организаций те, для пользователей которых (и всех дочерних) будет показываться этот контент
