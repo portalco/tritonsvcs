@@ -568,10 +568,14 @@ body {
 		}
 	}
 
-	.controls-hidden .portlet-title, .controls-visible.signed-out .portlet-title {
+	.portlet-title {
 	    display: none;
 	}
 
+	.controls-visible.signed-in .portlet-title {
+	    display: block;
+	}
+	
 	.portlet-asset-publisher .asset-content, .portlet-asset-publisher .asset-summary, .portlet-asset-publisher .asset-title, .portlet-asset-publisher .header-title, .portlet-asset-publisher li.title-list, .portlet-blogs .entry-body, .portlet-blogs .entry-title, .portlet-blogs .header-title, .portlet-journal-content .journal-content-article, .portlet-message-boards .header-title, .portlet-message-boards .thread-body {
 		-moz-hyphens: manual !important;
 		word-break: keep-all !important;
@@ -1341,7 +1345,7 @@ body {
 			padding: 4px 10px;
 			font-size: 11px;
 			line-height: 12px;
-			background-position: 0px -60px;
+			background-position: 0 0;
 		}
 		.carousel {
 			.carousel-title {
@@ -1756,13 +1760,13 @@ body {
 				font-size: 20px;
 				line-height: 24.1px;
 				background-position: 0 0;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: #2A3B4B;
 				&:hover {
 					text-decoration: none;
-					@include box-shadow(0px 0px 75px 39px rgba(0, 0, 0, 0.2) inset);
+					@include box-shadow(0px 0px 75px 39px rgba(0, 0, 0, 0.4) inset);
 				}
-			}
-			.careers {
-				background: url("@theme_image_path@/custom/careers_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
 			}
 			.policy {
 				background: url("@theme_image_path@/custom/policy_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
@@ -1804,11 +1808,11 @@ body {
 		}
 		.category .col-sm-12.col-md-4.col-lg-4 a {
 			height: 383px;
-			background-position: 0px -60px;
+			background-position: 0 0;
 		}
 		.category .col-sm-12.col-md-4.col-lg-4.two a {
 			height: 191px;
-			background-position: 0px -20px;
+			background-position: 0px -160px;
 			&:first-child {
 				height: 192px;
 			}
