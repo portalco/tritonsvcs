@@ -6,6 +6,8 @@
 		<version>6.2.0+</version>
 	</compatibility>
 	<theme id="citizensfla" name="Citizensfla">
-
+		<settings>
+			<setting configurable="true" key="alert-message-article-id" type="text" />
+		</settings>
 	</theme>
 </look-and-feel>

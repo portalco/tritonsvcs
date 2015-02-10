@@ -952,6 +952,16 @@ body {
 		font-family: 'Avenir85-Heavy';
 		font-size: 20px;
 	}
+	.red-alert {
+		p {
+			margin: 0;
+		}
+		.close {
+			position: absolute;
+			top: 9px;
+			right: 15px;
+		}
+	}
 	#_145_navAccountControls {
 		margin-top: 0 !important;
 		top: 0 !important;
@@ -1165,14 +1175,29 @@ body {
 			}
 		}
 	}
+
+	.search-layout-content {
+		.column-first {
+			.column-content {
+				box-shadow: none;
+				background: transparent;
+				border: 0;
+			}
+		}
+		.column-last {
+			margin-left: 200px;
+		}
+		.facet-value {
+    		border-bottom: 0 !important;
+    		border-radius: 0 !important;
+    		border-top: 0 !important;
+		}
+	}
+
 	.collapse {
 		overflow: visible !important;
 		display: block !important;
 		visibility: visible !important;
-	}
-	.has-alerts {
-		padding-top: 37px;
-		height: 74px;
 	}
 	#_145_navSiteNavigationNavbarBtn,
 	#_145_navAccountControlsNavbarBtn,

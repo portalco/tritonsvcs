@@ -2,3 +2,5 @@
 #set ($guest_group = $groupLocalService.getGroup($company_id, "Guest").getGroupId())
 
 #set ($css_class = "${css_class} dockbar-split")
+
+#set ($alert_message = $journalContentUtil.getContent($group_id, $theme.getSetting('alert-message-article-id'), null, "$locale", $theme_display))
