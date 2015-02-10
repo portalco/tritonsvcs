@@ -195,8 +195,8 @@ body {
 							height: 15px;
 							display: block;
 							position: absolute;
-							top: 0;
-							right: 0;
+							top: -11px;
+							right: -11px;
 
 						}
 					}
