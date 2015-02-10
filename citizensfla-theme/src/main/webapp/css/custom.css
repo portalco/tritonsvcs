@@ -568,10 +568,10 @@ body {
 		}
 	}
 
-	.controls-hidden .portlet-title {
+	.controls-hidden .portlet-title, .controls-visible.signed-out {
 	    display: none;
 	}
-	
+
 	.portlet-asset-publisher .asset-content, .portlet-asset-publisher .asset-summary, .portlet-asset-publisher .asset-title, .portlet-asset-publisher .header-title, .portlet-asset-publisher li.title-list, .portlet-blogs .entry-body, .portlet-blogs .entry-title, .portlet-blogs .header-title, .portlet-journal-content .journal-content-article, .portlet-message-boards .header-title, .portlet-message-boards .thread-body {
 		-moz-hyphens: manual !important;
 		word-break: keep-all !important;
@@ -1821,6 +1821,14 @@ body {
 		}
 		.category .col-sm-12.col-md-4.col-lg-4 a {
 			height: 383px;
+			background-position: 0px -60px;
+		}
+		.category .col-sm-12.col-md-4.col-lg-4.two a {
+			height: 191px;
+			background-position: 0px -20px;
+			&:first-child {
+				height: 192px;
+			}
 		}
 		.category span.title {
 			font-size: 35px;
