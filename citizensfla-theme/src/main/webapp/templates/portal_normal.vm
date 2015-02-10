@@ -71,7 +71,7 @@ $theme.include($body_top_include)
     <div class="links">
       <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Site Map</a>
     </div>
-    <p class="copyright">Copyright 2014 Citizens Property Insurance Corporation of Florida</p>
+    <p class="copyright">Copyright 2015 Citizens Property Insurance Corporation of Florida</p>
 
     <div class="social">
                 <a href="https://www.facebook.com/pages/Citizens-Property-Insurance-Corporation/313353039304?ref=ts&fref=ts" class="navbar-btn ">

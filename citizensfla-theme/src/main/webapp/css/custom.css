@@ -187,8 +187,17 @@ body {
 						background: transparent;
 						margin-left: 0px;
 						margin-right: -7px;
+						position: relative;
 						&:before {
-							content: "\f002" !important;
+							content: "" !important;
+							background: url("@theme_image_path@/custom/search_.png") no-repeat 0 0;
+							width: 15px;
+							height: 15px;
+							display: block;
+							position: absolute;
+							top: 0;
+							right: 0;
+
 						}
 					}
 					.portlet {
@@ -198,7 +207,7 @@ body {
 							display: none;
 						}
 						.control-group.control-group-inline {
-							margin: 4px !important;
+							margin: 4px 4px 4px 6px !important;
 							#_search_WAR_searchportlet_keywords {
 								width: 366px;
 								box-shadow: none;
@@ -223,6 +232,8 @@ body {
 							position: absolute;
 							top: 20px;
 							right: 15px;
+							font-size: 12px;
+							text-indent: 3px;
 						}
 					}
 					> .dropdown-menu {
@@ -575,7 +586,7 @@ body {
 	.controls-visible.signed-in .portlet-title {
 	    display: block;
 	}
-	
+
 	.portlet-asset-publisher .asset-content, .portlet-asset-publisher .asset-summary, .portlet-asset-publisher .asset-title, .portlet-asset-publisher .header-title, .portlet-asset-publisher li.title-list, .portlet-blogs .entry-body, .portlet-blogs .entry-title, .portlet-blogs .header-title, .portlet-journal-content .journal-content-article, .portlet-message-boards .header-title, .portlet-message-boards .thread-body {
 		-moz-hyphens: manual !important;
 		word-break: keep-all !important;
@@ -1017,8 +1028,9 @@ body {
 						font-size: 24.92px;
 						padding: 3px 0px;
 						margin-left: 0;
+						line-height: 28px;
 						&:hover, &:focus {
-							text-decoration: underline;
+							text-decoration: none;
 							color: rgb(0, 0, 0);
 						}
 						.icon-caret-down {
@@ -1074,7 +1086,7 @@ body {
 			border: 0;
 			background: transparent;
 			&.left, &.right {
-				background: url("@theme_image_path@/custom/arrow.png") no-repeat 11px 10px;
+				background: url("@theme_image_path@/custom/arw.png") no-repeat 11px 10px;
 				left: -5px;
 			}
 			&.right {
@@ -1633,7 +1645,7 @@ body {
 			float: none !important;
 		}
 		#navigation {
-			margin-top: 45px;
+			margin-top: 48px;
 			padding-left: 220px;
 		}
 		#navigation .navbar-inner ul.nav-collapse {
@@ -1812,7 +1824,7 @@ body {
 		}
 		.category .col-sm-12.col-md-4.col-lg-4.two a {
 			height: 191px;
-			background-position: 0px -160px;
+			background-position: 0px -160px !important;
 			&:first-child {
 				height: 192px;
 			}
