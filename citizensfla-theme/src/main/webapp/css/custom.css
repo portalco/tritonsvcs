@@ -568,7 +568,7 @@ body {
 		}
 	}
 
-	.controls-hidden .portlet-title, .controls-visible.signed-out {
+	.controls-hidden .portlet-title, .controls-visible.signed-out .portlet-title {
 	    display: none;
 	}
 
@@ -1288,21 +1288,12 @@ body {
 			}
 			.careers {
 				background: url("@theme_image_path@/custom/careers_bg_small.jpg") no-repeat 0 0 / cover #2A3B4B;
-				&:hover {
-					background: url("@theme_image_path@/custom/careers_bg_hover_small.jpg") no-repeat 0 0 / cover #2A3B4B;
-				}
 			}
 			.policy {
 				background: url("@theme_image_path@/custom/policy_bg_small.jpg") no-repeat 0 0 / cover #2A3B4B;
-				&:hover {
-					background: url("@theme_image_path@/custom/policy_bg_hover_small.jpg") no-repeat 0 0 / cover #2A3B4B;
-				}
 			}
 			.storm {
 				background: url("@theme_image_path@/custom/storm_bg_small.jpg") no-repeat 0 0 / cover #2A3B4B;
-				&:hover {
-					background: url("@theme_image_path@/custom/storm_bg_hover_small.jpg") no-repeat 0 0 / cover #2A3B4B;
-				}
 			}
 		}
 		.dockbar-split .dockbar .navbar-inner .btn-navbar {
@@ -1767,25 +1758,17 @@ body {
 				background-position: 0 0;
 				&:hover {
 					text-decoration: none;
+					@include box-shadow(0px 0px 75px 39px rgba(0, 0, 0, 0.2) inset);
 				}
 			}
 			.careers {
 				background: url("@theme_image_path@/custom/careers_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
-				&:hover {
-					background: url("@theme_image_path@/custom/careers_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
-				}
 			}
 			.policy {
 				background: url("@theme_image_path@/custom/policy_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
-				&:hover {
-					background: url("@theme_image_path@/custom/policy_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
-				}
 			}
 			.storm {
 				background: url("@theme_image_path@/custom/storm_bg.jpg") no-repeat 0 0 / cover #2A3B4B;
-				&:hover {
-					background: url("@theme_image_path@/custom/storm_bg_hover.jpg") no-repeat 0 0 / cover #2A3B4B;
-				}
 			}
 		}
 	}
