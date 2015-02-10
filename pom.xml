@@ -63,5 +63,7 @@
     </build>
     <modules>
         <module>dockbar-hook</module>
+        <module>citizensfla-theme/module>
+        <module>search-portlet</module>
     </modules>
 </project>
