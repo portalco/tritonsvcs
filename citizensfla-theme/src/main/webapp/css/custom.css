@@ -1226,6 +1226,36 @@ body {
 	#_145_navAddControlsNavbarBtn {
 		display: none !important;
 	}
+	.carousel.slide .carousel-inner {
+		background: rgb(125, 125, 128) !important;
+	}
+	.carousel.slide .item {
+		@include transition(opacity 0.4s ease-out 0.1s);
+		opacity:0;
+	}
+
+	.carousel.slide .active.item {
+		@include transition(opacity 0.3s ease-in 0s);
+		opacity:1;
+	}
+
+	.carousel.slide .active.left,
+	.carousel.slide .active.right {
+		left: 0;
+		z-index: 2;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+
+	.carousel.slide .next,
+	.carousel.slide .prev {
+		left: 0;
+		z-index: 1;
+	}
+
+	.carousel.slide .carousel-control {
+		z-index: 3;
+	}
 }
 
 .firefox .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .button-holder .btn,
