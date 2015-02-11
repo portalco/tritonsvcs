@@ -1894,7 +1894,7 @@ body {
 		display: block;
 		margin: 0 0 5px;
 	}
-	.site-navigation ul:hover .current {
+	.site-navigation ul:hover .selected {
 		background: url(@theme_image_path@/custom/icon-check.png) no-repeat 15px 11px;
 	}
 }
