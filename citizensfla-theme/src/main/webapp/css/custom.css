@@ -247,6 +247,28 @@ body {
 				#_145_loginDropdown {
 					background: $lightblue !important;
 					width: 96px;
+					.dropdown-menu {
+						display: block !important;
+						visibility: hidden !important;
+						.alert {
+						    line-height: 23px !important;
+							border-radius: 0px;
+							min-height: auto !important;
+							top: -14px;
+							display: block !important;
+							font-size: 14px;
+							position: absolute;
+							visibility: visible !important;
+							padding: 0 !important;
+							left: -20px;
+							height: 24px !important;
+							width: 284px;
+							overflow: hidden;
+						}
+					}
+					&.open .dropdown-menu {
+						visibility: visible !important;
+					}
 					a {
 						text-align: center;
 						> i {
@@ -260,10 +282,7 @@ body {
 						margin-left: -188px;
 						width: 284px;
 						height: 145px;
-						overflow: hidden;
-						.alert.alert-error {
-    						display: none;
-						}
+						overflow: visible;
 						.portlet-content {
 							position: relative;
 						}
@@ -1060,8 +1079,9 @@ body {
 						font-size: 19px;
 						padding: 0px 13px;
 						text-align: right;
-						&:hover {
+						&:hover, &:focus {
 							background: transparent !important;
+							border-bottom: 0;
 						} 
 					}
 				}
@@ -1694,6 +1714,10 @@ body {
 				a {
 					font-size: 17px;
 					font-weight: normal;
+					&:hover, &:focus {
+						text-decoration: underline;
+						border-bottom: 0;
+					}
 				}
 			}
 			.dropdown-menu.child-menu a {
@@ -1764,6 +1788,11 @@ body {
 				margin-left: 14px;
 				a {
 					font-size: 17px;
+					line-height: 19px;
+					&:hover, &:focus {
+						text-decoration: none;
+						border-bottom: 1px solid #000;
+					}
 				}
 			}
 			.dropdown-menu.child-menu a {
@@ -1869,6 +1898,7 @@ body {
 		.category .col-sm-12.col-md-4.col-lg-4 a {
 			height: 383px;
 			background-position: 0 0 !important;
+			padding: 44px 40px;
 		}
 		.category .col-sm-12.col-md-4.col-lg-4.two a {
 			height: 191px;
