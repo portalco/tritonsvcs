@@ -254,7 +254,7 @@ body {
 						.alert {
 						    line-height: 23px !important;
 							border-radius: 0px;
-							min-height: auto !important;
+							min-height: 0 !important;
 							top: -14px;
 							display: block !important;
 							font-size: 14px;
