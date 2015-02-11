@@ -1880,6 +1880,7 @@ body {
 		font-size: 18px !important;
 		font-weight: normal !important;
 		margin: 0 !important;
+		line-height: 28px !important;
 		&:hover, &:focus {
 			text-decoration: none !important;
 			border-bottom: 0 !important;
