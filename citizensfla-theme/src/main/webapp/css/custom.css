@@ -1865,6 +1865,9 @@ body {
 		margin: 0;
 		float: none !important;
 		margin: 0px 0px 0px 37px !important;
+		.dropdown-menu.child-menu {
+			display: none;
+		}
 	}
 	.site-navigation .selected {
 		display: block;
