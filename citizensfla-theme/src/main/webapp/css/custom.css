@@ -1845,7 +1845,7 @@ body {
 		min-height: 40px;
 		float: right;
 		margin-top: -65px;
-		z-index: 1;
+		z-index: 100;
 	}	
 	.site-navigation ul {
 		width: 190px;
@@ -1858,7 +1858,7 @@ body {
 		background: #fff url(@theme_image_path@/custom/icon-menu.png) no-repeat 15px 11px;
 		@include border-radius(5px);
 		@include box-shadow(1px 2px 6px 0px rgba(0, 0, 0, 0.2));
-		z-index: 10;
+		z-index: 100;
 	}
 	.site-navigation li {
 		display: none;
@@ -1866,7 +1866,7 @@ body {
 		float: none !important;
 		margin: 0px 0px 0px 37px !important;
 		.dropdown-menu.child-menu, .icon-caret-down {
-			display: none;
+			display: none !important;
 		}
 	}
 	.site-navigation .selected {
