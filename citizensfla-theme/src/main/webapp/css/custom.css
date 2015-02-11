@@ -1056,6 +1056,7 @@ body {
 							text-decoration: none;
 							color: rgb(0, 0, 0);
 							border-bottom: 2px solid #000;
+							background: transparent !important;
 						}
 						.icon-caret-down {
 							margin: 0px !important;
@@ -1313,6 +1314,10 @@ body {
 				a {
 					font-size: 17px;
 					font-weight: normal;
+					&:hover, &:focus {
+						text-decoration: underline;
+						border-bottom: 0;
+					}
 				}
 			}
 			.dropdown-menu.child-menu a {
