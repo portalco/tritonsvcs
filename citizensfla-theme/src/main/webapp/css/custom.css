@@ -1471,7 +1471,7 @@ body {
 			width: auto !important;
 			min-width: 30px;
 			.icon-caret-down {
-				margin-right: 9px;
+				margin-right: 9px !important;
 			}
 			a {
 				padding: 6px 7px 6px 1px !important;
@@ -1549,7 +1549,7 @@ body {
 		#_145_searchDropdown {
 			width: 110px !important;
 			.icon-caret-down {
-				margin-right: -7px;
+				margin-right: -7px !important;
 			}
 			a {
 				padding: 6px 7px 6px 1px !important;
