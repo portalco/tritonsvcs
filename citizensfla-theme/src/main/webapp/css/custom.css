@@ -1865,7 +1865,7 @@ body {
 		margin: 0;
 		float: none !important;
 		margin: 0px 0px 0px 37px !important;
-		.dropdown-menu.child-menu {
+		.dropdown-menu.child-menu, .icon-caret-down {
 			display: none;
 		}
 	}
