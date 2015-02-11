@@ -13,7 +13,6 @@
 
   $theme.include($top_head_include)
 
-  <script type="text/javascript" src="${theme_display.getPathThemeRoot()}/js/jquery.js"></script>
   <script type='text/javascript'>
 
   $(document).ready(function(){
@@ -104,6 +103,7 @@ $theme.include($body_top_include)
     </div>
   </footer>
 
+<script type="text/javascript" src="${theme_display.getPathThemeRoot()}/js/jquery.js"></script>
 <script type="text/javascript" src="${theme_display.getPathThemeRoot()}/js/bootstrap.min.js"></script>
 
 $theme.include($body_bottom_include)
