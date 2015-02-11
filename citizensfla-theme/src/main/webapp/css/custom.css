@@ -250,6 +250,7 @@ body {
 					.dropdown-menu {
 						display: block !important;
 						visibility: hidden !important;
+						position: absolute !important;
 						.alert {
 						    line-height: 23px !important;
 							border-radius: 0px;
@@ -1791,7 +1792,7 @@ body {
 					line-height: 19px;
 					&:hover, &:focus {
 						text-decoration: none;
-						border-bottom: 1px solid #000;
+						border-bottom: 2px solid #000;
 					}
 				}
 			}
@@ -1877,6 +1878,7 @@ body {
 				margin-left: 54px;
 				a {
 					font-size: 24.92px;
+					line-height: 28px;
 				}
 			}
 			.dropdown-menu.child-menu a {
