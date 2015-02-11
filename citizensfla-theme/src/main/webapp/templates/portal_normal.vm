@@ -12,6 +12,21 @@
   <link href="${theme_display.getPathThemeCss()}/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
   $theme.include($top_head_include)
+
+  <script type='text/javascript'>
+
+  $(document).ready(function(){
+
+  // iOS Hover Event Class Fix
+  if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+  $(".nav li a").click(function(){  // Update class to point at the head of the list
+  });
+
+  }
+
+  });
+
+  </script> 
 </head>
 
 <body class="$css_class">
