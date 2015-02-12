@@ -230,7 +230,8 @@ body {
 							position: absolute;
 							top: 20px;
 							right: 15px;
-							background: url("@theme_image_path@/custom/enter.png") no-repeat 0 0;
+							background: url("@theme_image_path@/custom/enter.png") no-repeat 0 0 #01699D;
+							text-indent: 100px;
 						}
 					}
 					> .dropdown-menu {
@@ -321,9 +322,10 @@ body {
 								left: 214px;
 								top: 24px;
 								position: absolute;
-								background: url("@theme_image_path@/custom/enter.png") no-repeat 0 0;
+								background: url("@theme_image_path@/custom/enter.png") no-repeat 0 0 #01699D;
 								border: 0;
 								overflow: hidden;
+								text-indent: 100px;
 							}
 							.navigation {
 								background: transparent !important;
