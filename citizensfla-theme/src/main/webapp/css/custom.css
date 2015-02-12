@@ -224,16 +224,13 @@ body {
 						button[name="search"] {
 							height: 25px;
 							width: 26px;
-							background: $darkblue !important;
 							border-radius: 0;
-							color: #fff !important;
 							overflow: hidden;
 							border: 0;
 							position: absolute;
 							top: 20px;
 							right: 15px;
-							font-size: 12px;
-							text-indent: 3px;
+							background: url("@theme_image_path@/custom/enter.png") no-repeat 0 0;
 						}
 					}
 					> .dropdown-menu {
@@ -324,12 +321,8 @@ body {
 								left: 214px;
 								top: 24px;
 								position: absolute;
-								text-indent: 3px;
-								background: $darkblue !important;
+								background: url("@theme_image_path@/custom/enter.png") no-repeat 0 0;
 								border: 0;
-								color: #fff !important;
-								line-height: 14px;
-								font-size: 12px;
 								overflow: hidden;
 							}
 							.navigation {
@@ -1037,7 +1030,7 @@ body {
 		display: block;
 		.navbar-inner {
 			background: transparent;
-			padding: 0;
+			padding: 0 !important;
 			.collapse.nav-collapse {
 				visibility: visible;
 				display: block;
@@ -1289,7 +1282,7 @@ body {
 
 
 
-@media (min-width: 240px) {
+@media (min-width: 0px) {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
 			width: 300px;
@@ -1718,7 +1711,13 @@ body {
 		}
 	}
 }
-
+@media (min-width: 980px) {
+	.aui {
+		.container, .navbar .container, .portlet-dockbar .dockbar {
+			width: 940px;
+		}
+	}
+}
 @media (min-width: 992px) {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
@@ -1837,11 +1836,17 @@ body {
 		#_145_navSiteNavigationNavbarBtn {
 			display: block !important;
 			position: absolute !important;
-			top: 79px !important;
+			top: 84px !important;
 			right: 0 !important;
 			background: #0066A1;
+			border: 0;
+			margin: 0 !important;
+			padding: 7px 14px !important;
 			&.open {
 				background: #F5AF45;
+			}
+			&.icon-reorder {
+				text-shadow: none;
 			}
 		}
 		.site-navigation {
@@ -1851,23 +1856,14 @@ body {
 			display: block !important;
 			position: absolute !important;
 			margin: 0 !important;
-			top: 30px !important;
-			right: 27px !important;
+			top: 40px;
+			right: 40px;
 		}
 		.site-navigation {
-			position: relative;
-			min-height: 40px;
-			float: right;
-			margin-top: -65px;
 			z-index: 100;
 		}	
 		.site-navigation ul {
 			width: 170px;
-			padding: 1px 0;
-			position: absolute;
-			height: auto !important;
-			top: 0;
-			left: 0;
 			border: solid 1px #aaa;
 			background: #fff;
 			@include border-radius(3px);
@@ -1875,37 +1871,19 @@ body {
 			z-index: 100;
 		}
 		.site-navigation li {
-			margin: 0;
 			float: none !important;
 			margin: 0px 0px 0px 8px !important;
 			.dropdown-menu.child-menu, .icon-caret-down {
 				display: none !important;
 			}
 		}
-		.site-navigation .selected {
-			display: block;
-		}
 		.site-navigation a {
-			display: block;
-			padding: 1px 5px 4px 2px !important;
-			text-align: left;
-			font-family: 'Avenir35-Light' !important;
 			font-size: 18px !important;
-			font-weight: normal !important;
-			margin: 0 !important;
 			line-height: 28px !important;
 			&:hover, &:focus {
 				text-decoration: none !important;
 				border-bottom: 0 !important;
 			}
-		}
-		.site-navigation .current a {
-			background: none;
-			color: #666;
-		}
-		.site-navigation ul:hover li {
-			display: block;
-			margin: 0 0 5px;
 		}
 	}
 }
