@@ -915,11 +915,6 @@ body {
 	font-style: normal;
 }
 
-
-.aui body {
-	margin-bottom: 120px !important;
-}
-
 .portlet-dockbar {
 	height: 37px;
 	background-color: $darkblue;
@@ -954,28 +949,20 @@ body {
 }
 
 .aui {
+	body {
+		margin-bottom: 120px !important;
+	}
 	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
 		margin: 0;
-	}
-	.navbar > .container > #navbar {
-		position: static !important;
-	}
-	#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3) {
-		margin-right: 18px;
-	}
-	#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3):after {
-		content: " | ";
-		position: absolute;
-		top: 4px;
-		color: #fff;
-		right: -18px;
-		z-index: 1;
 	}
 	.navbar {
 		margin-bottom: 0;
 	}
 	.navbar-brand {
 		padding: 17px;
+	}
+	.navbar > .container > #navbar {
+		position: static !important;
 	}
 	.alert-danger, .alert-error, .portlet-msg-error {
 		background-color: $alert;
@@ -1000,20 +987,38 @@ body {
 			right: 15px;
 		}
 	}
+	#_145_navAccountControlsNavbarCollapse {
+		> .nav.nav-account-controls > li:nth-last-child(3) {
+			margin-right: 18px;
+			&:after {
+				content: " | ";
+				position: absolute;
+				top: 4px;
+				color: #fff;
+				right: -18px;
+				z-index: 1;
+			}
+		}
+		.nav.nav-account-controls li {
+			float: left;
+		}
+		.nav.nav-account-controls .dropdown-menu a {
+			padding: 0px 35px !important;
+			line-height: 26px !important;
+			height: 26px;
+			&:hover, &:focus {
+				background: transparent;
+			}
+		}
+	}
 	#_145_navAccountControls {
 		margin-top: 0 !important;
 		top: 0 !important;
 	}
-	#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls li {
-		float: left;
-	}
-	#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls .dropdown-menu a {
-		padding: 0px 35px !important;
-		line-height: 26px !important;
-		height: 26px;
-		&:hover, &:focus {
-			background: transparent;
-		}
+	#_145_navSiteNavigationNavbarBtn,
+	#_145_navAccountControlsNavbarBtn,
+	#_145_navAddControlsNavbarBtn {
+		display: none !important;
 	}
 	.navbar-header .navbar-brand {
 		height: auto !important;
@@ -1023,9 +1028,6 @@ body {
 	.navbar .container .nav-collapse {
 		display: block !important;
 	}
-	#navigation .navbar-inner .nav-collapse, #navigation .navbar-inner .nav-collapse.collapse {
-		overflow: visible !important;
-	}
 	#navigation {
 		margin-top: 46px;
 		float: right;
@@ -1033,8 +1035,10 @@ body {
 		.navbar-inner {
 			background: transparent;
 			padding: 0 !important;
+			.nav-collapse, .nav-collapse.collapse {
+				overflow: visible !important;
+			}
 			.collapse.nav-collapse {
-				visibility: visible;
 				display: block;
 			}
 			ul.nav-collapse {
@@ -1239,11 +1243,6 @@ body {
 		overflow: visible !important;
 		display: block !important;
 		visibility: visible !important;
-	}
-	#_145_navSiteNavigationNavbarBtn,
-	#_145_navAccountControlsNavbarBtn,
-	#_145_navAddControlsNavbarBtn {
-		display: none !important;
 	}
 	.carousel.slide .carousel-inner {
 		background: rgb(125, 125, 128) !important;
@@ -1488,7 +1487,7 @@ body {
 			}
 		}
 		#_search_WAR_searchportlet_keywords {
-			width: 270px !important;
+			width: 286px !important;
 			position: absolute;
 			left: 0 !important;
 			top: 0 !important;
