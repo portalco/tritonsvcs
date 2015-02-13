@@ -250,7 +250,7 @@ body {
 						visibility: hidden !important;
 						position: absolute !important;
 						.alert {
-						    line-height: 23px !important;
+							line-height: 23px !important;
 							border-radius: 0px;
 							min-height: 0 !important;
 							top: -14px;
@@ -592,17 +592,17 @@ body {
 			right: 10px;
 			top: 50%;
 			a i {
-    			color: #000;
+				color: #000;
 			}
 		}
 	}
 
 	.portlet-title {
-	    display: none;
+		display: none;
 	}
 
 	.controls-visible.signed-in .portlet-title {
-	    display: block;
+		display: block;
 	}
 
 	.portlet-asset-publisher .asset-content, .portlet-asset-publisher .asset-summary, .portlet-asset-publisher .asset-title, .portlet-asset-publisher .header-title, .portlet-asset-publisher li.title-list, .portlet-blogs .entry-body, .portlet-blogs .entry-title, .portlet-blogs .header-title, .portlet-journal-content .journal-content-article, .portlet-message-boards .header-title, .portlet-message-boards .thread-body {
@@ -1233,9 +1233,9 @@ body {
 			margin-left: 200px;
 		}
 		.facet-value {
-    		border-bottom: 0 !important;
-    		border-radius: 0 !important;
-    		border-top: 0 !important;
+			border-bottom: 0 !important;
+			border-radius: 0 !important;
+			border-top: 0 !important;
 		}
 	}
 
@@ -1502,7 +1502,7 @@ body {
 			line-height: 18px;
 		}
 		.navbar > .container > #navbar {
-    		height: auto;
+			height: auto;
 		}
 		.carousel {
 			.carousel-title {
@@ -1540,10 +1540,10 @@ body {
 			width: 446px;
 			position: absolute !important;
 			#_search_WAR_searchportlet_keywords {
-    			width: 366px !important;
-    			position: relative !important;
-    			left: 0 !important;
-    			top: 0 !important;
+				width: 366px !important;
+				position: relative !important;
+				left: 0 !important;
+				top: 0 !important;
 			}
 		}
 		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
@@ -1645,7 +1645,14 @@ body {
 			}
 		}
 		.footer .copyright {
-    		line-height: 25px;
+			line-height: 25px;
+		}
+		#_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.admin-links .dropdown-menu li, 
+		#_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.my-sites .dropdown-menu li {
+			float: none !important;
+			a {
+				padding: 0 15px !important;
+			}
 		}
 	}
 }
