@@ -1281,6 +1281,14 @@ body {
 	text-indent: 5px;
 }
 
+#_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.admin-links .dropdown-menu li, 
+#_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.my-sites .dropdown-menu li {
+	float: none !important;
+	a {
+		padding: 0 15px !important;
+	}
+}
+
 @media (min-width: 0px) {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
@@ -1646,13 +1654,6 @@ body {
 		}
 		.footer .copyright {
 			line-height: 25px;
-		}
-		#_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.admin-links .dropdown-menu li, 
-		#_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.my-sites .dropdown-menu li {
-			float: none !important;
-			a {
-				padding: 0 15px !important;
-			}
 		}
 	}
 }

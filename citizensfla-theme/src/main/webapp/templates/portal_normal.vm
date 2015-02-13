@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
-  <link href="${theme_display.getPathThemeCss()}/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="${theme_display.getPathThemeCss()}/bootstrap.css" rel="stylesheet" type="text/css" />
 
   $theme.include($top_head_include)
 </head>
