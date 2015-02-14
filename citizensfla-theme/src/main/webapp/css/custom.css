@@ -1513,9 +1513,9 @@ body {
 			margin-left: -86px;
 		}
 		.portlet-navigation .portlet-title > .portlet-title-text {
-		    padding: 12px 5px 11px 27px;
-		    font-size: 18px;
-		    line-height: 17px;
+			padding: 12px 5px 11px 27px;
+			font-size: 18px;
+			line-height: 17px;
 		}
 	}
 }
@@ -1774,9 +1774,9 @@ body {
 			}
 		}
 		.portlet-navigation .portlet-title > .portlet-title-text {
-		    padding: 25px 5px 24px 27px;
-		    font-size: 25px;
-		    line-height: 17px;
+			padding: 25px 5px 24px 27px;
+			font-size: 18px;
+			line-height: 17px;
 		}
 	}
 }
@@ -1919,6 +1919,11 @@ body {
 		}
 		#column-3.span8 {
 			width: 976px !important;
+		}
+		.portlet-navigation .portlet-title > .portlet-title-text {
+			padding: 25px 5px 24px 27px;
+			font-size: 25px;
+			line-height: 17px;
 		}
 	}
 }
