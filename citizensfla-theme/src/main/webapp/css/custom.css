@@ -1488,7 +1488,7 @@ body {
 					font-size: 11px;
 					line-height: 12px;
 					font-family: 'Avenir35-Light';
-					background-position: 0px 0 !important;
+					background-position: 0px -10px !important;
 					background-size: 100% !important;
 					&:hover {
 						text-decoration: none;
