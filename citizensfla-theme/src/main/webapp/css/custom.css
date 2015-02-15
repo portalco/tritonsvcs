@@ -1301,9 +1301,7 @@ body {
 			display: none;
 		}
 		> .portlet-title-text {
-			padding: 25px 5px 24px 27px;
 			font-family: "Avenir95-Black";
-			font-size: 25px;
 			font-weight: normal;
 			line-height: 17px;
 		}
@@ -1367,7 +1365,7 @@ body {
 		}
 	}
 	.portlet-content {
-		padding: 42px 38px;
+		padding: 44px 38px;
 		background-color: rgb(240, 240, 240);
 		font-size: 14px;
 		line-height: 22px;
@@ -1384,7 +1382,7 @@ body {
 		h1 {
 			font-size: 18px;
 			font-family: "Avenir95-Black";
-			margin-top: 1px;
+			margin-top: -2px;
 			margin-bottom: 23px;
 			line-height: 22px;
 		}
@@ -1572,6 +1570,27 @@ body {
 				padding: 12px 5px 11px 27px;
 				font-size: 18px;
 				line-height: 17px;
+			}
+		}
+		.main_content, .learn_more {
+			.portlet-title > .portlet-title-text {
+				padding: 12px 5px 11px 38px;
+			}
+		}
+		.breadcrumb {
+			background-color: transparent;
+			padding: 0px 38px;
+			margin-bottom: 0px;
+			position: absolute;
+			margin-top: 55px;
+			font-size: 12px;
+			> li + li:before {
+				display: none;
+			}
+			a, li.last a {
+				font-family: 'Avenir35-Light';
+				color: rgb(149, 149, 149);
+				font-size: 12px;
 			}
 		}
 		.main_content .portlet-content {
@@ -1844,11 +1863,18 @@ body {
 				line-height: 33px;
 			}
 		}
+		.breadcrumb {
+			margin-top: 82px;
+		}
 		.portlet-navigation, .main_content, .learn_more {
 			.portlet-title > .portlet-title-text {
 				padding: 25px 5px 24px 27px;
 				font-size: 18px;
-				line-height: 17px;
+			}
+		}
+		.main_content, .learn_more {
+			.portlet-title > .portlet-title-text {
+				padding: 25px 5px 24px 38px;
 			}
 		}
 		#column-3.span4.portlet-column {
@@ -2005,10 +2031,16 @@ body {
 		#column-4.span4.portlet-column-last {
 			width: 400px;
 		}
-		.portlet-navigation .portlet-title > .portlet-title-text {
-			padding: 25px 5px 24px 27px;
-			font-size: 25px;
-			line-height: 17px;
+		.portlet-navigation, .main_content, .learn_more {
+			.portlet-title > .portlet-title-text {
+				padding: 25px 5px 24px 27px !important;
+				font-size: 25px !important;
+			}
+		}
+		.main_content, .learn_more {
+			.portlet-title > .portlet-title-text {
+				padding: 25px 5px 24px 38px !important;
+			}
 		}
 	}
 }
