@@ -1167,6 +1167,10 @@ body {
 			margin: 0px 0 0px !important;
 			padding: 10px 0px 0px 0px;
 			line-height: 70%;
+			p i {
+				font-family: 'Avenir35-LightOblique';
+				font-style: normal;
+			}
 		}
 	}
 	.navbar .container, .container {
@@ -1308,16 +1312,16 @@ body {
 	}
 	.nav-menu {
 		ul {
-			padding: 10px 5px 10px 46px;
+			padding: 10px 5px 10px 11px !important;
 			list-style: none;
 			background: transparent !important;
 			li {
+				padding: 4px 0px;
 				a {
 					color: #000;
 					font-family: "Avenir35-Light";
 					font-size: 18px;
-					line-height: 29px;
-					margin-left: -16px;
+					line-height: 20px;
 					&:hover, &:focus {
 						text-decoration: none;
 						opacity: 0.7;
@@ -1329,6 +1333,21 @@ body {
 				font-weight: normal;
 			}
 		}
+		.level-1 {
+			.level-2 {
+				padding: 4px 0px 4px 17px !important;
+				li a {
+					font-size: 14px;
+				}
+				.level-3 {
+					padding: 3px 0px 5px 12px !important;
+					margin-bottom: -7px;
+					li {
+					    padding: 2px 0px;
+					}
+				}
+			}
+		}
 		> ul > li > a:before {
 			content:"\f0da";
 			font-family: "fontawesome-alloy";
@@ -1338,12 +1357,6 @@ body {
 		}
 		> ul > li.open > a:before {
 			content:"\f0d7";
-		}
-		.level-2 {
-			padding: 0px 2px 0px 17px !important;
-			li a {
-				font-size: 14px;
-			}
 		}
 	}
 }
@@ -1524,11 +1537,15 @@ body {
 		}
 		.carousel {
 			.carousel-title {
-				font-size: 19px;
+				font-size: 17px;
+				left: 26.5%;
+				bottom: 26%;
 			}
 			.carousel-text {
-				font-size: 7px;
+				font-size: 10px;
 				line-height: 0;
+				bottom: 14%;
+				left: 27.5%;
 			}
 		}
 		.category {
@@ -1608,6 +1625,16 @@ body {
 		.container, .navbar .container, .portlet-dockbar .dockbar {
 			width: 460px;
 			float: none !important;
+		}
+		.carousel {
+			.carousel-title {
+				font-size: 27px;
+			}
+			.carousel-text {
+				font-size: 11px;
+				line-height: 27%;
+				bottom: 15%;
+			}
 		}
 		#_145_navAccountControlsNavbarCollapse {
 			margin-left: 0px;
@@ -1716,6 +1743,16 @@ body {
 				top: 0 !important;
 			}
 		}
+		.carousel {
+			.carousel-title {
+				font-size: 35px;
+			}
+			.carousel-text {
+				font-size: 13px;
+				line-height: 27%;
+				bottom: 14%;
+			}
+		}
 		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
 			padding: 6px 15px;
 		}
@@ -1784,8 +1821,9 @@ body {
 				font-size: 47px;
 			}
 			.carousel-text {
-				font-size: 11px;
-				line-height: 18%;
+				font-size: 16px;
+				line-height: 32%;
+				bottom: 13%;
 			}
 		}
 		.dockbar-split .dockbar .navbar-inner .btn-navbar {
@@ -1849,6 +1887,19 @@ body {
 		#column-3.portlet-column-last.span8 {
 			width: 800px;
 		}
+		.carousel {
+			.carousel-title {
+				font-size: 60.68px;
+				bottom: 36%;
+				left: 46.5%;
+			}
+			.carousel-text {
+				font-size: 16px;
+				line-height: 43%;
+				bottom: 21%;
+				left: 47.5%;
+			}
+		}
 		.category {
 			.col-sm-12 {
 				&.second {
@@ -1902,15 +1953,6 @@ body {
 			}
 			.dropdown-menu.child-menu a {
 				font-size: 16px;
-			}
-		}
-		.carousel {
-			.carousel-title {
-				font-size: 60.68px;
-			}
-			.carousel-text {
-				font-size: 16px;
-				line-height: 43%;
 			}
 		}
 		.category .col-sm-12 a {
@@ -1983,7 +2025,8 @@ body {
 			}
 			.carousel-text {
 				font-size: 20px;
-				line-height: 70%;
+				line-height: 65%;
+				bottom: 12.5%;
 			}
 		}
 		.category {
