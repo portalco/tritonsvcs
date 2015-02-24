@@ -209,7 +209,6 @@ body {
 						.control-group.control-group-inline {
 							margin: 4px 4px 4px 6px !important;
 							#_search_WAR_searchportlet_keywords {
-								width: 366px;
 								box-shadow: none;
 								border-radius: 0px;
 								font-family: "Avenir35-Light" !important;
@@ -1007,7 +1006,7 @@ body {
 			line-height: 26px !important;
 			height: 26px;
 			&:hover, &:focus {
-				background: transparent;
+				background: transparent !important;
 			}
 		}
 	}
@@ -1360,6 +1359,72 @@ body {
 		}
 	}
 }
+
+.portlet-boundary_85_.portlet-site-map {
+	.portlet-title {
+		display: block;
+		padding: 0;
+		margin: 0;
+		background-color: rgb(37, 26, 6);
+		> span:first-child {
+			display: none;
+		}
+		> .portlet-title-text {
+			font-family: "Avenir95-Black";
+			font-weight: normal;
+			line-height: 17px;
+		}
+	}
+	ul {
+		padding: 10px 5px 10px 11px !important;
+		list-style: none;
+		background: transparent !important;
+		li {
+			padding: 4px 0px;
+			a {
+				color: #000;
+				font-family: "Avenir35-Light";
+				font-size: 18px;
+				line-height: 20px;
+				&:hover, &:focus {
+					text-decoration: none;
+					opacity: 0.7;
+				}
+			}
+		}
+		.selected {
+			font-family: "Avenir95-Black";
+			font-weight: normal;
+		}
+	}
+	.level-1 {
+		.level-2 {
+			padding: 1px 0px 4px 17px !important;
+			li a {
+				font-size: 14px;
+			}
+			.level-3 {
+				padding: 3px 0px 5px 12px !important;
+				margin-bottom: -7px;
+				li {
+				    padding: 2px 0px;
+				}
+			}
+		}
+	}
+	.portlet-body > ul > li > a:before {
+		content:"\f0da";
+		font-family: "fontawesome-alloy";
+		width: 11px;
+		display: inline-block;
+		font-size: 17.5px;
+		padding-right: 16px;
+	}
+	.portlet-body > ul > li.toggler-header-expanded > a:before {
+		content:"\f0d7";
+	}
+}
+
 .learn_more, .main_content {
 	.portlet-title {
 		display: block;
@@ -1570,19 +1635,18 @@ body {
 		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline, 
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline {
 			margin-left: -177px;
-			width: 286px;
-			#_search_WAR_searchportlet_keywords {
-				position: absolute;
-				left: 20px;
-				top: 22px;
-				width: 130px !important;
-			}
 		}
 		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu, 
 		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu {
 			margin-left: -86px;
 		}
-		.portlet-navigation, .main_content, .learn_more {
+		#_search_WAR_searchportlet_keywords {
+			position: absolute;
+			left: 20px;
+			top: 22px;
+			width: 130px;
+		}
+		.portlet-navigation, .main_content, .learn_more, .portlet-boundary_85_.portlet-site-map {
 			.portlet-title > .portlet-title-text {
 				padding: 12px 5px 11px 27px;
 				font-size: 18px;
@@ -1676,12 +1740,6 @@ body {
 				display: inline-block !important;
 			}
 		}
-		#_search_WAR_searchportlet_keywords {
-			width: 286px !important;
-			position: absolute;
-			left: 0 !important;
-			top: 0 !important;
-		}
 		.portlet-dockbar {
 			height: 37px;
 		}
@@ -1704,13 +1762,6 @@ body {
 		.carousel {
 			.carousel-title {
 				font-size: 30px;
-			}
-		}
-		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline,
-		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline {
-			#_search_WAR_searchportlet_keywords {
-				width: 286px;
-				position: relative;
 			}
 		}
 		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu, 
@@ -1736,12 +1787,12 @@ body {
 			margin-left: -336px;
 			width: 446px;
 			position: absolute !important;
-			#_search_WAR_searchportlet_keywords {
-				width: 366px !important;
-				position: relative !important;
-				left: 0 !important;
-				top: 0 !important;
-			}
+		}
+		#_search_WAR_searchportlet_keywords {
+			width: 366px;
+			position: relative !important;
+			left: 0 !important;
+			top: 0 !important;
 		}
 		.carousel {
 			.carousel-title {
@@ -1771,7 +1822,7 @@ body {
 			}
 		}
 		#_search_WAR_searchportlet_keywords {
-			width: 366px !important;
+			width: 366px;
 			position: relative;
 		}
 		.footer {
@@ -1917,7 +1968,7 @@ body {
 		.breadcrumb {
 			margin-top: 82px;
 		}
-		.portlet-navigation, .main_content, .learn_more {
+		.portlet-navigation, .main_content, .learn_more, .portlet-boundary_85_.portlet-site-map {
 			.portlet-title > .portlet-title-text {
 				padding: 25px 5px 24px 27px;
 				font-size: 18px;
@@ -2074,7 +2125,7 @@ body {
 		#column-4.span4.portlet-column-last {
 			width: 400px;
 		}
-		.portlet-navigation, .main_content, .learn_more {
+		.portlet-navigation, .main_content, .learn_more, .portlet-boundary_85_.portlet-site-map {
 			.portlet-title > .portlet-title-text {
 				padding: 25px 5px 24px 27px !important;
 				font-size: 25px !important;
