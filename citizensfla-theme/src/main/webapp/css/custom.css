@@ -1732,8 +1732,8 @@ body {
 				padding: 6px 7px 6px 1px !important;
 			}
 			> .dropdown-menu {
-				margin-left: -256px !important;
-				width: 366px !important;
+				margin-left: -96px !important;
+				width: 206px !important;
 				position: relative !important;
 			}
 			.nav-item-label {
