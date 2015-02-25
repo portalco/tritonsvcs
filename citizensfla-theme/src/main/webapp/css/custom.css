@@ -1067,7 +1067,8 @@ body {
 						color: inherit;
 					}
 					&.active > a {
-						font-family: 'Avenir95-Black' !important;
+						font-family: "Avenir95-Black" !important;
+						border-bottom: 2px solid #000;
 					}
 				}
 				.dropdown-menu.child-menu {
@@ -1392,7 +1393,7 @@ body {
 				}
 			}
 		}
-		.selected {
+		.current-page > a {
 			font-family: "Avenir95-Black";
 			font-weight: normal;
 		}
@@ -1412,20 +1413,21 @@ body {
 			}
 		}
 	}
-	.portlet-body > ul > li > a:before {
+	.portlet-body > ul > li:before {
 		content:"\f0da";
 		font-family: "fontawesome-alloy";
 		width: 11px;
 		display: inline-block;
 		font-size: 17.5px;
-		padding-right: 16px;
+		padding-right: 12px;
+		cursor: pointer;
 	}
-	.portlet-body > ul > li.toggler-header-expanded > a:before {
+	.portlet-body > ul > li.toggler-header-expanded:before {
 		content:"\f0d7";
 	}
 }
 
-.learn_more, .main_content {
+.learn_more, .main_content, .downloads {
 	.portlet-title {
 		display: block;
 		padding: 0;
@@ -1466,17 +1468,50 @@ body {
 		}
 	}
 }
-.learn_more .portlet-content {
+.learn_more .portlet-content, .downloads .portlet-content {
 	margin-bottom: -26px;
 }
-.main_content {
+.main_content, .downloads {
 	.portlet-title {
 		background-color: rgb(121, 121, 124);
 	}
 	.portlet-content {
 		background-color: transparent;
-		border-left: 1px solid rgb(194, 194, 194);
-		height: 162px;
+		position: relative;
+	}
+}
+.main_content .portlet-content:before,
+.downloads .portlet-content:before {
+	border-left: 1px solid #c2c2c2;
+	height: 162px;
+	top: 0;
+	left: -1px;
+	position: absolute;
+	content: "";
+}
+.downloads {
+	.portlet-title {
+		background-color: rgb(183, 183, 183);
+	}
+}
+.download {
+    max-width: 311px;
+	display: block;
+	text-decoration: none !important;
+	position: relative;
+	margin-bottom: 38px;
+	margin-top: 13px;
+    span {
+	    color: rgb(255, 255, 255);
+		font-size: 20px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.89);
+		font-family: "Avenir35-Light";
+		text-align: left;
+		line-height: 24px;
+		padding: 9px 20px 6px 20px;
+		position: absolute;
+		left: 0px;
+		right: 0px;
 	}
 }
 
@@ -1646,25 +1681,27 @@ body {
 			top: 22px;
 			width: 130px;
 		}
-		.portlet-navigation, .main_content, .learn_more, .portlet-boundary_85_.portlet-site-map {
+		.portlet-navigation, .main_content, .learn_more, .downloads, .portlet-boundary_85_.portlet-site-map {
 			.portlet-title > .portlet-title-text {
 				padding: 12px 5px 11px 27px;
 				font-size: 18px;
 				line-height: 17px;
 			}
 		}
-		.main_content, .learn_more {
+		.main_content, .learn_more, .downloads {
 			.portlet-title > .portlet-title-text {
 				padding: 12px 5px 11px 38px;
 			}
 		}
 		.breadcrumb {
 			background-color: transparent;
-			padding: 0px 38px;
+			padding: 0px 8px 0px 38px;
 			margin-bottom: 0px;
 			position: absolute;
 			margin-top: 55px;
 			font-size: 12px;
+			z-index: 99;
+			line-height: 14px;
 			> li + li:before {
 				display: none;
 			}
@@ -1674,9 +1711,9 @@ body {
 				font-size: 12px;
 			}
 		}
-		.main_content .portlet-content {
-		    border: 0 !important;
-		    height: auto !important;
+		.main_content .portlet-content:before,
+		.downloads .portlet-content:before {
+			display: none;
 		}
 		#column-3.span4.portlet-column {
 			width: 100%;
@@ -1912,9 +1949,21 @@ body {
 		.footer .copyright {
 			line-height: 25px;
 		}
-		.main_content .portlet-content {
-		    border-left: 1px solid #C2C2C2;
-		    height: 162px;
+		.main_content .portlet-content:before,
+		.downloads .portlet-content:before {
+		    background-color: transparent;
+			border-left: 1px solid rgb(194, 194, 194);
+			height: 162px;
+			position: absolute;
+			display: block;
+			width: 1px;
+		}
+		.breadcrumb {
+			width: 372px;
+		}
+		.download span {
+			font-size: 12px;
+			line-height: 14px;
 		}
 		#column-2.portlet-column-first.span4 {
 			width: 150px;
@@ -1967,17 +2016,22 @@ body {
 		}
 		.breadcrumb {
 			margin-top: 82px;
+			width: 476px;
 		}
-		.portlet-navigation, .main_content, .learn_more, .portlet-boundary_85_.portlet-site-map {
+		.portlet-navigation, .main_content, .learn_more, .downloads, .portlet-boundary_85_.portlet-site-map {
 			.portlet-title > .portlet-title-text {
 				padding: 25px 5px 24px 27px;
 				font-size: 18px;
 			}
 		}
-		.main_content, .learn_more {
+		.main_content, .learn_more, .downloads {
 			.portlet-title > .portlet-title-text {
 				padding: 25px 5px 24px 38px;
 			}
+		}
+		.download span {
+			font-size: 20px;
+			line-height: 24px;
 		}
 		#column-3.span4.portlet-column {
 			width: 476px;
@@ -2125,16 +2179,19 @@ body {
 		#column-4.span4.portlet-column-last {
 			width: 400px;
 		}
-		.portlet-navigation, .main_content, .learn_more, .portlet-boundary_85_.portlet-site-map {
+		.portlet-navigation, .main_content, .learn_more, .downloads, .portlet-boundary_85_.portlet-site-map {
 			.portlet-title > .portlet-title-text {
 				padding: 25px 5px 24px 27px !important;
 				font-size: 25px !important;
 			}
 		}
-		.main_content, .learn_more {
+		.main_content, .learn_more, .downloads {
 			.portlet-title > .portlet-title-text {
 				padding: 25px 5px 24px 38px !important;
 			}
+		}
+		.breadcrumb {
+			width: 576px;
 		}
 	}
 }
