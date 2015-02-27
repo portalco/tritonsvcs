@@ -1480,8 +1480,7 @@ body {
 		position: relative;
 	}
 }
-.main_content .portlet-content:before,
-.downloads .portlet-content:before {
+.main_content .portlet-content:before, .downloads .portlet-content:before {
 	border-left: 1px solid #c2c2c2;
 	height: 162px;
 	top: 0;
@@ -1489,9 +1488,18 @@ body {
 	position: absolute;
 	content: "";
 }
+.downloads.without .portlet-content {
+	padding-top: 8px !important;
+}
+.downloads.without .portlet-content:before {
+	display: none !important;
+}
 .downloads {
 	.portlet-title {
 		background-color: rgb(183, 183, 183);
+		> span:first-child {
+			display: block;
+		}
 	}
 }
 .download {
@@ -1499,7 +1507,6 @@ body {
 	display: block;
 	text-decoration: none !important;
 	position: relative;
-	margin-bottom: 38px;
 	margin-top: 13px;
     span {
 	    color: rgb(255, 255, 255);
@@ -1512,6 +1519,9 @@ body {
 		position: absolute;
 		left: 0px;
 		right: 0px;
+	}
+	img {
+		width: 311px;
 	}
 }
 
@@ -1700,7 +1710,7 @@ body {
 			position: absolute;
 			margin-top: 55px;
 			font-size: 12px;
-			z-index: 99;
+			z-index: 5;
 			line-height: 14px;
 			> li + li:before {
 				display: none;
