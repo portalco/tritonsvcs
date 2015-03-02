@@ -70,16 +70,16 @@ $theme.include($body_top_include)
     <div class="links">
       <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Site Map</a>
     </div>
-    <p class="copyright">Copyright 2015 Citizens Property Insurance Corporation of Florida</p>
+    <p class="copyright">Triton</p>
 
     <div class="social">
-                <a href="https://www.facebook.com/pages/Citizens-Property-Insurance-Corporation/313353039304?ref=ts&fref=ts" class="navbar-btn ">
+                <a href="https://www.facebook.com/" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/fb.png">
                 </a>
-                <a href="https://twitter.com/citizens_fla" class="navbar-btn ">
+                <a href="https://twitter.com/triton" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/twt.png">
                 </a>
-                <a href="https://www.linkedin.com/company/42110?trk=tyah" class="navbar-btn ">
+                <a href="https://www.linkedin.com/" class="navbar-btn ">
                     <img src="${theme_display.getPathThemeRoot()}/images/custom/lnkd.png">
                 </a>
             </div>
