@@ -65,5 +65,6 @@
         <module>dockbar-hook</module>
         <module>citizensfla-theme</module>
         <module>search-portlet</module>
+        <module>triton-theme</module>
     </modules>
 </project>
