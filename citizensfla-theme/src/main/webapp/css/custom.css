@@ -947,7 +947,6 @@ body {
 			min-height: 37px !important;
 			background: transparent !important;
 			.container {
-				max-width: 1200px;
 				height: 37px;
 				background: $darkblue;
 				.collapse.nav-collapse {
@@ -1007,8 +1006,8 @@ body {
 	}
 	#_145_navAccountControlsNavbarCollapse {
 		background-color: $darkblue;
-		margin: 0 auto;
-		max-width: 1200px;
+		margin: 0 auto !important;
+		max-width: 1200px !important;
 		> .nav.nav-account-controls > li:nth-last-child(3) {
 			margin-right: 18px;
 			&:after {
