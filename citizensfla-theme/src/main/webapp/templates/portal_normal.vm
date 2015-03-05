@@ -101,7 +101,9 @@ $theme.include($body_top_include)
                 box.css('position', 'static');
             } else {
                 box.css('position', 'fixed');
-                box.css('top', 37);
+                box.css('top', 0);
+                box.css('right', 0);
+                box.css('left', 0);
             }
         });
     });
