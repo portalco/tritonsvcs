@@ -92,7 +92,7 @@ $theme.include($body_top_include)
 
 <script>
     $(function() {
-        var box = $('.portlet-boundary_145_.portlet-dockbar > .navbar > .navbar-inner > .container'); // float-fixed block
+        var box = $('.portlet-dockbar .dockbar .navbar-inner .container'); // float-fixed block
 
         var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
         $(window).scroll(function(){
