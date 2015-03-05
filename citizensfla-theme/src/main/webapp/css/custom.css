@@ -1054,7 +1054,6 @@ body {
 						&:hover, &:focus {
 							text-decoration: none;
 							color: rgb(0, 0, 0);
-							border-bottom: 2px solid #000;
 							background: transparent !important;
 						}
 						.icon-caret-down {
@@ -1639,6 +1638,9 @@ body {
 				padding: 0;
 			}
 		}
+		#navigation .navbar-inner ul.nav-collapse li.active > a {
+			border-bottom: 0;
+		}
 		.portlet-login {
 			ul li a.taglib-icon {
 				padding: 0 6px !important;
@@ -2064,6 +2066,9 @@ body {
 				margin-left: 24px;
 				a {
 					font-size: 22px;
+				}
+				&.active > a {
+					border-bottom: 2px solid #000;
 				}
 			}
 			.dropdown-menu.child-menu a {
