@@ -92,7 +92,7 @@ $theme.include($body_top_include)
 
 <script>
     $(function() {
-        var box = $('.portlet-dockbar .dockbar .navbar-inner .container'); // float-fixed block
+        var box = $('#_145_navSiteNavigationNavbarCollapse'); // float-fixed block
 
         var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
         $(window).scroll(function(){
