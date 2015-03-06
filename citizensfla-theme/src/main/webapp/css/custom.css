@@ -1010,8 +1010,8 @@ body {
 	}
 	#_145_navAccountControlsNavbarCollapse {
 		margin: 0 auto !important;
-		max-width: 1200px !important;
-		width: 100%;
+		left: 0px;
+		right: 0px;
 		> .nav.nav-account-controls > li:nth-last-child(3) {
 			margin-right: 18px;
 			&:after {
