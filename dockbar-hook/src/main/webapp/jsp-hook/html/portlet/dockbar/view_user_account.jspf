@@ -21,10 +21,13 @@
 <%
     List<Layout> layoutList = LayoutLocalServiceUtil.getLayouts(themeDisplay.getLayout().getGroupId(),false);
     List<Layout> dockbarLinks = new LinkedList<Layout>();
+    List<Layout> systemLinks = new LinkedList<Layout>();
     for(Layout childLayout :layoutList){
         if(childLayout.getName().contains("Dockbar links")&&childLayout.isHidden()){
             dockbarLinks.addAll(childLayout.getAllChildren());
-            break;
+        }
+        if(childLayout.getName().contains("Dockbar Menu Items")&&childLayout.isHidden()){
+            systemLinks.addAll(childLayout.getAllChildren());
         }
     }
 %>
@@ -39,6 +42,19 @@
 		<%= HtmlUtil.escape(user.getFullName()) %>
 	</span>
 </liferay-util:buffer>
+<c:if test="<%=systemLinks.size()>0%>">
+    <aui:nav-item dropdown="<%= true %>" id="systemDropdown" label="System">
+        <%for(Layout dockbarLink : systemLinks){
+            String label = dockbarLink.getName(themeDisplay.getLocale());
+            String href =PortalUtil.getLayoutActualURL(dockbarLink);
+            String anchorId=String.valueOf(dockbarLink.getLayoutId())+WebKeys.LAYOUT;
+        %>
+        <aui:nav-item anchorId="<%=anchorId%>" href="<%=href%>" label='<%=label%>'/>
+        <%
+            }
+        %>
+    </aui:nav-item>
+</c:if>
 <c:if test="<%=dockbarLinks.size()>0%>">
     <%for(Layout dockbarLink : dockbarLinks){
         String label = dockbarLink.getName(themeDisplay.getLocale());
