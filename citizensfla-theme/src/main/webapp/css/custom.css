@@ -1570,6 +1570,10 @@ body {
 			width: 300px;
 			float: none !important;
 		}
+		.alert-danger, .alert-error, .portlet-msg-error {
+			line-height: 18px;
+			font-size: 12px;
+		}
 		#_145_navSiteNavigationNavbarBtn {
 			top: 88px !important;
 		}
@@ -1870,6 +1874,10 @@ body {
 		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 620px;
 			float: none !important;
+		}
+		.alert-danger, .alert-error, .portlet-msg-error {
+			line-height: 37px;
+			font-size: 20px;
 		}
 		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
@@ -2262,6 +2270,7 @@ body {
 			border: 0;
 			margin: 0 !important;
 			padding: 7px 14px !important;
+			z-index: 999;
 			&.open {
 				background: #F5AF45;
 			}
