@@ -1877,8 +1877,8 @@ body {
 			float: none !important;
 		}
 		.alert-danger, .alert-error, .portlet-msg-error {
-			line-height: 37px;
-			font-size: 20px;
+			line-height: 18px;
+			font-size: 12px;
 		}
 		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
@@ -1944,6 +1944,10 @@ body {
 		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 750px;
 			float: none !important;
+		}
+		.alert-danger, .alert-error, .portlet-msg-error {
+			line-height: 37px;
+			font-size: 20px;
 		}
 		.category {
 			.col-sm-12 {
