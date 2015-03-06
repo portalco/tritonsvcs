@@ -1551,7 +1551,7 @@ body {
 
 @media (min-width: 0px) {
 	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
+		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 300px;
 			float: none !important;
 		}
@@ -1760,7 +1760,7 @@ body {
 
 @media (min-width: 480px) {
 	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
+		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 460px;
 			float: none !important;
 		}
@@ -1852,7 +1852,7 @@ body {
 
 @media (min-width: 640px) {
 	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
+		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 620px;
 			float: none !important;
 		}
@@ -1917,7 +1917,7 @@ body {
 
 @media (min-width: 768px) {
 	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
+		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 750px;
 			float: none !important;
 		}
@@ -2015,7 +2015,7 @@ body {
 }
 @media (min-width: 980px) {
 	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
+		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 940px;
 		}
 		#column-2.portlet-column-first.span4 {
@@ -2080,7 +2080,7 @@ body {
 }
 @media (min-width: 992px) {
 	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
+		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 940px;
 		}
 		#_145_navAddControlsNavbarCollapse {
@@ -2146,7 +2146,7 @@ body {
 
 @media (min-width: 1200px) {
 	.aui {
-		.container, .navbar .container, .portlet-dockbar .dockbar {
+		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 1200px;
 		}
 		#navigation .navbar-inner {
