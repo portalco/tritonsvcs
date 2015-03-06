@@ -1,3 +1,8 @@
+<%@ page import="com.liferay.portal.service.LayoutLocalServiceUtil" %>
+<%@ page import="com.liferay.portal.model.Layout" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.LinkedList" %>
+<%@ page import="com.liferay.portal.util.PortalUtil" %>
 <%--
 /**
  * Copyright (c) 2000-2013 Liferay, Inc. All rights reserved.
@@ -13,6 +18,16 @@
  * details.
  */
 --%>
+<%
+    List<Layout> layoutList = LayoutLocalServiceUtil.getLayouts(themeDisplay.getLayout().getGroupId(),false);
+    List<Layout> dockbarLinks = new LinkedList<Layout>();
+    for(Layout childLayout :layoutList){
+        if(childLayout.getName().contains("Dockbar links")&&childLayout.isHidden()){
+            dockbarLinks.addAll(childLayout.getAllChildren());
+            break;
+        }
+    }
+%>
 <liferay-util:buffer var="userName">
 	<c:if test="<%= themeDisplay.isImpersonated() %>">
 		<b class="alert-icon icon-warning-sign"></b>
@@ -24,8 +39,17 @@
 		<%= HtmlUtil.escape(user.getFullName()) %>
 	</span>
 </liferay-util:buffer>
-<aui:nav-item anchorId="careersLink" href="/careers" label='Careers'/>
-<aui:nav-item anchorId="contactusLink" href="/contact-us" label='Contact Us'/>
+<c:if test="<%=dockbarLinks.size()>0%>">
+    <%for(Layout dockbarLink : dockbarLinks){
+        String label = dockbarLink.getName(themeDisplay.getLocale());
+        String href =PortalUtil.getLayoutActualURL(dockbarLink);
+        String anchorId=String.valueOf(dockbarLink.getLayoutId())+WebKeys.LAYOUT;
+    %>
+    <aui:nav-item anchorId="<%=anchorId%>" href="<%=href%>" label='<%=label%>'/>
+    <%
+    }
+    %>
+</c:if>
 <aui:nav-item dropdown="<%= true %>" id="searchDropdown" label="Search">
     <aui:nav-item id="searchDropdown" cssClass="staging-controls">
         <liferay-portlet:runtime portletName="search_WAR_searchportlet"/>
