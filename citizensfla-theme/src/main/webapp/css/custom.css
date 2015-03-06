@@ -1011,6 +1011,14 @@ body {
 		background-color: $darkblue;
 		height: 37px;
 	}
+	#_145_adminLinks, #_145_mySites, #_145_systemDropdown {
+		.dropdown-menu li a {
+			padding: 0px 15px !important;
+			&:hover {
+				background-color: $navydarkblue;
+			}
+		}
+	}
 	#_145_navAccountControlsNavbarCollapse {
 		margin: 0 auto !important;
 		left: 0px;
