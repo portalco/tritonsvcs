@@ -952,6 +952,9 @@ body {
 				.collapse.nav-collapse {
 					visibility: visible;
 					display: block;
+					.dropdown-menu {
+						position: absolute !important;
+					}
 				}
 				.nav-account-controls {
 					position: relative !important;
