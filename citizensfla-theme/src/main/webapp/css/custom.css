@@ -1013,9 +1013,11 @@ body {
 		#_145_adminLinks, #_145_mySites, #_145_systemDropdown {
 			&.open {
 				.dropdown-menu li a {
-					padding: 0px 15px !important;
+					padding: 0px 10px !important;
+					line-height: 34px !important;
+					height: 34px;
 					&:hover {
-						background-color: $navydarkblue;
+						background-color: $darkblue;
 					}
 				}
 			}
