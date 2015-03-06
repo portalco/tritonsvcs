@@ -1945,6 +1945,9 @@ body {
 			width: 750px;
 			float: none !important;
 		}
+		.alert-danger, .alert-error, .portlet-msg-error {
+			font-size: 17px;
+		}
 		.category {
 			.col-sm-12 {
 				a {
