@@ -1017,7 +1017,7 @@ body {
 					line-height: 34px !important;
 					height: 34px;
 					&:hover {
-						background-color: $darkblue;
+						background-color: $darkblue !important;
 					}
 				}
 			}
