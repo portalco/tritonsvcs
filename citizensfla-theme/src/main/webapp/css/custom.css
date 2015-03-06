@@ -1010,12 +1010,12 @@ body {
 	.navAccountControlsDivClass {
 		background-color: $darkblue;
 		height: 37px;
-	}
-	#_145_adminLinks, #_145_mySites, #_145_systemDropdown {
-		.dropdown-menu li a {
-			padding: 0px 15px !important;
-			&:hover {
-				background-color: $navydarkblue;
+		#_145_adminLinks, #_145_mySites, #_145_systemDropdown {
+			.dropdown-menu li a {
+				padding: 0px 15px !important;
+				&:hover {
+					background-color: $navydarkblue;
+				}
 			}
 		}
 	}
@@ -1323,9 +1323,6 @@ body {
 #_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.admin-links .dropdown-menu li, 
 #_145_navAccountControlsNavbarCollapse > .nav-account-controls > li.my-sites .dropdown-menu li {
 	float: none !important;
-	a {
-		padding: 0 15px !important;
-	}
 }
 .portlet-column {
 	margin: 0 !important;
