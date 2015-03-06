@@ -1878,7 +1878,7 @@ body {
 		}
 		.alert-danger, .alert-error, .portlet-msg-error {
 			line-height: 18px;
-			font-size: 12px;
+			font-size: 14px;
 		}
 		.dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu, 
 		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown > .dropdown-menu {
@@ -1944,10 +1944,6 @@ body {
 		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 750px;
 			float: none !important;
-		}
-		.alert-danger, .alert-error, .portlet-msg-error {
-			line-height: 37px;
-			font-size: 20px;
 		}
 		.category {
 			.col-sm-12 {
@@ -2045,6 +2041,10 @@ body {
 	.aui {
 		.container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
 			width: 940px;
+		}
+		.alert-danger, .alert-error, .portlet-msg-error {
+			line-height: 37px;
+			font-size: 20px;
 		}
 		#column-2.portlet-column-first.span4 {
 			width: 140px;
