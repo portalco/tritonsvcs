@@ -191,7 +191,7 @@ body {
 							height: 31px;
 							line-height: 26px;
 							text-align: left;
-							overflow-x: hidden;
+							overflow-y: hidden;
 							&:before {
 								content: "Welcome "
 							}
