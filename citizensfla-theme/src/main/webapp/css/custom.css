@@ -1189,6 +1189,7 @@ p {
 			li {
 				background-color: rgba(255, 255, 255, 0.85);
 				border: 1px solid #FFF;
+				cursor: pointer;
 			}
 			.active {
 				background-color: rgba(255, 255, 255, 0.25);
@@ -1314,7 +1315,6 @@ p {
 	.carousel.slide .item {
 		@include transition(opacity 0.4s ease-out 0.1s);
 		opacity:0;
-		max-height: 276px;
 	}
 
 	.carousel.slide .active.item {
@@ -1401,7 +1401,7 @@ p {
 					padding: 3px 0px 5px 12px !important;
 					margin-bottom: -7px;
 					li {
-							padding: 2px 0px;
+					    padding: 2px 0px;
 					}
 				}
 			}
@@ -1467,7 +1467,7 @@ p {
 				padding: 3px 0px 5px 12px !important;
 				margin-bottom: -7px;
 				li {
-						padding: 2px 0px;
+				    padding: 2px 0px;
 				}
 			}
 		}
@@ -1562,13 +1562,13 @@ p {
 	}
 }
 .download {
-		max-width: 311px;
+	max-width: 311px;
 	display: block;
 	text-decoration: none !important;
 	position: relative;
 	margin-top: 13px;
-		span {
-			color: rgb(255, 255, 255);
+	span {
+		color: rgb(255, 255, 255);
 		font-size: 20px;
 		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.89);
 		font-family: "Avenir35-Light";
@@ -2035,7 +2035,7 @@ p {
 		}
 		.main_content .portlet-content:before,
 		.downloads .portlet-content:before {
-				background-color: transparent;
+			background-color: transparent;
 			border-left: 1px solid rgb(194, 194, 194);
 			height: 162px;
 			position: absolute;
