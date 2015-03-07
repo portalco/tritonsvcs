@@ -1872,6 +1872,7 @@ p {
 		.navbar > .container > #navbar {
 			height: auto;
 			float: right;
+			min-height: 100px;
 		}
 		.carousel {
 			.carousel-title {
