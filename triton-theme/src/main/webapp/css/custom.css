@@ -469,6 +469,11 @@ body {
 					background: transparent;
 				}
 			}
+			.nav > li > a {
+				[class^="icon-"], [class*=" icon-"] {
+					margin: 0;
+				}
+			}
 		}
 	}
 	.dockbar-messages .header {
@@ -988,6 +993,9 @@ p {
 	}
 	.navbar {
 		margin-bottom: 0;
+		.icon-caret-down {
+			padding: 0px 4px;
+		}
 	}
 	.navbar-brand {
 		padding: 18px 0px 13px 2px;
