@@ -1,0 +1,53 @@
+.aui {
+	.green {
+		.portlet-dockbar, .navAccountControlsDivClass, .dockbar .navbar-inner .nav > li, 
+        .dockbar-split .dockbar .navbar-inner .nav > li, 
+		.navAccountControlsDivClass #_145_adminLinks.open .dropdown-menu li a:hover, 
+        .navAccountControlsDivClass #_145_mySites.open .dropdown-menu li a:hover, 
+		.navAccountControlsDivClass #_145_systemDropdown.open .dropdown-menu li a:hover,
+        .dockbar .navbar-inner .navAccountControlsDivClass .nav > li, .dockbar-split .dockbar .navbar-inner .navAccountControlsDivClass .nav > li, 
+        a#_145_navSiteNavigationNavbarBtn,
+        .footer {
+			background-color: rgb(89, 166, 24) !important;
+		}
+		#navigation .navbar-inner ul.nav-collapse li a {
+			color: rgb(89, 166, 24) !important;
+            &:hover {
+                color: #000 !important;
+            }
+		}
+		.dockbar.navbar .nav > li > a:hover,  
+        .dockbar .nav li.dropdown .dropdown-menu, 
+		.dockbar .nav li.dropdown .site-administration-menu, 
+        .dockbar .navbar-inner .navAccountControlsDivClass .nav #_145_loginDropdown > .dropdown-menu .portlet-login section.portlet, 
+		.dockbar-split .dockbar .navbar-inner .navAccountControlsDivClass .nav #_145_loginDropdown > .dropdown-menu .portlet-login section.portlet,
+		.dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:hover, 
+        .dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:hover,
+        .container .navAccountControlsDivClass .nav-collapse .nav .dropdown.open .dropdown-toggle,
+        .dockbar .navbar-inner .nav > li.user-avatar.dropdown:hover,
+        .dockbar .navbar-inner .nav > li.user-avatar.dropdown.open > a,
+        .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
+        .dockbar .navbar-inner .nav > li.user-avatar.dropdown .dropdown-menu,
+        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown:hover,
+        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown.open > a,
+        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
+        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown .dropdown-menu,  {
+			background-color: rgb(62, 117, 16) !important;
+		}
+		.dockbar .navbar-inner div.navAccountControlsDivClass ul.nav #_145_loginDropdown, 
+        .dockbar-split .dockbar .navbar-inner div.navAccountControlsDivClass ul.nav #_145_loginDropdown,
+        .dockbar .navbar-inner div.navAccountControlsDivClass ul.nav > li.user-avatar.dropdown, 
+        .dockbar-split .dockbar .navbar-inner div.navAccountControlsDivClass ul.nav > li.user-avatar.dropdown,
+        #_145_userAvatar.user-avatar.dropdown.dockbar-item.open .dropdown-menu,
+        #_145_userAvatar.user-avatar.dropdown.dockbar-item.open .user-avatar-link.dropdown-toggle,
+        #_145_userAvatar.user-avatar.dropdown.dockbar-item a.user-avatar-link.dropdown-toggle:hover {
+			background-color: rgb(115, 217, 30) !important;
+		}
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet button[type="submit"], 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet button[type="submit"],
+		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet button[name="search"], 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet button[name="search"] {
+			background: url("@theme_image_path@/color_schemes/green/enter.png") no-repeat 0 0 rgb(89, 166, 24) !important;
+		}
+	}
+}

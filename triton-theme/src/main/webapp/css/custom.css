@@ -1,6 +1,8 @@
 @import "compass";
 @import "mixins";
 
+@import url(color_schemes/green.css);
+
 @import url(custom_common.css);
 
 $darkblue: rgb(0, 102, 161);
@@ -209,8 +211,8 @@ body {
 						&:before {
 							content: "" !important;
 							background: url("@theme_image_path@/custom/search_.png") no-repeat 0 0;
-							width: 15px;
-							height: 15px;
+							width: 14px;
+							height: 14px;
 							display: block;
 							position: absolute;
 							top: -11px;
@@ -1034,9 +1036,10 @@ p {
 				.dropdown-menu li {
 					width: 100% !important;
 					a {
-						padding: 0px 10px !important;
+						padding: 0px 18px !important;
 						line-height: 34px !important;
 						height: 34px;
+						width: 100% !important;
 						&:hover {
 							background-color: $darkblue !important;
 						}
@@ -1086,6 +1089,11 @@ p {
 	#_145_systemDropdown {
 		a {
 			padding-right: 27px !important;
+			width: 105px;
+			text-align: center;
+		}
+		.dropdown-menu li a {
+			text-align: left !important;
 		}
 		.icon-caret-down {
 			background: transparent;
@@ -1153,6 +1161,7 @@ p {
 					&.active > a {
 						font-family: "Avenir95-Black" !important;
 						border-bottom: 2px solid #000;
+						color: #000 !important;
 					}
 				}
 				.dropdown-menu.child-menu {
@@ -1640,7 +1649,7 @@ p {
 				background: transparent !important;
 				a {
 					margin: 0;
-					padding: 6px 7px;
+					padding: 6px 4px;
 					font-weight: normal;
 					border-radius: 0;
 					font-size: 13px;
