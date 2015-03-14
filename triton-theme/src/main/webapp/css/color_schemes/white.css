@@ -1,0 +1,182 @@
+.aui {
+	.white {
+		.portlet-dockbar, 
+		.navAccountControlsDivClass, 
+		.dockbar .navbar-inner .nav > li, 
+		.dockbar-split .dockbar .navbar-inner .nav > li {
+			background-color: rgba(255, 255, 255, 0.9);
+		}
+		.dockbar .navbar-inner .navAccountControlsDivClass .nav > li, 
+		.dockbar-split .dockbar .navbar-inner .navAccountControlsDivClass .nav > li,
+		.portlet-dockbar .dockbar .navbar-inner .container {
+			background-color: transparent !important;
+			a {
+				color: #333 !important;
+			}
+		}
+		#_145_systemDropdown a {
+			padding-right: 25px !important;
+			width: 85px;
+		}
+		#_145_searchDropdown {
+			width: 85px !important;
+		}
+		#_145_searchDropdown a {
+			padding: 6px 17px 6px 1px !important;
+		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls {
+			padding-left: 100px;
+		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a {
+			padding: 6px 7px;
+		}
+		.navAccountControlsDivClass, 
+		#_145_navAccountControls, 
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls > li > a, 
+		.portlet-dockbar {
+			height: 50px;
+		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls .dropdown-menu a {
+			height: 34px;
+		}
+		#_145_navAccountControlsNavbarCollapse .nav.nav-account-controls a, 
+		.dockbar .navbar-inner .nav > li.user-avatar.dropdown .user-full-name, 
+		.dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown .user-full-name {
+			line-height: 37px !important;
+		}
+		#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3) {
+			margin-right: 0px;
+			margin-left: 5px;
+		}
+		#_145_navAccountControlsNavbarCollapse > .nav.nav-account-controls > li:nth-last-child(3):after {
+			display: none;
+		}
+		.navAccountControlsDivClass:after {
+			content: "";
+			position: absolute;
+			top: 50px;
+			z-index: 1;
+			height: 39px;
+			width: 100%;
+			background: url("@theme_image_path@/color_schemes/white/shadow.png") no-repeat scroll center transparent;
+			background-size: 100% 100%;
+		}
+		.navbar-header {
+			width: 100px;
+			margin: 0 auto !important;
+			height: 50px;
+			top: -50px;
+			position: absolute;
+			z-index: 1032;
+		}
+		.navbar-header .navbar-brand {
+			background: url("@theme_image_path@/color_schemes/white/logo.png") no-repeat 0 0;
+			z-index: 9999;
+			height: 35px;
+			width: 100px;
+			margin-top: 9px;
+			position: absolute;
+		}
+		.navbar .icon-caret-down {
+			background: transparent !important;
+		}
+		#navigation {
+			margin-top: 40px;
+		}
+		.open > .dropdown-menu {
+			box-shadow: 0px 5px 9px -8px #333 !important;
+		}
+		.site-navigation.open {
+			top: 30px;
+			right: 42px;
+		}
+		#navigation .navbar-inner ul.nav-collapse li a,
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet label,
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet a.taglib-icon,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet label,
+		.aui .dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet a.taglib-icon,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet a.taglib-icon,
+		.portlet-login section.portlet .portlet-content .navigation .taglib-icon-list li a.taglib-icon {
+			color: #333 !important;
+			&:hover {
+				color: #000 !important;
+			}
+		}
+		.dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .navigation .taglib-icon-list li,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown>.dropdown-menu .portlet .navigation .taglib-icon-list li {
+			margin-top: -10px;
+			margin-bottom: -17px;
+		}
+		#navigation .navbar-inner ul.nav-collapse li.active > a {
+			border-bottom: 0;
+		}
+		#_145_systemDropdown .icon-caret-down:before {
+			background: url("@theme_image_path@/color_schemes/white/lock.png") no-repeat 0 0 !important;
+		}
+		#_145_searchDropdown .icon-caret-down:before {
+			background: url("@theme_image_path@/color_schemes/white/search_.png") no-repeat 0 0 !important;
+		}
+		.dockbar .nav li.dropdown .dropdown-menu, 
+		.dockbar .nav li.dropdown .site-administration-menu,
+		.dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:hover, 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:hover,
+		.dockbar .navbar-inner .nav > li.user-avatar.dropdown:hover,
+		.dockbar .navbar-inner .nav > li.user-avatar.dropdown.open > a,
+		.dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
+		.dockbar .navbar-inner .nav > li.user-avatar.dropdown .dropdown-menu,
+		.dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown:hover,
+		.dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown.open > a,
+		.dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
+		.dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown .dropdown-menu,
+		.navAccountControlsDivClass #_145_adminLinks.open .dropdown-menu li a:hover, 
+		.navAccountControlsDivClass #_145_mySites.open .dropdown-menu li a:hover, 
+		.navAccountControlsDivClass #_145_systemDropdown.open .dropdown-menu li a:hover,
+		li#_145_userAvatar.user-avatar.dropdown.dockbar-item ul.dropdown-menu {
+			background-color: rgba(255, 255, 255, 0.97) !important;
+		}
+		.container .navAccountControlsDivClass .nav-collapse .nav .dropdown.open .dropdown-toggle,
+		.dockbar.navbar .nav > li > a:hover, .navAccountControlsDivClass #_145_adminLinks.open .dropdown-menu li a:hover, 
+		.navAccountControlsDivClass #_145_mySites.open .dropdown-menu li a:hover,
+		.navAccountControlsDivClass #_145_systemDropdown.open .dropdown-menu li a:hover,
+		.dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
+		li#_145_userAvatar.user-avatar.dropdown.dockbar-item.open a.user-avatar-link.dropdown-toggle {
+			background-color: rgba(255, 255, 255, 0.63) !important;
+		}
+		.dockbar .navbar-inner div.navAccountControlsDivClass ul.nav #_145_loginDropdown, 
+		.dockbar-split .dockbar .navbar-inner div.navAccountControlsDivClass ul.nav #_145_loginDropdown,
+		.dockbar .navbar-inner div.navAccountControlsDivClass ul.nav > li.user-avatar.dropdown, 
+		.dockbar-split .dockbar .navbar-inner div.navAccountControlsDivClass ul.nav > li.user-avatar.dropdown,
+		.dockbar .navbar-inner .navAccountControlsDivClass .nav #_145_loginDropdown > .dropdown-menu .portlet-login section.portlet, 
+		.dockbar-split .dockbar .navbar-inner .navAccountControlsDivClass .nav #_145_loginDropdown > .dropdown-menu .portlet-login section.portlet,
+		li#_145_userAvatar.user-avatar.dropdown.dockbar-item a.user-avatar-link.dropdown-toggle,
+		.navAccountControlsDivClass .dropdown .dropdown-menu ul.unstyled {
+			background-color: transparent !important;
+		}
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet button[type="submit"], 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet button[type="submit"],
+		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet button[name="search"], 
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet button[name="search"] {
+			background: url("@theme_image_path@/color_schemes/white/enter.png") no-repeat -2px -3px #fff !important;
+			height: 22px !important;
+			width: 25px !important;
+			margin-top: 2px !important;
+			margin-right: 5px !important;
+		}
+		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet .control-group.control-group-inline #_search_WAR_searchportlet_keywords,
+		.dockbar .navbar-inner .nav #_145_searchDropdown .portlet button[name="search"],
+		.dockbar-split .dockbar .navbar-inner .nav #_145_searchDropdown .portlet button[name="search"],
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet #_58_login,
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet #_58_password,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet #_58_login,
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet #_58_password,
+		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet button[type="submit"],
+		.dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet button[type="submit"] {
+			border: 1px solid #666 !important;
+		}
+		.footer, a#_145_navSiteNavigationNavbarBtn {
+			background-color: #474B4C !important;
+			color: #fff !important;
+		}
+	}
+}

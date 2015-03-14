@@ -12,9 +12,12 @@
 		<color-scheme id="01" name="Blue">
 			<css-class>default</css-class>
 			<color-scheme-images-path>${images-path}/color_schemes/${css-class}</color-scheme-images-path>
-		</color-scheme>	
+		</color-scheme>
 		<color-scheme id="02" name="Green">
 			<css-class>green</css-class>
+		</color-scheme>	
+		<color-scheme id="03" name="White">
+			<css-class>white</css-class>
 		</color-scheme>	
 	</theme>
 </look-and-feel>

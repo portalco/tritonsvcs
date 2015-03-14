@@ -36,7 +36,7 @@ $theme.include($body_top_include)
     <div class="container">
     <div class="navbar-header">
 
-      <a class="$logo_css_class navbar-brand" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])"><img alt="$logo_description" src="${theme_display.getPathThemeRoot()}/images/custom/logo.png" /></a>
+      <a class="$logo_css_class navbar-brand" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])"></a>
 
     </div>
     <div id="navbar" class="collapse navbar-collapse">
@@ -101,8 +101,26 @@ $theme.include($body_top_include)
             } else {
                 box.css('position', 'fixed');
                 box.css('top', 0);
-                box.css('right', 0);
                 box.css('left', 0);
+                box.css('right', 0);
+            }
+        });
+    });
+</script>
+
+<script>
+    $(function() {
+        var box = $('.white .navbar-header'); // float-fixed block
+
+        var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
+        $(window).scroll(function(){
+            var windowpos = $(window).scrollTop();
+            if(windowpos < top) {
+                box.css('position', 'absolute');
+                box.css('top', '-50px');
+            } else {
+                box.css('position', 'fixed');
+                box.css('top', 0);
             }
         });
     });

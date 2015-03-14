@@ -1,8 +1,6 @@
 @import "compass";
 @import "mixins";
 
-@import url(color_schemes/green.css);
-
 @import url(custom_common.css);
 
 $darkblue: rgb(0, 102, 161);
@@ -999,9 +997,6 @@ p {
 			padding: 0px 4px;
 		}
 	}
-	.navbar-brand {
-		padding: 18px 0px 13px 2px;
-	}
 	.navbar > .container > #navbar {
 		position: static !important;
 	}
@@ -1113,9 +1108,12 @@ p {
 		}
 	}
 	.navbar-header .navbar-brand {
-		height: auto !important;
 		position: relative;
 		z-index: 1;
+		background: url("@theme_image_path@/custom/logo.png") no-repeat 0 0;
+		width: 240px;
+		height: 70px;
+		margin-top: 18px;
 	}
 	.navbar .container .nav-collapse {
 		display: block !important;
@@ -1267,6 +1265,9 @@ p {
 				font-style: normal;
 			}
 		}
+	}
+	.navbar .container {
+		position: relative !important;
 	}
 	.navbar .container, .container {
 		padding: 0;
@@ -1439,7 +1440,7 @@ p {
 					padding: 3px 0px 5px 12px !important;
 					margin-bottom: -7px;
 					li {
-					    padding: 2px 0px;
+						padding: 2px 0px;
 					}
 				}
 			}
@@ -1505,7 +1506,7 @@ p {
 				padding: 3px 0px 5px 12px !important;
 				margin-bottom: -7px;
 				li {
-				    padding: 2px 0px;
+					padding: 2px 0px;
 				}
 			}
 		}
@@ -2495,3 +2496,6 @@ p {
 		}
 	}
 }
+
+@import url(color_schemes/green.css);
+@import url(color_schemes/white.css);
