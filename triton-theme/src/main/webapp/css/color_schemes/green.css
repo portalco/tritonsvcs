@@ -16,22 +16,29 @@
                 color: #000 !important;
             }
 		}
-		.dockbar.navbar .nav > li > a:hover,  
+		.dockbar.navbar .nav > li > a:hover,
+        .dockbar.navbar .nav > li > a:focus,  
         .dockbar .nav li.dropdown .dropdown-menu, 
 		.dockbar .nav li.dropdown .site-administration-menu, 
         .dockbar .navbar-inner .navAccountControlsDivClass .nav #_145_loginDropdown > .dropdown-menu .portlet-login section.portlet, 
 		.dockbar-split .dockbar .navbar-inner .navAccountControlsDivClass .nav #_145_loginDropdown > .dropdown-menu .portlet-login section.portlet,
-		.dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:hover, 
+		.dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:hover,
+        .dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:focus,
         .dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:hover,
+        .dockbar-split .dockbar .navbar-inner .nav #_145_loginDropdown.dropdown a.dropdown-toggle:focus,
         .container .navAccountControlsDivClass .nav-collapse .nav .dropdown.open .dropdown-toggle,
         .dockbar .navbar-inner .nav > li.user-avatar.dropdown:hover,
+        .dockbar .navbar-inner .nav > li.user-avatar.dropdown:focus,
         .dockbar .navbar-inner .nav > li.user-avatar.dropdown.open > a,
         .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
+        .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:focus,
         .dockbar .navbar-inner .nav > li.user-avatar.dropdown .dropdown-menu,
         .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown:hover,
+        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown:focus,
         .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown.open > a,
         .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
-        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown .dropdown-menu,  {
+        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:focus,
+        .dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown .dropdown-menu {
 			background-color: rgb(62, 117, 16) !important;
 		}
 		.dockbar .navbar-inner div.navAccountControlsDivClass ul.nav #_145_loginDropdown, 
