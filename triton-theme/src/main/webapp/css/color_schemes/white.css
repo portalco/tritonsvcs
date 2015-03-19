@@ -191,9 +191,9 @@
 			background-color: #474B4C !important;
 			color: #fff !important;
 		}
-        #_145_navSiteNavigationNavbarBtn {
-            margin-right: 20px !important;
-        }
+		#_145_navSiteNavigationNavbarBtn {
+			margin-right: 20px !important;
+		}
 		#_145_searchDropdown > .dropdown-menu {
 			margin-left: -361px !important;
 		}
@@ -210,6 +210,19 @@
 				padding-left: 20px;
 				padding-right: 20px;
 			}
+			.carousel.slide .item img {
+				margin-left: -170px;
+			}
+		}
+	}
+	@media (max-width: 479px) {
+		.white .navbar .container {
+			margin-top: 105px;
+		}
+	}
+	@media (max-width: 1023px) {
+		.carousel.slide .item img {
+			margin-left: -170px;
 		}
 	}
 }
