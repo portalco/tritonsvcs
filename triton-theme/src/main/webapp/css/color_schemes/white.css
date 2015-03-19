@@ -219,19 +219,35 @@
 		}
 	}
 	@media (max-width: 479px) {
-		.white .navbar .container {
-			height: 100px;
-		}
-        .white #_145_searchDropdown {
-            width: 30px !important;
+        .white {
+            .navbar .container {
+                height: 100px;
+            }
+            #_145_searchDropdown {
+                width: 30px !important;
+            }
+            #_145_searchDropdown > .dropdown-menu {
+                margin-left: -173px !important;
+            }
         }
+	}
+    @media (max-width: 639px) {
         .white #_145_searchDropdown > .dropdown-menu {
-            margin-left: -173px !important;
+            margin-left: -121px !important;
         }
-	}
-	@media (max-width: 1023px) {
-		.carousel.slide .item img {
-			margin-left: -170px;
-		}
-	}
+    }
+    @media (min-width: 1024px) {
+        .white {
+            .container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse, .carousel.slide .item img {
+               width: 100% !important;
+            }
+            #navigation, .footer {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .carousel.slide .item img, .carousel-title, .carousel-text {
+                margin-left: 0 !important;
+            }
+        }
+    }
 }
