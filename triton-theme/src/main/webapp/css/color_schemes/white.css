@@ -219,16 +219,23 @@
 		}
 	}
 	@media (max-width: 479px) {
-		.white .navbar .container {
-			height: 100px;
-		}
-        .white #_145_searchDropdown {
-            width: 30px !important;
-        }
-        .white #_145_searchDropdown > .dropdown-menu {
-            margin-left: -173px !important;
+        .white {
+            .white .navbar .container {
+                height: 100px;
+            }
+            .white #_145_searchDropdown {
+                width: 30px !important;
+            }
+            .white #_145_searchDropdown > .dropdown-menu {
+                margin-left: -173px !important;
+            }
         }
 	}
+    @media (max-width: 639px) {
+        .white #_145_searchDropdown > .dropdown-menu {
+            margin-left: -121px !important;
+        }
+    }
     @media (min-width: 1024px) {
         .white {
             .container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse, .carousel.slide .item img {
