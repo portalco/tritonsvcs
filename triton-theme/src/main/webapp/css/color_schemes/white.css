@@ -220,13 +220,13 @@
 	}
 	@media (max-width: 479px) {
         .white {
-            .white .navbar .container {
+            .navbar .container {
                 height: 100px;
             }
-            .white #_145_searchDropdown {
+            #_145_searchDropdown {
                 width: 30px !important;
             }
-            .white #_145_searchDropdown > .dropdown-menu {
+            #_145_searchDropdown > .dropdown-menu {
                 margin-left: -173px !important;
             }
         }
