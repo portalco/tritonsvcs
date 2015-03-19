@@ -148,7 +148,11 @@
 		.navAccountControlsDivClass #_145_mySites.open .dropdown-menu li a:hover,
 		.navAccountControlsDivClass #_145_systemDropdown.open .dropdown-menu li a:hover,
 		.dockbar-split .dockbar .navbar-inner .nav > li.user-avatar.dropdown a:hover,
-		li#_145_userAvatar.user-avatar.dropdown.dockbar-item.open a.user-avatar-link.dropdown-toggle {
+		li#_145_userAvatar.user-avatar.dropdown.dockbar-item.open a.user-avatar-link.dropdown-toggle,
+        .dockbar-split .dockbar .navbar-inner .nav-collapse > .nav > li > a:focus,
+        .dockbar-split .dockbar .navbar-inner .nav-collapse > .nav > li > a:hover,
+        .dockbar .navbar-inner .nav-collapse > .nav > li > a:focus,
+        .dockbar .navbar-inner .nav-collapse > .nav > li > a:hover {
 			background-color: rgba(255, 255, 255, 0.63) !important;
 		}
 		.dockbar .navbar-inner div.navAccountControlsDivClass ul.nav #_145_loginDropdown, 
@@ -187,5 +191,23 @@
 			background-color: #474B4C !important;
 			color: #fff !important;
 		}
+        #_145_searchDropdown > .dropdown-menu {
+            margin-left: -361px !important;
+        }
+        @media (min-width: 1200px) {
+            body {
+                margin-bottom: 87px !important;
+            }
+            .container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
+                width: auto !important;
+            }
+            #navigation, .footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .carousel.slide .item img {
+                width: 100%;
+            }
+        }
 	}
 }
