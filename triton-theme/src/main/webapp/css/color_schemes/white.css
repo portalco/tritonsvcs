@@ -231,7 +231,7 @@
 	}
     @media (min-width: 1024px) {
         .white {
-            .container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse {
+            .container, .navbar .container, .portlet-dockbar .dockbar, #_145_navAccountControlsNavbarCollapse, .carousel.slide .item img {
                width: 100% !important;
             }
             #navigation, .footer {
@@ -240,7 +240,7 @@
             }
             .carousel.slide .item img, .carousel-title, .carousel-text {
                 margin-left: 0 !important;
-            } 
+            }
         }
     }
 }
