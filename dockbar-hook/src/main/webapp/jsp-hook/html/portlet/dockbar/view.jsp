@@ -121,51 +121,56 @@ String toggleControlsState = GetterUtil.getString(SessionClicks.get(request, "li
 	String controlPanelCategory = themeDisplay.getControlPanelCategory();
 	%>
 
-	<c:if test="<%= !(group.isControlPanel() && controlPanelCategory.startsWith(PortletCategoryKeys.CURRENT_SITE)) %>">
-		<%-- 
-		<aui:nav collapsible="<%= true %>" cssClass="nav-navigation" icon="reorder" id="navSiteNavigation">
-			<c:if test="<%= group.isControlPanel() && !controlPanelCategory.equals(PortletCategoryKeys.MY) && !controlPanelCategory.startsWith(PortletCategoryKeys.CURRENT_SITE) %>">
-
-				<%
-				String[] categories = PortletCategoryKeys.ALL;
-
-				for (String curCategory : categories) {
-					String urlControlPanelCategory = HttpUtil.setParameter(themeDisplay.getURLControlPanel(), "controlPanelCategory", curCategory);
-
-					String cssClass = StringPool.BLANK;
-					String iconCssClass = StringPool.BLANK;
-
-					if (curCategory.equals(PortletCategoryKeys.APPS)) {
-						cssClass = "control-panel-apps";
-						iconCssClass = "icon-th";
+	<%-- Fix to do  not display empty burger-button in normal (not control panel) view --%>
+	<c:if test="<%= group.isControlPanel() %>">
+		<c:if test="<%= !(group.isControlPanel() && controlPanelCategory.startsWith(PortletCategoryKeys.CURRENT_SITE)) %>">
+			<aui:nav collapsible="<%= true %>" cssClass="nav-navigation" icon="reorder" id="navSiteNavigation">
+				<c:if test="<%= group.isControlPanel() && !controlPanelCategory.equals(PortletCategoryKeys.MY) && !controlPanelCategory.startsWith(PortletCategoryKeys.CURRENT_SITE) %>">
+	
+					<%
+					String[] categories = PortletCategoryKeys.ALL;
+	
+					for (String curCategory : categories) {
+						String urlControlPanelCategory = HttpUtil.setParameter(themeDisplay.getURLControlPanel(), "controlPanelCategory", curCategory);
+	
+						String cssClass = StringPool.BLANK;
+						String iconCssClass = StringPool.BLANK;
+	
+						if (curCategory.equals(PortletCategoryKeys.APPS)) {
+							cssClass = "control-panel-apps";
+							iconCssClass = "icon-th";
+						}
+						else if (curCategory.equals(PortletCategoryKeys.CONFIGURATION)) {
+							cssClass = "control-panel-configuration";
+							iconCssClass = "icon-cog";
+						}
+						else if (curCategory.equals(PortletCategoryKeys.SITES)) {
+							cssClass = "control-panel-sites";
+							iconCssClass = "icon-globe";
+						}
+						else if (curCategory.equals(PortletCategoryKeys.USERS)) {
+							cssClass = "control-panel-users";
+							iconCssClass = "icon-user";
+						}
+					%>
+	
+						<c:if test="<%= _hasPortlets(curCategory, themeDisplay) %>">
+							<aui:nav-item anchorId='<%= "controlPanelNav" + curCategory + "Link" %>' cssClass="<%= cssClass %>" href="<%= urlControlPanelCategory %>" iconCssClass="<%= iconCssClass %>" label='<%= "category." + curCategory %>' selected="<%= controlPanelCategory.equals(curCategory) %>" />
+						</c:if>
+	
+					<%
 					}
-					else if (curCategory.equals(PortletCategoryKeys.CONFIGURATION)) {
-						cssClass = "control-panel-configuration";
-						iconCssClass = "icon-cog";
-					}
-					else if (curCategory.equals(PortletCategoryKeys.SITES)) {
-						cssClass = "control-panel-sites";
-						iconCssClass = "icon-globe";
-					}
-					else if (curCategory.equals(PortletCategoryKeys.USERS)) {
-						cssClass = "control-panel-users";
-						iconCssClass = "icon-user";
-					}
-				%>
-
-					<c:if test="<%= _hasPortlets(curCategory, themeDisplay) %>">
-						<aui:nav-item anchorId='<%= "controlPanelNav" + curCategory + "Link" %>' cssClass="<%= cssClass %>" href="<%= urlControlPanelCategory %>" iconCssClass="<%= iconCssClass %>" label='<%= "category." + curCategory %>' selected="<%= controlPanelCategory.equals(curCategory) %>" />
-					</c:if>
-
-				<%
-				}
-				%>
-
-			</c:if>
-		</aui:nav>
-		--%>
+					%>
+	
+				</c:if>
+			</aui:nav>
+		</c:if>
 	</c:if>
-
+	<c:if test="<%= !group.isControlPanel() && themeDisplay.getLayouts().size() > 0 %>">
+		<aui:nav collapsible="<%= true %>" cssClass="nav-navigation" icon="reorder" id="navSiteNavigation">
+		</aui:nav>
+	</c:if>
+	
 	<%
 	boolean userSetupComplete = user.isSetupComplete();
 
