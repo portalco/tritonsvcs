@@ -69,6 +69,7 @@ $theme.include($body_top_include)
     <div class="links">
       <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Site Map</a>
       <h1>$nav_items.size()</h1>
+      <h2>$has_navigation</h2>
     </div>
     <p class="copyright">Copyright 2015</p>
 
