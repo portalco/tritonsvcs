@@ -2453,7 +2453,7 @@ p {
 			right: 0 !important;
 			background: #0066A1;
 			border: 0;
-			margin: 0 !important;
+			margin: 0;
 			padding: 7px 14px !important;
 			&.open {
 				background: #F5AF45;
