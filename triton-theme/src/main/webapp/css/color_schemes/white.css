@@ -235,8 +235,16 @@
         }
 	}
     @media (max-width: 639px) {
+        body.white {
+            margin-bottom: 57px !important;
+        }
         .white #_145_searchDropdown > .dropdown-menu {
             margin-left: -121px !important;
+        }
+    }
+    @media (max-width: 767px) {
+        body.white {
+            margin-bottom: 77px !important;
         }
     }
     @media (max-width: 1023px) {
