@@ -68,6 +68,7 @@ $theme.include($body_top_include)
     <div class="container">
     <div class="links">
       <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Site Map</a>
+      <h1>$nav_items.size()</h1>
     </div>
     <p class="copyright">Copyright 2015</p>
 
@@ -133,10 +134,10 @@ $theme.include($body_top_include)
             var windowpos = $(window).scrollTop();
             if(windowpos < top) {
                 box.css('position', 'absolute');
-                box.css('margin-top', '50px');
+                box.css('margin-top', '0');
             } else {
                 box.css('position', 'fixed');
-                box.css('margin-top', '54px');
+                box.css('margin-top', '0');
             }
         });
     });
