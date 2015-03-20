@@ -204,7 +204,7 @@
 		}
 		#_145_navSiteNavigationNavbarBtn {
 			margin-right: 50px !important;
-			top: 50px !important;
+			top: 50px;
 			background-color: rgba(255, 255, 255, 0.9) !important;
 			border-radius: 0 0 2px 2px;
 			color: #474B4C !important;
