@@ -1634,7 +1634,7 @@ p {
 			font-size: 12px;
 		}
 		#_145_navSiteNavigationNavbarBtn {
-			top: 88px;
+			top: 88px !important;
 		}
 		#_145_navAddControlsNavbarCollapse {
 			display: none !important;
@@ -2449,7 +2449,7 @@ p {
 		#_145_navSiteNavigationNavbarBtn {
 			display: block !important;
 			position: absolute;
-			top: 84px;
+			top: 84px !important;
 			right: 0 !important;
 			background: #0066A1;
 			border: 0;
