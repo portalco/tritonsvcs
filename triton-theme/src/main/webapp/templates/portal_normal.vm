@@ -133,10 +133,10 @@ $theme.include($body_top_include)
             var windowpos = $(window).scrollTop();
             if(windowpos < top) {
                 box.css('position', 'absolute');
-                box.css('top', 0);
+                box.css('margin-top', 0);
             } else {
                 box.css('position', 'fixed');
-                box.css('top', '127px !important');
+                box.css('margin-top', '56px !important');
             }
         });
     });
