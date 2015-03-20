@@ -136,7 +136,7 @@ $theme.include($body_top_include)
                 box.css('margin-top', 0);
             } else {
                 box.css('position', 'fixed');
-                box.css('margin-top', '56px !important');
+                box.css('margin-top', '56px');
             }
         });
     });
