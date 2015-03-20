@@ -1,6 +1,9 @@
 .aui {
 	.white {
-		.portlet-dockbar, 
+		.portlet-dockbar {
+            display: block;
+        }
+        .portlet-dockbar, 
 		.navAccountControlsDivClass, 
 		.dockbar .navbar-inner .nav > li, 
 		.dockbar-split .dockbar .navbar-inner .nav > li {
