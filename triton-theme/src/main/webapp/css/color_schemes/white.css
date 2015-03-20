@@ -235,6 +235,24 @@
 			}
 		}
 	}
+    @media (max-width: 1023px) {
+        .white .carousel-title, .white .carousel-text {
+            margin-left: 0 !important;
+        }
+    }
+    @media (max-width: 767px) {
+        body.white {
+            margin-bottom: 77px !important;
+        }
+    }
+    @media (max-width: 639px) {
+        body.white {
+            margin-bottom: 57px !important;
+        }
+        .white #_145_searchDropdown > .dropdown-menu {
+            margin-left: -121px !important;
+        }
+    }
 	@media (max-width: 479px) {
 		.white {
 			#_145_searchDropdown {
@@ -243,24 +261,6 @@
 			#_145_searchDropdown > .dropdown-menu {
 				margin-left: -173px !important;
 			}
-		}
-	}
-	@media (max-width: 639px) {
-		body.white {
-			margin-bottom: 57px !important;
-		}
-		.white #_145_searchDropdown > .dropdown-menu {
-			margin-left: -121px !important;
-		}
-	}
-	@media (max-width: 767px) {
-		body.white {
-			margin-bottom: 77px !important;
-		}
-	}
-	@media (max-width: 1023px) {
-		.white .carousel-title, .white .carousel-text {
-			margin-left: 0 !important;
 		}
 	}
 	@media (min-width: 1024px) {
