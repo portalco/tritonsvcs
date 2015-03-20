@@ -98,7 +98,8 @@
 		}
 		.site-navigation.open {
 			top: 30px;
-			right: 42px;
+			right: 68px;
+            position: fixed !important;
 		}
 		#navigation .navbar-inner ul.nav-collapse li a,
 		.dockbar .navbar-inner .nav #_145_loginDropdown > .dropdown-menu .portlet label,
@@ -208,7 +209,7 @@
 			border-radius: 0 0 2px 2px;
 			color: #474B4C !important;
 			position: fixed !important;
-			z-index: 999999;
+			z-index: 99;
 		}
 		#_145_searchDropdown > .dropdown-menu {
 			margin-left: -361px !important;
@@ -258,7 +259,7 @@
 		}
 	}
 	@media (max-width: 1023px) {
-		.white .carousel-title, .carousel-text {
+		.white .carousel-title, .white .carousel-text {
 			margin-left: 0 !important;
 		}
 	}
