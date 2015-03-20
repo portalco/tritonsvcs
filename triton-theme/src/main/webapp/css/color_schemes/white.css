@@ -208,7 +208,6 @@
 			background-color: rgba(255, 255, 255, 0.9) !important;
 			border-radius: 0 0 2px 2px;
 			color: #474B4C !important;
-			position: fixed !important;
 			z-index: 99;
 		}
 		#_145_searchDropdown > .dropdown-menu {

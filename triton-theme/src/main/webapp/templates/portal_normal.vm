@@ -89,10 +89,27 @@ $theme.include($body_top_include)
 <script type="text/javascript" src="${theme_display.getPathThemeRoot()}/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="${theme_display.getPathThemeRoot()}/js/carousel.js"></script>
 
-
 <script>
     $(function() {
-        var box = $('.white .dockbar .navbar-inner .container a.btn.btn-navbar'); // float-fixed block
+        var box = $('.navAccountControlsDivClass'); // float-fixed block
+
+        var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
+        $(window).scroll(function(){
+            var windowpos = $(window).scrollTop();
+            if(windowpos < top) {
+                box.css('position', 'static');
+            } else {
+                box.css('position', 'fixed');
+                box.css('top', 0);
+                box.css('left', 0);
+                box.css('right', 0);
+            }
+        });
+    });
+</script>
+<script>
+    $(function() {
+        var box = $('.white .navbar-header'); // float-fixed block
 
         var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
         $(window).scroll(function(){
@@ -103,6 +120,23 @@ $theme.include($body_top_include)
             } else {
                 box.css('position', 'fixed');
                 box.css('top', 0);
+            }
+        });
+    });
+</script>
+<script>
+    $(function() {
+        var box = $('.white .dockbar .navbar-inner .container a.btn.btn-navbar, .white .navbar.site-navigation.open'); // float-fixed block
+
+        var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
+        $(window).scroll(function(){
+            var windowpos = $(window).scrollTop();
+            if(windowpos < top) {
+                box.css('position', 'absolute');
+                box.css('top', 0);
+            } else {
+                box.css('position', 'fixed');
+                box.css('top', '127px !important');
             }
         });
     });
