@@ -61,6 +61,9 @@
 			background: url("@theme_image_path@/color_schemes/white/shadow.png") no-repeat scroll center transparent;
 			background-size: 100% 100%;
 		}
+        .navbar > .container > #navbar {
+            min-height: auto !important;
+        }
 		.navbar-header {
 			width: 100px;
 			margin: 0 auto !important;
