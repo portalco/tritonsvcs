@@ -126,15 +126,17 @@ $theme.include($body_top_include)
 </script>
 <script>
     $(function() {
-        var box = $('.white #_145_navSiteNavigationNavbarBtn, #navigation.site-navigation.open'); // float-fixed block
+        var box = $('.white .dockbar .navbar-inner .container a.btn.btn-navbar'); // float-fixed block
 
         var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
         $(window).scroll(function(){
             var windowpos = $(window).scrollTop();
             if(windowpos < top) {
                 box.css('position', 'absolute');
+                box.css('top', '-50px');
             } else {
                 box.css('position', 'fixed');
+                box.css('top', 0);
             }
         });
     });
