@@ -19,6 +19,8 @@ $theme.include($body_top_include)
 <!-- ID2: $theme.getSetting('alert-message-article-id') -->
 <!-- ID3: $theme_display.getThemeSetting('alert-message-article-id') -->
 <!-- Message: $alert_message -->
+<p>$nav_items.size()</p>
+<p>$has_navigation</p>
 
 
 #if ($alert_message)
