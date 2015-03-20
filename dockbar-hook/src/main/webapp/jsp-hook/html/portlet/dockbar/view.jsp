@@ -166,7 +166,7 @@ String toggleControlsState = GetterUtil.getString(SessionClicks.get(request, "li
 			</aui:nav>
 		</c:if>
 	</c:if>
-	<c:if test="<%= !group.isControlPanel() && themeDisplay.getLayouts().size() > 0 %>">
+	<c:if test="<%= !group.isControlPanel() && themeDisplay.getLayouts() != null && themeDisplay.getLayouts().size() > 0 %>">
 		<aui:nav collapsible="<%= true %>" cssClass="nav-navigation" icon="reorder" id="navSiteNavigation">
 		</aui:nav>
 	</c:if>
